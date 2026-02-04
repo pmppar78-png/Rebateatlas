@@ -1,6 +1,6 @@
 
 async function fetchZipData(zip){
-  try { const r=await fetch(`/data/zip/${zip}.json`,{cache:'no-store'}); if(r.ok) return await r.json(); } catch {}
+  try { const r=await fetch(`/${zip}.json`,{cache:'no-store'}); if(r.ok) return await r.json(); } catch {}
   const r2=await fetch(`/api/zip?code=${encodeURIComponent(zip)}`,{cache:'no-store'});
   if(r2.ok) return await r2.json();
   return null;
