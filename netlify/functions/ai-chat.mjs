@@ -1,46 +1,45 @@
-const OpenAI = require('openai');
+import OpenAI from 'openai';
 
-exports.handler = async function(event) {
-  if (event.httpMethod === 'OPTIONS') {
-    return {
-      statusCode: 200,
+export default async (req, context) => {
+  if (req.method === 'OPTIONS') {
+    return new Response('', {
+      status: 200,
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Access-Control-Allow-Methods': 'POST, OPTIONS'
-      },
-      body: ''
-    };
+      }
+    });
   }
 
-  if (event.httpMethod !== 'POST') {
-    return {
-      statusCode: 405,
+  if (req.method !== 'POST') {
+    return new Response(JSON.stringify({ error: 'Method not allowed' }), {
+      status: 405,
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*'
-      },
-      body: JSON.stringify({ error: 'Method not allowed' })
-    };
+      }
+    });
   }
 
   try {
-    const apiKey = process.env.OPENAI_API_KEY || process.env.OPENAI_API_KEY_BILLBUSTER || process.env.OPENAI_API_KEY_REBATE_ATLAS;
+    const apiKey = Netlify.env.get('OPENAI_API_KEY') ||
+                   Netlify.env.get('OPENAI_API_KEY_BILLBUSTER') ||
+                   Netlify.env.get('OPENAI_API_KEY_REBATE_ATLAS');
 
     if (!apiKey) {
-      return {
-        statusCode: 500,
+      return new Response(JSON.stringify({ error: 'OPENAI_API_KEY is not configured in environment variables' }), {
+        status: 500,
         headers: {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*'
-        },
-        body: JSON.stringify({ error: 'OPENAI_API_KEY is not configured in environment variables' })
-      };
+        }
+      });
     }
 
     const openai = new OpenAI({ apiKey });
 
-    const body = JSON.parse(event.body || '{}');
+    const body = await req.json();
     const userMessages = body.messages || [];
 
     const systemPrompt = `You are Rebate Atlas AI, a friendly assistant helping US households understand energy-efficiency rebates, tax credits, and incentives.
@@ -117,26 +116,24 @@ IMPORTANT: You must not give tax, legal, or financial advice. Always remind user
 
     const reply = completion.choices?.[0]?.message?.content || 'Sorry — I could not generate a response at this time.';
 
-    return {
-      statusCode: 200,
+    return new Response(JSON.stringify({ reply }), {
+      status: 200,
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*'
-      },
-      body: JSON.stringify({ reply })
-    };
+      }
+    });
   } catch (err) {
     console.error('Function error:', err);
-    return {
-      statusCode: 500,
+    return new Response(JSON.stringify({
+      error: 'Server error',
+      detail: err.message
+    }), {
+      status: 500,
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*'
-      },
-      body: JSON.stringify({ 
-        error: 'Server error', 
-        detail: err.message 
-      })
-    };
+      }
+    });
   }
 };
