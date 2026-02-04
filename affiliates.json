@@ -1,0 +1,122 @@
+{
+  "solar_quotes": [
+    {
+      "name": "EnergySage",
+      "url": "https://www.energysage.com",
+      "notes": "Solar quote marketplace, very high EPC"
+    },
+    {
+      "name": "Project Solar",
+      "url": "https://www.projectsolar.com",
+      "notes": "Direct-to-consumer solar installer"
+    },
+    {
+      "name": "SunPower",
+      "url": "https://us.sunpower.com",
+      "notes": "Premium national solar brand"
+    },
+    {
+      "name": "ADT Solar",
+      "url": "https://www.adtsolar.com",
+      "notes": "Solar arm of ADT"
+    },
+    {
+      "name": "Momentum Solar",
+      "url": "https://momentumsolar.com",
+      "notes": "Regional US solar installer"
+    },
+    {
+      "name": "SolarReviews",
+      "url": "https://www.solarreviews.com",
+      "notes": "Solar reviews and lead-gen"
+    }
+  ],
+  "home_services": [
+    {
+      "name": "Modernize Home Services",
+      "url": "https://modernize.com",
+      "notes": "Leads for HVAC, windows, roofing, etc."
+    },
+    {
+      "name": "Angi (HomeAdvisor)",
+      "url": "https://www.angi.com",
+      "notes": "Home services marketplace"
+    },
+    {
+      "name": "Thumbtack",
+      "url": "https://www.thumbtack.com",
+      "notes": "Local pros marketplace"
+    }
+  ],
+  "retail": [
+    {
+      "name": "Amazon",
+      "url": "https://www.amazon.com",
+      "notes": "Smart thermostats, energy devices, etc."
+    },
+    {
+      "name": "Home Depot",
+      "url": "https://www.homedepot.com",
+      "notes": "Home improvement retailer"
+    },
+    {
+      "name": "Lowe's",
+      "url": "https://www.lowes.com",
+      "notes": "Home improvement retailer"
+    }
+  ],
+  "energy_devices": [
+    {
+      "name": "Sense Energy Monitor",
+      "url": "https://sense.com",
+      "notes": "Home energy monitoring"
+    },
+    {
+      "name": "Emporia Energy",
+      "url": "https://www.emporiaenergy.com",
+      "notes": "Energy monitors & smart plugs"
+    },
+    {
+      "name": "Ecobee",
+      "url": "https://www.ecobee.com",
+      "notes": "Smart thermostats"
+    },
+    {
+      "name": "Google Nest",
+      "url": "https://store.google.com/us/category/connected_home",
+      "notes": "Nest thermostats & devices"
+    },
+    {
+      "name": "Wyze",
+      "url": "https://www.wyze.com",
+      "notes": "Affordable smart home products"
+    }
+  ],
+  "financing": [
+    {
+      "name": "Upgrade",
+      "url": "https://www.upgrade.com",
+      "notes": "Personal loans"
+    },
+    {
+      "name": "LendingTree",
+      "url": "https://www.lendingtree.com",
+      "notes": "Loan comparison marketplace"
+    },
+    {
+      "name": "LightStream",
+      "url": "https://www.lightstream.com",
+      "notes": "Home improvement & solar loans"
+    },
+    {
+      "name": "SoFi",
+      "url": "https://www.sofi.com",
+      "notes": "Loans & refinancing"
+    },
+    {
+      "name": "Credible",
+      "url": "https://www.credible.com",
+      "notes": "Loan comparison"
+    }
+  ]
+}

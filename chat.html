@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rebate Atlas AI Chat · Get Instant Rebate Guidance</title>
+  <meta name="description" content="Chat with our AI to discover energy rebates for your home. Get personalized guidance on heat pumps, solar, EV chargers, and more based on your ZIP code." />
+  <meta property="og:title" content="Rebate Atlas AI · Interactive Rebate Guidance" />
+  <meta property="og:description" content="Ask our AI about home energy rebates and get instant, personalized answers." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="page page-chat">
+  <header class="site-header">
+    <div class="site-brand">
+      <span class="site-logo-dot"></span>
+      <span class="site-title">Rebate Atlas</span>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="chat.html" class="nav-link nav-link-active">Ask the AI</a>
+    </nav>
+  </header>
+
+  <main class="content content-chat">
+    <p style="margin: 1rem 0; padding: 0.75rem; background: #f7fafc; border-left: 3px solid #4fd1c5; font-size: 0.9rem;">
+      Some suggestions may include sponsored partners. This does not affect guidance.
+    </p>
+    <section class="chat-panel">
+      <div class="chat-intro">
+        <h1>Rebate Atlas AI</h1>
+        <p>
+          Tell me about your home, what upgrades you're considering, and roughly what you spend on
+          energy now. I'll walk you through realistic rebates and credits — and when it makes
+          sense, I'll suggest <span class="accent">partner links and tools</span> that might help you claim them.
+        </p>
+      </div>
+
+      <div id="chat-log" class="chat-log">
+        <div class="msg msg-ai">
+          <p><strong>Rebate Atlas AI:</strong> Hi! Share your ZIP code, home type, and one upgrade you're
+            considering (like a heat pump, insulation, EV charger, or solar). I'll outline likely
+            rebates and when it makes sense, I'll include clear, colored <span class="accent">partner links</span>
+            you can click to explore your options.</p>
+        </div>
+      </div>
+
+      <form id="chat-form" class="chat-input-row">
+        <input id="chat-input" type="text" placeholder="Ask about any rebate, upgrade, or credit..." autocomplete="off" />
+        <button class="btn-primary" type="submit">Send</button>
+      </form>
+
+      <p class="chat-tip">
+        Tip: You can ask things like <em>“How much could I get to replace my oil boiler with a heat pump?”</em>
+        or <em>“What rebates exist for adding an EV charger in ZIP 02118?”</em>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only · Not tax or legal advice.</p>
+    <p>Some suggestions may include sponsored partners. This does not affect guidance.</p>
+    <p><a href="privacy-policy.html" class="inline-link">Privacy Policy</a></p>
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+</html>

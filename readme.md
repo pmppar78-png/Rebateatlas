@@ -1,0 +1,1 @@
+Deploy on Netlify. Paste Google site verification in config + index. Monetization toggles off for review.

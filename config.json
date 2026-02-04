@@ -1,0 +1,19 @@
+{
+  "site": {
+    "name": "Rebate Atlas",
+    "domain_placeholder": "your-domain.example",
+    "google_site_verification_placeholder": "PASTE_CODE_FROM_GOOGLE"
+  },
+  "features": {
+    "adsense_enabled": false,
+    "ga4_enabled": false,
+    "skimlinks_enabled": false,
+    "pwa_enabled": true,
+    "email_alerts_enabled": true
+  },
+  "ids": {
+    "adsense_client": "ca-pub-XXXXXXXXXXXXXXXX",
+    "ga4_id": "G-XXXXXXXXXX",
+    "skimlinks_site_id": "ENTER_YOUR_SKIMLINKS_SITE_ID"
+  }
+}

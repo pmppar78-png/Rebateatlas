@@ -1,0 +1,84 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const yearEl = document.getElementById('year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  const form = document.getElementById('chat-form');
+  const input = document.getElementById('chat-input');
+  const log = document.getElementById('chat-log');
+
+  if (!form || !input || !log) return;
+
+  const conversationHistory = [];
+
+  const appendMessage = (text, who = 'ai') => {
+    const div = document.createElement('div');
+    div.className = 'msg ' + (who === 'user' ? 'msg-user' : 'msg-ai');
+    div.innerHTML = text;
+    log.appendChild(div);
+    log.scrollTop = log.scrollHeight;
+  };
+
+  const renderTypingIndicator = () => {
+    const div = document.createElement('div');
+    div.className = 'msg msg-ai typing-indicator';
+    div.innerHTML = '<strong>Rebate Atlas AI:</strong> <span class="typing-dots">Thinking<span>.</span><span>.</span><span>.</span></span>';
+    log.appendChild(div);
+    log.scrollTop = log.scrollHeight;
+    return div;
+  };
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const content = input.value.trim();
+    if (!content) return;
+
+    appendMessage(`<strong>You:</strong> ${content}`, 'user');
+    conversationHistory.push({ role: 'user', content });
+
+    input.value = '';
+    input.disabled = true;
+
+    const typingIndicator = renderTypingIndicator();
+
+    try {
+      const res = await fetch('/.netlify/functions/ai-chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          messages: conversationHistory
+        })
+      });
+
+      const data = await res.json();
+
+      if (typingIndicator && typingIndicator.parentNode) {
+        log.removeChild(typingIndicator);
+      }
+
+      if (res.ok && data.reply) {
+        const aiReply = `<strong>Rebate Atlas AI:</strong> ${data.reply}`;
+        appendMessage(aiReply, 'ai');
+        conversationHistory.push({ role: 'assistant', content: data.reply });
+      } else {
+        appendMessage(
+          '<strong>Rebate Atlas AI:</strong> Sorry \u2014 I encountered an error. Please try again.',
+          'ai'
+        );
+      }
+    } catch (err) {
+      console.error('Chat error:', err);
+      if (typingIndicator && typingIndicator.parentNode) {
+        log.removeChild(typingIndicator);
+      }
+      appendMessage(
+        '<strong>Rebate Atlas AI:</strong> Sorry \u2014 I couldn\u2019t reach the AI engine. Please check your connection and try again.',
+        'ai'
+      );
+    } finally {
+      input.disabled = false;
+      input.focus();
+    }
+  });
+});
