@@ -12,6 +12,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const conversationHistory = [];
 
+  // Check for URL parameters from homepage form
+  const urlParams = new URLSearchParams(window.location.search);
+  const zipCode = urlParams.get('zip');
+  const homeType = urlParams.get('home');
+
+  // Build initial context message if we have parameters
+  if (zipCode) {
+    const homeTypeLabels = {
+      'single_family': 'a single-family home',
+      'multi_unit': 'a multi-unit building or condo',
+      'manufactured': 'a manufactured or mobile home',
+      'rental': 'a rental property'
+    };
+    const homeTypeText = homeType && homeTypeLabels[homeType] ? homeTypeLabels[homeType] : 'a home';
+    const contextMessage = `I'm looking for energy rebates. My ZIP code is ${zipCode} and I live in ${homeTypeText}. What rebates and credits might I qualify for?`;
+    input.value = contextMessage;
+    input.focus();
+    input.setSelectionRange(0, 0);
+  }
+
   const appendMessage = (text, who = 'ai') => {
     const div = document.createElement('div');
     div.className = 'msg ' + (who === 'user' ? 'msg-user' : 'msg-ai');
