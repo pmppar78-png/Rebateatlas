@@ -1,0 +1,71 @@
+{
+  "zip": "15201",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "deltas": [
+    "New instant thermostat rebate added 2025-10-15.",
+    "2026-01-01: Program amounts scheduled to change."
+  ],
+  "items": [
+    {
+      "title": "Heat Pump Rebate",
+      "amount_pretty": "$4,000",
+      "cap_pretty": "per household",
+      "summary": "Air-source heat pump incentive for qualifying installs.",
+      "deadline": "2025-12-31",
+      "program": "PA Energy",
+      "category": "Heat Pumps",
+      "product_url": "https://go.skimresources.com",
+      "quote_url": "https://www.thumbtack.com/",
+      "source_url": "https://example.gov/heat-pumps"
+    },
+    {
+      "title": "Heat Pump Water Heater",
+      "amount_pretty": "$750",
+      "cap_pretty": "per unit",
+      "summary": "ENERGY STAR HPWH rebate.",
+      "deadline": "2025-12-31",
+      "program": "Utility Program",
+      "category": "Water Heaters",
+      "product_url": "https://go.skimresources.com",
+      "quote_url": "https://www.angi.com/",
+      "source_url": "https://example.gov/hpwh"
+    },
+    {
+      "title": "Smart Thermostat",
+      "amount_pretty": "$50",
+      "cap_pretty": "",
+      "summary": "Instant discount at participating retailers.",
+      "deadline": "",
+      "program": "Utility",
+      "category": "Smart Thermostats",
+      "product_url": "https://go.skimresources.com",
+      "quote_url": "",
+      "source_url": "https://example.gov/thermostats"
+    },
+    {
+      "title": "EV Charger Rebate",
+      "amount_pretty": "$500",
+      "cap_pretty": "",
+      "summary": "Residential Level 2 charger rebate.",
+      "deadline": "",
+      "program": "Utility EV",
+      "category": "EV Chargers",
+      "product_url": "https://go.skimresources.com",
+      "quote_url": "https://www.angi.com/",
+      "source_url": "https://example.gov/ev"
+    },
+    {
+      "title": "Federal Solar Credit",
+      "amount_pretty": "30%",
+      "cap_pretty": "IRS cap varies",
+      "summary": "Federal tax credit for residential solar.",
+      "deadline": "2025-12-31",
+      "program": "Federal (IRS)",
+      "category": "Solar",
+      "product_url": "https://go.skimresources.com",
+      "quote_url": "",
+      "source_url": "https://www.irs.gov/"
+    }
+  ]
+}

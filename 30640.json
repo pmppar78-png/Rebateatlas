@@ -1,0 +1,32 @@
+{
+  "zip": "30640",
+  "city": "City43",
+  "state": "US",
+  "items": [
+    {
+      "title": "Heat Pumps",
+      "amount_pretty": "$4,000",
+      "summary": "Air-source heat pump rebate."
+    },
+    {
+      "title": "Water Heaters",
+      "amount_pretty": "$750",
+      "summary": "ENERGY STAR HPWH rebate."
+    },
+    {
+      "title": "Smart Thermostats",
+      "amount_pretty": "$50",
+      "summary": "Instant retailer discount."
+    },
+    {
+      "title": "EV Chargers",
+      "amount_pretty": "$500",
+      "summary": "Level 2 charger rebate."
+    },
+    {
+      "title": "Solar",
+      "amount_pretty": "30%",
+      "summary": "Federal tax credit."
+    }
+  ]
+}
