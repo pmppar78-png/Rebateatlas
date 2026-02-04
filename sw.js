@@ -1,0 +1,1 @@
+self.addEventListener('install',e=>{e.waitUntil(caches.open('ra-v1').then(c=>c.addAll(['/','/assets/styles.css'])))})

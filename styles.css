@@ -1,0 +1,32 @@
+
+:root {
+  --bg:#0b1221; --card:#121a2e; --text:#f3f7ff; --muted:#a6b3d0;
+  --accent:#4cc9f0; --pill:#142446; --pillText:#cde6ff;
+  --btn:#1f3b6b; --btnText:#e7f0ff; --success:#2dd4bf;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif}
+.container{width:min(1100px,92%);margin:0 auto}
+header{padding:24px 0;display:flex;align-items:center;justify-content:space-between}
+.brand{color:var(--text);text-decoration:none;font-weight:800}
+h1,h2,h3{margin:0 0 8px}
+.tagline{color:var(--muted);margin-top:-8px}
+.card{background:var(--card);padding:20px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.zip-form{display:grid;grid-template-columns:1fr auto;gap:12px;margin-top:8px;max-width:520px}
+label{color:var(--muted)}
+input,button{font-size:16px}
+input[type="text"],input[type="email"]{padding:14px 16px;border-radius:12px;border:1px solid #223;background:#0d1730;color:var(--text);width:100%}
+button,.btn{background:var(--btn);color:var(--btnText);border:none;padding:14px 18px;border-radius:12px;cursor:pointer;text-decoration:none;display:inline-block}
+.highlights{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.pill{background:var(--pill);color:var(--pillText);padding:8px 12px;border-radius:999px;font-size:14px}
+.muted{color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}
+.chip{background:#0c1a34;color:var(--pillText);padding:8px 12px;border-radius:10px;cursor:pointer}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:24px}
+.card h3{margin:0 0 8px}
+.amount{color:var(--success);font-weight:700}
+.meta{font-size:14px;color:var(--muted)}
+.actions{display:flex;gap:8px;margin-top:10px}
+.actions a,.actions button{flex:1;text-align:center;background:var(--btn);color:var(--btnText);text-decoration:none;padding:10px 12px;border-radius:10px;border:none;cursor:pointer}
+.badge{display:inline-block;font-size:12px;padding:4px 8px;border-radius:999px;background:#0e2b52;color:#cfe8ff}
+.footer-nav a{color:var(--muted);margin-right:12px;text-decoration:none}
