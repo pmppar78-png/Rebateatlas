@@ -46,15 +46,15 @@
         </div>
       </div>
 
-      <form class="zip-form" onsubmit="return false;">
+      <form id="zip-form" class="zip-form" onsubmit="return false;">
         <div class="field-row">
           <label class="field">
             <span class="field-label">ZIP code</span>
-            <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="e.g. 02118" />
+            <input id="zip-input" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="e.g. 02118" />
           </label>
           <label class="field">
             <span class="field-label">Home type</span>
-            <select>
+            <select id="home-type">
               <option value="">Select one</option>
               <option value="single_family">Single-family home</option>
               <option value="multi_unit">Multi-unit / condo</option>
@@ -63,7 +63,7 @@
             </select>
           </label>
         </div>
-        <button class="btn-primary" type="button" onclick="document.location='chat.html';">
+        <button class="btn-primary" type="submit">
           Find my rebates
         </button>
         <p class="helper-text">
@@ -326,5 +326,25 @@
   </footer>
 
   <script src="/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('zip-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var zip = document.getElementById('zip-input').value.trim();
+          var homeType = document.getElementById('home-type').value;
+          if (!/^\d{5}$/.test(zip)) {
+            alert('Please enter a valid 5-digit ZIP code.');
+            return;
+          }
+          var params = new URLSearchParams();
+          params.set('zip', zip);
+          if (homeType) params.set('home', homeType);
+          window.location.href = 'chat.html?' + params.toString();
+        });
+      }
+    });
+  </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ra-v2';
+const CACHE_NAME = 'ra-v3';
 const ASSETS = ['/', '/styles.css', '/main.js'];
 
 self.addEventListener('install', e => {
