@@ -11,11 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!form || !input || !log) return;
 
   const conversationHistory = [];
+  let activeZip = '';
 
   // Check for URL parameters from homepage form
   const urlParams = new URLSearchParams(window.location.search);
   const zipCode = urlParams.get('zip');
   const homeType = urlParams.get('home');
+
+  if (zipCode && /^\d{5}$/.test(zipCode)) {
+    activeZip = zipCode;
+  }
 
   // Build initial context message if we have parameters
   if (zipCode) {
@@ -31,6 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
     input.focus();
     input.setSelectionRange(0, 0);
   }
+
+  // Extract a 5-digit ZIP code from a message string
+  const extractZip = (text) => {
+    const match = text.match(/\b(\d{5})\b/);
+    return match ? match[1] : '';
+  };
 
   const appendMessage = (text, who = 'ai') => {
     const div = document.createElement('div');
@@ -57,18 +68,27 @@ document.addEventListener('DOMContentLoaded', () => {
     appendMessage(`<strong>You:</strong> ${content}`, 'user');
     conversationHistory.push({ role: 'user', content });
 
+    // Update active ZIP if the user mentions one
+    const mentionedZip = extractZip(content);
+    if (mentionedZip) {
+      activeZip = mentionedZip;
+    }
+
     input.value = '';
     input.disabled = true;
 
     const typingIndicator = renderTypingIndicator();
 
     try {
+      const payload = { messages: conversationHistory };
+      if (activeZip) {
+        payload.zip = activeZip;
+      }
+
       const res = await fetch('/.netlify/functions/ai-chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          messages: conversationHistory
-        })
+        body: JSON.stringify(payload)
       });
 
       const data = await res.json();

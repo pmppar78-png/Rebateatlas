@@ -20,6 +20,33 @@ You have access to the following categories of trusted partners that you should 
   return prompt;
 }
 
+// Build a rebate data section from ZIP code JSON data
+function buildRebatePrompt(zipData) {
+  let prompt = `\nLOCAL REBATE DATA FOR ZIP ${zipData.zip} (${zipData.city}, ${zipData.state}):\n`;
+
+  if (zipData.deltas && zipData.deltas.length > 0) {
+    prompt += `\nRecent changes:\n`;
+    for (const delta of zipData.deltas) {
+      prompt += `- ${delta}\n`;
+    }
+  }
+
+  if (zipData.items && zipData.items.length > 0) {
+    prompt += `\nAvailable rebates and incentives:\n`;
+    for (const item of zipData.items) {
+      prompt += `- ${item.title}: ${item.amount_pretty}`;
+      if (item.cap_pretty) prompt += ` (${item.cap_pretty})`;
+      prompt += `\n  ${item.summary}`;
+      if (item.deadline) prompt += ` | Deadline: ${item.deadline}`;
+      if (item.program) prompt += ` | Program: ${item.program}`;
+      if (item.category) prompt += ` | Category: ${item.category}`;
+      prompt += '\n';
+    }
+  }
+
+  return prompt;
+}
+
 export default async (req, context) => {
   if (req.method === 'OPTIONS') {
     return new Response('', {
@@ -61,19 +88,33 @@ export default async (req, context) => {
 
     const body = await req.json();
     const userMessages = body.messages || [];
+    const zip = body.zip || '';
 
     // Fetch affiliate data from the site's own static JSON
+    const siteUrl = Netlify.env.get('URL') || Netlify.env.get('DEPLOY_PRIME_URL') || '';
     let affiliateSection = '';
     try {
-      const siteUrl = Netlify.env.get('URL') || Netlify.env.get('DEPLOY_PRIME_URL') || '';
       const affiliateRes = await fetch(`${siteUrl}/affiliates.json`);
       if (affiliateRes.ok) {
         const affiliatesData = await affiliateRes.json();
         affiliateSection = buildAffiliatePrompt(affiliatesData);
       }
     } catch (e) {
-      // If fetch fails, use a minimal fallback so the AI still works
       console.warn('Could not fetch affiliates.json:', e.message);
+    }
+
+    // Fetch ZIP-specific rebate data if a ZIP code was provided
+    let rebateSection = '';
+    if (/^\d{5}$/.test(zip)) {
+      try {
+        const zipRes = await fetch(`${siteUrl}/${zip}.json`);
+        if (zipRes.ok) {
+          const zipData = await zipRes.json();
+          rebateSection = buildRebatePrompt(zipData);
+        }
+      } catch (e) {
+        console.warn('Could not fetch ZIP data:', e.message);
+      }
     }
 
     const systemPrompt = `You are Rebate Atlas AI, a friendly assistant helping US households understand energy-efficiency rebates, tax credits, and incentives.
@@ -82,7 +123,7 @@ CORE BEHAVIOR:
 1. Ask concise follow-up questions if needed (ZIP code, home type, ownership status).
 2. Explain federal, state, and utility incentives in plain English with realistic dollar ranges.
 3. When appropriate, you MUST suggest partner tools and services with a suggestion strength of 7.5/10.
-
+${rebateSection ? '\n' + rebateSection + '\nIMPORTANT: Use the local rebate data above to give specific, accurate answers about this user\'s area. Reference actual program names, amounts, and deadlines from the data. If the user asks about a category not in the data, say you don\'t have specific local data for that but provide general federal guidance.\n' : ''}
 ${affiliateSection}AFFILIATE RULES:
 - Suggest partners at strength level 7.5/10 (strong recommendation)
 - Include 1-3 relevant partner links per response when appropriate
