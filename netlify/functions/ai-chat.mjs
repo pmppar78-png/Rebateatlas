@@ -1,5 +1,25 @@
 import OpenAI from 'openai';
 
+// Build the affiliate prompt section from structured affiliates.json data
+function buildAffiliatePrompt(affiliatesData) {
+  let prompt = `AFFILIATE CATEGORIES & PARTNERS:
+You have access to the following categories of trusted partners that you should recommend when relevant:\n\n`;
+
+  const categoryOrder = ['solar_quotes', 'home_services', 'energy_devices', 'retail', 'financing'];
+
+  for (const key of categoryOrder) {
+    const category = affiliatesData[key];
+    if (!category) continue;
+    prompt += `${category.label.toUpperCase()}:\n`;
+    for (const partner of category.partners) {
+      prompt += `- ${partner.name} (${partner.url}) - ${partner.description}\n`;
+    }
+    prompt += '\n';
+  }
+
+  return prompt;
+}
+
 export default async (req, context) => {
   if (req.method === 'OPTIONS') {
     return new Response('', {
@@ -42,6 +62,20 @@ export default async (req, context) => {
     const body = await req.json();
     const userMessages = body.messages || [];
 
+    // Fetch affiliate data from the site's own static JSON
+    let affiliateSection = '';
+    try {
+      const siteUrl = Netlify.env.get('URL') || Netlify.env.get('DEPLOY_PRIME_URL') || '';
+      const affiliateRes = await fetch(`${siteUrl}/affiliates.json`);
+      if (affiliateRes.ok) {
+        const affiliatesData = await affiliateRes.json();
+        affiliateSection = buildAffiliatePrompt(affiliatesData);
+      }
+    } catch (e) {
+      // If fetch fails, use a minimal fallback so the AI still works
+      console.warn('Could not fetch affiliates.json:', e.message);
+    }
+
     const systemPrompt = `You are Rebate Atlas AI, a friendly assistant helping US households understand energy-efficiency rebates, tax credits, and incentives.
 
 CORE BEHAVIOR:
@@ -49,42 +83,7 @@ CORE BEHAVIOR:
 2. Explain federal, state, and utility incentives in plain English with realistic dollar ranges.
 3. When appropriate, you MUST suggest partner tools and services with a suggestion strength of 7.5/10.
 
-AFFILIATE CATEGORIES & PARTNERS:
-You have access to 5 categories of trusted partners that you should recommend when relevant:
-
-SOLAR QUOTES:
-- EnergySage (https://www.energysage.com) - Solar quote marketplace
-- Project Solar (https://www.projectsolar.com) - Direct-to-consumer installer
-- SunPower (https://us.sunpower.com) - Premium national brand
-- ADT Solar (https://www.adtsolar.com) - Solar arm of ADT
-- Momentum Solar (https://momentumsolar.com) - Regional installer
-- SolarReviews (https://www.solarreviews.com) - Reviews and lead-gen
-
-HOME SERVICES:
-- Modernize (https://modernize.com) - HVAC, windows, roofing leads
-- Angi (https://www.angi.com) - Home services marketplace
-- Thumbtack (https://www.thumbtack.com) - Local pros marketplace
-
-RETAIL:
-- Amazon (https://www.amazon.com) - Smart thermostats, energy devices
-- Home Depot (https://www.homedepot.com) - Home improvement retailer
-- Lowe's (https://www.lowes.com) - Home improvement retailer
-
-ENERGY DEVICES:
-- Sense (https://sense.com) - Home energy monitoring
-- Emporia Energy (https://www.emporiaenergy.com) - Energy monitors & smart plugs
-- Ecobee (https://www.ecobee.com) - Smart thermostats
-- Google Nest (https://store.google.com/us/category/connected_home) - Nest devices
-- Wyze (https://www.wyze.com) - Affordable smart home products
-
-FINANCING:
-- Upgrade (https://www.upgrade.com) - Personal loans
-- LendingTree (https://www.lendingtree.com) - Loan comparison marketplace
-- LightStream (https://www.lightstream.com) - Home improvement & solar loans
-- SoFi (https://www.sofi.com) - Loans & refinancing
-- Credible (https://www.credible.com) - Loan comparison
-
-AFFILIATE RULES:
+${affiliateSection}AFFILIATE RULES:
 - Suggest partners at strength level 7.5/10 (strong recommendation)
 - Include 1-3 relevant partner links per response when appropriate
 - ALWAYS format partner links as: <a href="REAL_URL" style="color:#4fd1c5;" target="_blank" rel="sponsored noopener">Partner Name</a>

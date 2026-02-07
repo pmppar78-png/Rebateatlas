@@ -1,122 +1,181 @@
 {
-  "solar_quotes": [
-    {
-      "name": "EnergySage",
-      "url": "https://www.energysage.com",
-      "notes": "Solar quote marketplace, very high EPC"
-    },
-    {
-      "name": "Project Solar",
-      "url": "https://www.projectsolar.com",
-      "notes": "Direct-to-consumer solar installer"
-    },
-    {
-      "name": "SunPower",
-      "url": "https://us.sunpower.com",
-      "notes": "Premium national solar brand"
-    },
-    {
-      "name": "ADT Solar",
-      "url": "https://www.adtsolar.com",
-      "notes": "Solar arm of ADT"
-    },
-    {
-      "name": "Momentum Solar",
-      "url": "https://momentumsolar.com",
-      "notes": "Regional US solar installer"
-    },
-    {
-      "name": "SolarReviews",
-      "url": "https://www.solarreviews.com",
-      "notes": "Solar reviews and lead-gen"
-    }
-  ],
-  "home_services": [
-    {
-      "name": "Modernize Home Services",
-      "url": "https://modernize.com",
-      "notes": "Leads for HVAC, windows, roofing, etc."
-    },
-    {
-      "name": "Angi (HomeAdvisor)",
-      "url": "https://www.angi.com",
-      "notes": "Home services marketplace"
-    },
-    {
-      "name": "Thumbtack",
-      "url": "https://www.thumbtack.com",
-      "notes": "Local pros marketplace"
-    }
-  ],
-  "retail": [
-    {
-      "name": "Amazon",
-      "url": "https://www.amazon.com",
-      "notes": "Smart thermostats, energy devices, etc."
-    },
-    {
-      "name": "Home Depot",
-      "url": "https://www.homedepot.com",
-      "notes": "Home improvement retailer"
-    },
-    {
-      "name": "Lowe's",
-      "url": "https://www.lowes.com",
-      "notes": "Home improvement retailer"
-    }
-  ],
-  "energy_devices": [
-    {
-      "name": "Sense Energy Monitor",
-      "url": "https://sense.com",
-      "notes": "Home energy monitoring"
-    },
-    {
-      "name": "Emporia Energy",
-      "url": "https://www.emporiaenergy.com",
-      "notes": "Energy monitors & smart plugs"
-    },
-    {
-      "name": "Ecobee",
-      "url": "https://www.ecobee.com",
-      "notes": "Smart thermostats"
-    },
-    {
-      "name": "Google Nest",
-      "url": "https://store.google.com/us/category/connected_home",
-      "notes": "Nest thermostats & devices"
-    },
-    {
-      "name": "Wyze",
-      "url": "https://www.wyze.com",
-      "notes": "Affordable smart home products"
-    }
-  ],
-  "financing": [
-    {
-      "name": "Upgrade",
-      "url": "https://www.upgrade.com",
-      "notes": "Personal loans"
-    },
-    {
-      "name": "LendingTree",
-      "url": "https://www.lendingtree.com",
-      "notes": "Loan comparison marketplace"
-    },
-    {
-      "name": "LightStream",
-      "url": "https://www.lightstream.com",
-      "notes": "Home improvement & solar loans"
-    },
-    {
-      "name": "SoFi",
-      "url": "https://www.sofi.com",
-      "notes": "Loans & refinancing"
-    },
-    {
-      "name": "Credible",
-      "url": "https://www.credible.com",
-      "notes": "Loan comparison"
-    }
-  ]
+  "solar_quotes": {
+    "label": "Solar Quotes & Installation",
+    "partners": [
+      {
+        "name": "EnergySage",
+        "url": "https://www.energysage.com",
+        "description": "Solar quote marketplace",
+        "cta": "Compare Solar Quotes",
+        "notes": "Solar quote marketplace, very high EPC"
+      },
+      {
+        "name": "Project Solar",
+        "url": "https://www.projectsolar.com",
+        "description": "Direct-to-consumer installer",
+        "cta": "Get a Quote",
+        "notes": "Direct-to-consumer solar installer"
+      },
+      {
+        "name": "SunPower",
+        "url": "https://us.sunpower.com",
+        "description": "Premium national brand",
+        "cta": "Explore SunPower",
+        "notes": "Premium national solar brand"
+      },
+      {
+        "name": "ADT Solar",
+        "url": "https://www.adtsolar.com",
+        "description": "Solar installations",
+        "cta": "Get a Quote",
+        "notes": "Solar arm of ADT"
+      },
+      {
+        "name": "Momentum Solar",
+        "url": "https://momentumsolar.com",
+        "description": "Regional installer",
+        "cta": "Get a Quote",
+        "notes": "Regional US solar installer"
+      },
+      {
+        "name": "SolarReviews",
+        "url": "https://www.solarreviews.com",
+        "description": "Solar reviews & quotes",
+        "cta": "Read Reviews",
+        "notes": "Solar reviews and lead-gen"
+      }
+    ]
+  },
+  "home_services": {
+    "label": "Home Services & Contractors",
+    "partners": [
+      {
+        "name": "Modernize",
+        "url": "https://modernize.com",
+        "description": "HVAC, windows, roofing pros",
+        "cta": "Find Pros",
+        "notes": "Leads for HVAC, windows, roofing, etc."
+      },
+      {
+        "name": "Angi",
+        "url": "https://www.angi.com",
+        "description": "Home services marketplace",
+        "cta": "Find Pros",
+        "notes": "Home services marketplace"
+      },
+      {
+        "name": "Thumbtack",
+        "url": "https://www.thumbtack.com",
+        "description": "Local professionals",
+        "cta": "Find Local Pros",
+        "notes": "Local pros marketplace"
+      }
+    ]
+  },
+  "energy_devices": {
+    "label": "Energy Devices & Smart Home",
+    "partners": [
+      {
+        "name": "Sense",
+        "url": "https://sense.com",
+        "description": "Home energy monitoring",
+        "cta": "Shop Now",
+        "notes": "Home energy monitoring"
+      },
+      {
+        "name": "Emporia Energy",
+        "url": "https://www.emporiaenergy.com",
+        "description": "Energy monitors & smart plugs",
+        "cta": "Shop Now",
+        "notes": "Energy monitors & smart plugs"
+      },
+      {
+        "name": "Ecobee",
+        "url": "https://www.ecobee.com",
+        "description": "Smart thermostats",
+        "cta": "Shop Now",
+        "notes": "Smart thermostats"
+      },
+      {
+        "name": "Google Nest",
+        "url": "https://store.google.com/us/category/connected_home",
+        "description": "Nest thermostats & devices",
+        "cta": "Shop Now",
+        "notes": "Nest thermostats & devices"
+      },
+      {
+        "name": "Wyze",
+        "url": "https://www.wyze.com",
+        "description": "Affordable smart products",
+        "cta": "Shop Now",
+        "notes": "Affordable smart home products"
+      }
+    ]
+  },
+  "retail": {
+    "label": "Home Improvement Retail",
+    "partners": [
+      {
+        "name": "Amazon",
+        "url": "https://www.amazon.com",
+        "description": "Smart thermostats & energy devices",
+        "cta": "Shop Now",
+        "notes": "Smart thermostats, energy devices, etc."
+      },
+      {
+        "name": "Home Depot",
+        "url": "https://www.homedepot.com",
+        "description": "Home improvement supplies",
+        "cta": "Shop Now",
+        "notes": "Home improvement retailer"
+      },
+      {
+        "name": "Lowe's",
+        "url": "https://www.lowes.com",
+        "description": "Tools & materials",
+        "cta": "Shop Now",
+        "notes": "Home improvement retailer"
+      }
+    ]
+  },
+  "financing": {
+    "label": "Financing & Loans",
+    "partners": [
+      {
+        "name": "Upgrade",
+        "url": "https://www.upgrade.com",
+        "description": "Personal loans",
+        "cta": "Check Rates",
+        "notes": "Personal loans"
+      },
+      {
+        "name": "LendingTree",
+        "url": "https://www.lendingtree.com",
+        "description": "Loan comparison marketplace",
+        "cta": "Compare Rates",
+        "notes": "Loan comparison marketplace"
+      },
+      {
+        "name": "LightStream",
+        "url": "https://www.lightstream.com",
+        "description": "Home improvement loans",
+        "cta": "Check Rates",
+        "notes": "Home improvement & solar loans"
+      },
+      {
+        "name": "SoFi",
+        "url": "https://www.sofi.com",
+        "description": "Loans & refinancing",
+        "cta": "Check Rates",
+        "notes": "Loans & refinancing"
+      },
+      {
+        "name": "Credible",
+        "url": "https://www.credible.com",
+        "description": "Compare loan options",
+        "cta": "Compare Rates",
+        "notes": "Loan comparison"
+      }
+    ]
+  }
 }

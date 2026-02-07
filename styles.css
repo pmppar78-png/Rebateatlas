@@ -387,6 +387,13 @@ select:focus {
   line-height: 1.6;
 }
 
+.partners-category-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 .partner-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
