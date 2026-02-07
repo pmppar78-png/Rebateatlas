@@ -1,5 +1,5 @@
-const CACHE_NAME = 'ra-v3';
-const ASSETS = ['/', '/styles.css', '/main.js'];
+const CACHE_NAME = 'ra-v4';
+const ASSETS = ['/', '/index.html', '/chat.html', '/styles.css', '/main.js', '/partners.js'];
 
 self.addEventListener('install', e => {
   e.waitUntil(

@@ -1,30 +1,66 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About — Rebate Atlas</title>
-<meta name="description" content="Learn about Rebate Atlas—our mission, methods, and editorial standards.">
-<link rel="stylesheet" href="/styles.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Rebate Atlas",
-  "url": "https://your-domain.example/",
-  "logo": "https://your-domain.example/assets/icon.png",
-  "sameAs": []
-}
-</script>
-</head><body>
-<main class="container card">
-  <h1>About Rebate Atlas</h1>
-  <p>Rebate Atlas helps households discover incentives that lower the cost of energy upgrades and everyday products. Type your ZIP, and we show federal, state, utility, and city programs in one place.</p>
-  <h2>How we work</h2>
-  <ul>
-    <li>Summarize official program pages in plain language</li>
-    <li>Show key facts: amounts, caps, categories, and deadlines</li>
-    <li>Link directly to the <strong>official source</strong> on every card</li>
-  </ul>
-  <h2>Editorial standards</h2>
-  <p>Information changes. We encourage every user to verify details with the official source before purchase or installation.</p>
-  <p class="muted">Questions? <a href="/contact.html">Contact us</a>.</p>
-</main>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Rebate Atlas</title>
+  <meta name="description" content="Learn about Rebate Atlas — our mission, methods, and editorial standards for helping US households find energy rebates." />
+  <meta property="og:title" content="About — Rebate Atlas" />
+  <meta property="og:description" content="Learn about Rebate Atlas — our mission, methods, and editorial standards." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Rebate Atlas",
+    "description": "Free educational platform helping US households discover energy-efficiency rebates, tax credits, and incentives.",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="site-brand">
+      <span class="site-logo-dot"></span>
+      <span class="site-title">Rebate Atlas</span>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="chat.html" class="nav-link">Ask the AI</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="explainer">
+      <h1>About Rebate Atlas</h1>
+      <p>
+        Rebate Atlas helps households discover incentives that lower the cost of energy upgrades and
+        everyday products. Type your ZIP, and we show federal, state, utility, and city programs in one place.
+      </p>
+
+      <h2>How we work</h2>
+      <ul>
+        <li>Summarize official program pages in plain language</li>
+        <li>Show key facts: amounts, caps, categories, and deadlines</li>
+        <li>Link directly to the <strong>official source</strong> on every card</li>
+      </ul>
+
+      <h2>Editorial standards</h2>
+      <p>
+        Information changes. We encourage every user to verify details with the official source before
+        purchase or installation.
+      </p>
+
+      <p style="margin-top:1rem">Questions? <a href="contact.html" class="inline-link">Contact us</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only &middot; Not tax or legal advice.</p>
+    <p><a href="index.html" class="inline-link">Home</a> &middot; <a href="chat.html" class="inline-link">Ask the AI</a> &middot; <a href="privacy-policy.html" class="inline-link">Privacy Policy</a> &middot; <a href="terms.html" class="inline-link">Terms</a></p>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

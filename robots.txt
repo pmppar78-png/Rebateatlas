@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://your-domain.example/sitemap.xml
+Disallow: /.netlify/
+
+Sitemap: https://rebateatlas.netlify.app/sitemap.xml
