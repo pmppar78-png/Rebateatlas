@@ -1,0 +1,106 @@
+<!--
+  Category Page Template for Rebate Atlas
+  ========================================
+  This template defines the structure for category landing pages.
+  Each page is generated as a static HTML file at /categories/[slug].html
+
+  Placeholders:
+    {{CATEGORY_NAME}}       — Display name (e.g. "Heat Pumps")
+    {{CATEGORY_HEADLINE}}   — H1 text (e.g. "Heat Pump Rebates & Incentives")
+    {{CATEGORY_SLUG}}       — URL slug (e.g. "heat-pumps")
+    {{CATEGORY_DESCRIPTION}}— Intro paragraph
+    {{FEDERAL_PROGRAMS}}    — Rendered federal program cards
+    {{FAQ_SCHEMA}}          — JSON-LD FAQPage markup
+    {{FAQ_HTML}}            — Rendered FAQ section
+    {{PARTNER_SECTIONS}}    — Relevant affiliate partner cards
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{CATEGORY_HEADLINE}} — Rebate Atlas</title>
+  <meta name="description" content="{{CATEGORY_DESCRIPTION}}" />
+  <meta property="og:title" content="{{CATEGORY_HEADLINE}} — Rebate Atlas" />
+  <meta property="og:description" content="{{CATEGORY_DESCRIPTION}}" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {{FAQ_SCHEMA}}
+  </script>
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="site-brand">
+      <span class="site-logo-dot"></span>
+      <span class="site-title">Rebate Atlas</span>
+    </div>
+    <nav class="site-nav">
+      <a href="/index.html" class="nav-link">Home</a>
+      <a href="/chat.html" class="nav-link">Ask the AI</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="explainer">
+      <p class="eyebrow">Rebate category</p>
+      <h1>{{CATEGORY_HEADLINE}}</h1>
+      <p>{{CATEGORY_DESCRIPTION}}</p>
+    </section>
+
+    <section class="explainer" style="margin-top:22px;">
+      <h2>Federal programs for {{CATEGORY_NAME}}</h2>
+      {{FEDERAL_PROGRAMS}}
+    </section>
+
+    <section class="explainer" style="margin-top:22px;">
+      <h2>Find local {{CATEGORY_NAME}} rebates</h2>
+      <p>Enter your ZIP code to see state, utility, and local incentives for {{CATEGORY_NAME}} in your area.</p>
+      <form class="zip-form" onsubmit="return false;" id="zip-form">
+        <div class="field-row">
+          <label class="field">
+            <span class="field-label">ZIP code</span>
+            <input id="zip-input" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="e.g. 02118" />
+          </label>
+        </div>
+        <button class="btn-primary" type="submit">Find my rebates</button>
+      </form>
+    </section>
+
+    <section class="explainer" style="margin-top:22px;">
+      <h2>Frequently asked questions</h2>
+      {{FAQ_HTML}}
+    </section>
+
+    <section class="partners" style="margin-top:22px;">
+      <h2>Recommended partners</h2>
+      <p class="partners-intro">
+        These vetted partners can help with your {{CATEGORY_NAME}} project.
+        We may earn a referral fee if you choose to use their services.
+      </p>
+      {{PARTNER_SECTIONS}}
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only &middot; Not tax or legal advice.</p>
+    <p><a href="/index.html" class="inline-link">Home</a> &middot; <a href="/chat.html" class="inline-link">Ask the AI</a> &middot; <a href="/privacy-policy.html" class="inline-link">Privacy Policy</a> &middot; <a href="/terms.html" class="inline-link">Terms</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var form = document.getElementById('zip-form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var zip = document.getElementById('zip-input').value.trim();
+        if (!/^\d{5}$/.test(zip)) {
+          alert('Please enter a valid 5-digit ZIP code.');
+          return;
+        }
+        window.location.href = '/chat.html?zip=' + encodeURIComponent(zip);
+      });
+    }
+  </script>
+</body>
+</html>

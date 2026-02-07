@@ -1,0 +1,246 @@
+[
+  {
+    "slug": "heat-pumps",
+    "name": "Heat Pumps",
+    "headline": "Heat Pump Rebates & Incentives",
+    "description": "Heat pumps are one of the most efficient ways to heat and cool your home. Federal tax credits under the Inflation Reduction Act cover up to 30% of the cost (up to $2,000 per year), and many states and utilities offer additional rebates that can significantly reduce your out-of-pocket expense.",
+    "federal_programs": [
+      {
+        "name": "25C Energy Efficient Home Improvement Credit",
+        "details": "Up to $2,000 per year for qualifying heat pumps (air-source, geothermal, or mini-split). Covers 30% of equipment and installation costs.",
+        "eligibility": "Must be an existing home you own and use as a primary or secondary residence. New construction does not qualify."
+      },
+      {
+        "name": "HOMES / HEAR Rebates (IRA §50121–50122)",
+        "details": "Income-qualified households may receive $4,000–$8,000 in point-of-sale rebates for heat pump installations through state-administered programs.",
+        "eligibility": "Low- and moderate-income households (up to 150% of area median income). Check your state energy office for availability."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much can I save with heat pump rebates?",
+        "answer": "Depending on your income and location, you could save $2,000–$8,000 or more on a heat pump installation through combined federal tax credits, state rebates, and utility incentives."
+      },
+      {
+        "question": "Do I need to replace my existing system to qualify?",
+        "answer": "Not always. Many programs cover both replacements and new installations. However, some utility rebates require you to be replacing an older, less efficient system."
+      },
+      {
+        "question": "Are mini-splits eligible for rebates?",
+        "answer": "Yes. Ductless mini-split heat pumps qualify for the federal 25C tax credit and most state and utility rebate programs."
+      }
+    ],
+    "related_affiliates": ["home_services", "financing"]
+  },
+  {
+    "slug": "water-heaters",
+    "name": "Water Heaters",
+    "headline": "Water Heater Rebates & Incentives",
+    "description": "Upgrading to a heat pump water heater or high-efficiency gas water heater can qualify you for significant federal tax credits and utility rebates. Water heating accounts for roughly 20% of home energy use, so an efficient unit pays for itself over time.",
+    "federal_programs": [
+      {
+        "name": "25C Energy Efficient Home Improvement Credit",
+        "details": "Up to $2,000 per year for qualifying heat pump water heaters. Covers 30% of equipment and installation costs.",
+        "eligibility": "Existing homes only. The water heater must meet specific energy efficiency requirements (typically ENERGY STAR certified)."
+      },
+      {
+        "name": "HOMES / HEAR Rebates (IRA §50121–50122)",
+        "details": "Income-qualified households may receive up to $1,750 in point-of-sale rebates for heat pump water heaters.",
+        "eligibility": "Low- and moderate-income households. State-administered — check local availability."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Which water heaters qualify for the federal tax credit?",
+        "answer": "Heat pump water heaters (hybrid water heaters) that meet ENERGY STAR requirements qualify for the full $2,000 annual credit. Some high-efficiency gas water heaters qualify for up to $600."
+      },
+      {
+        "question": "How much does a heat pump water heater cost?",
+        "answer": "Typical installed costs range from $2,500 to $4,500. After federal tax credits and any state/utility rebates, your net cost could be $1,000–$2,500 or less."
+      },
+      {
+        "question": "Can I claim both the federal credit and a utility rebate?",
+        "answer": "Yes. The federal tax credit and utility or state rebates are independent programs. You can stack them to maximize your savings."
+      }
+    ],
+    "related_affiliates": ["home_services", "financing"]
+  },
+  {
+    "slug": "smart-thermostats",
+    "name": "Smart Thermostats",
+    "headline": "Smart Thermostat Rebates & Incentives",
+    "description": "Smart thermostats help reduce heating and cooling costs by learning your schedule and optimizing temperature settings automatically. While the federal tax credit for thermostats is modest, many utilities offer instant rebates or free smart thermostats to their customers.",
+    "federal_programs": [
+      {
+        "name": "25C Energy Efficient Home Improvement Credit",
+        "details": "Up to $150 for qualifying ENERGY STAR smart thermostats. Part of the $1,200 annual cap for non-heat-pump improvements.",
+        "eligibility": "Existing homes only. The thermostat must be ENERGY STAR certified."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do utilities offer free smart thermostats?",
+        "answer": "Many utilities offer free or heavily discounted ENERGY STAR smart thermostats as part of demand response or energy savings programs. Check with your local utility or enter your ZIP code to find available offers."
+      },
+      {
+        "question": "How much can a smart thermostat save on energy bills?",
+        "answer": "ENERGY STAR estimates that a smart thermostat can save an average of 8% on heating and cooling bills, or roughly $50 per year depending on your climate and usage."
+      },
+      {
+        "question": "Which smart thermostats qualify for rebates?",
+        "answer": "ENERGY STAR certified models from brands like Ecobee, Google Nest, and Honeywell typically qualify for federal credits and utility rebates."
+      }
+    ],
+    "related_affiliates": ["energy_devices", "retail"]
+  },
+  {
+    "slug": "ev-chargers",
+    "name": "EV Chargers",
+    "headline": "EV Charger Rebates & Incentives",
+    "description": "Installing a Level 2 home EV charger can qualify you for a federal tax credit, and many states and utilities offer additional incentives. As electric vehicle adoption grows, charging at home remains the most convenient and cost-effective option.",
+    "federal_programs": [
+      {
+        "name": "30C Alternative Fuel Vehicle Refueling Property Credit",
+        "details": "Up to $1,000 for residential EV charger installations (30% of cost). The property must be in an eligible census tract.",
+        "eligibility": "Available for charger installations in low-income or non-urban census tracts. Check IRS guidance for eligible locations."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does the federal EV charger credit cover installation costs?",
+        "answer": "Yes. The 30C credit covers 30% of equipment and installation costs combined, up to $1,000 for residential installations."
+      },
+      {
+        "question": "Do I need a specific type of charger to qualify?",
+        "answer": "The charger must be a Level 2 (240V) or DC fast charger. Standard 120V outlet charging does not qualify. Most home Level 2 chargers meet the requirements."
+      },
+      {
+        "question": "Are there state or utility rebates for EV chargers?",
+        "answer": "Many states and utilities offer $200–$1,000 in additional rebates for home EV charger installations. Some also offer discounted electricity rates for EV charging during off-peak hours."
+      }
+    ],
+    "related_affiliates": ["energy_devices", "retail", "financing"]
+  },
+  {
+    "slug": "solar-panels",
+    "name": "Solar Panels",
+    "headline": "Solar Panel Rebates & Incentives",
+    "description": "The federal solar tax credit (ITC) remains one of the most valuable clean energy incentives available to homeowners. Combined with state programs, net metering, and utility incentives, solar panels can dramatically reduce or eliminate your electricity bill.",
+    "federal_programs": [
+      {
+        "name": "25D Residential Clean Energy Credit",
+        "details": "30% of the total cost of a solar panel system (equipment, installation, permitting). No annual cap. Available through 2032, then steps down to 26% in 2033 and 22% in 2034.",
+        "eligibility": "Must be a home you own in the US (primary or secondary residence). Rental properties do not qualify. System must be new — used panels are not eligible."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much is the federal solar tax credit worth?",
+        "answer": "The credit is worth 30% of your total solar installation cost. For a typical $20,000 system, that's a $6,000 credit directly reducing your federal tax liability."
+      },
+      {
+        "question": "Can I combine the federal credit with state incentives?",
+        "answer": "Yes. Many states offer additional rebates, performance payments, or renewable energy credits (SRECs) that stack on top of the federal credit."
+      },
+      {
+        "question": "Does the credit apply to battery storage too?",
+        "answer": "Yes, as of 2023, standalone battery storage systems also qualify for the 30% Residential Clean Energy Credit, even if not paired with solar."
+      }
+    ],
+    "related_affiliates": ["solar_quotes", "financing"]
+  },
+  {
+    "slug": "insulation-weatherization",
+    "name": "Insulation & Weatherization",
+    "headline": "Insulation & Weatherization Rebates & Incentives",
+    "description": "Proper insulation and air sealing are among the most cost-effective home energy improvements. Federal tax credits cover insulation materials, and income-qualified households may receive substantial rebates through the Weatherization Assistance Program and new IRA-funded programs.",
+    "federal_programs": [
+      {
+        "name": "25C Energy Efficient Home Improvement Credit",
+        "details": "Up to $1,200 per year for insulation, air sealing materials, and home energy audits. Covers 30% of material and installation costs.",
+        "eligibility": "Existing homes only. Insulation must meet IECC standards for your climate zone."
+      },
+      {
+        "name": "Weatherization Assistance Program (WAP)",
+        "details": "Free weatherization services for income-qualifying households, including insulation, air sealing, and heating system repairs. Average value of $7,500 per home.",
+        "eligibility": "Household income at or below 200% of the federal poverty level, or receiving certain government assistance (SNAP, SSI, TANF)."
+      },
+      {
+        "name": "HOMES / HEAR Rebates (IRA §50121–50122)",
+        "details": "Up to $1,600 in rebates for insulation and air sealing through state-administered programs.",
+        "eligibility": "Low- and moderate-income households. Check your state energy office for program availability."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What insulation qualifies for the tax credit?",
+        "answer": "Attic insulation, wall insulation, floor insulation, air sealing materials, and weatherstripping that meet IECC prescriptive criteria all qualify."
+      },
+      {
+        "question": "Can I do the insulation work myself and still claim the credit?",
+        "answer": "Yes, for the 25C tax credit. The credit covers the cost of materials even for DIY installation. However, most utility and state rebate programs require professional installation."
+      },
+      {
+        "question": "How much can weatherization save on energy bills?",
+        "answer": "The Department of Energy estimates that weatherization reduces heating bills by an average of 30% and overall energy costs by an average of $372 per year."
+      }
+    ],
+    "related_affiliates": ["home_services", "retail", "financing"]
+  },
+  {
+    "slug": "windows-doors",
+    "name": "Windows & Doors",
+    "headline": "Window & Door Rebates & Incentives",
+    "description": "Replacing old, drafty windows and exterior doors with ENERGY STAR certified models can improve comfort, reduce noise, and lower energy bills. The federal tax credit covers a meaningful portion of the cost, and some utilities offer additional rebates.",
+    "federal_programs": [
+      {
+        "name": "25C Energy Efficient Home Improvement Credit",
+        "details": "Up to $600 per year for ENERGY STAR Most Efficient certified windows and skylights. Up to $500 for exterior doors ($250 per door). These fall within the $1,200 annual cap.",
+        "eligibility": "Existing homes only. Products must be ENERGY STAR Most Efficient certified (windows) or ENERGY STAR certified (doors)."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Which windows qualify for the tax credit?",
+        "answer": "Windows must meet ENERGY STAR Most Efficient criteria for your climate zone. Standard ENERGY STAR windows do not qualify — they must carry the 'Most Efficient' designation."
+      },
+      {
+        "question": "Is there a limit on how many windows I can claim?",
+        "answer": "There is no limit on the number of windows, but the total credit for windows and skylights is capped at $600 per year. You can spread a larger project across multiple tax years."
+      },
+      {
+        "question": "Do storm windows qualify?",
+        "answer": "Storm windows that meet ENERGY STAR criteria may qualify. Check the ENERGY STAR product finder for certified models."
+      }
+    ],
+    "related_affiliates": ["home_services", "retail", "financing"]
+  },
+  {
+    "slug": "battery-storage",
+    "name": "Battery Storage",
+    "headline": "Battery Storage Rebates & Incentives",
+    "description": "Home battery storage systems provide backup power during outages, help you maximize solar self-consumption, and can reduce peak electricity charges. The federal tax credit now covers standalone batteries, making energy storage more accessible than ever.",
+    "federal_programs": [
+      {
+        "name": "25D Residential Clean Energy Credit",
+        "details": "30% of the total cost of a battery storage system (must have at least 3 kWh capacity). No annual cap. Standalone batteries qualify as of 2023.",
+        "eligibility": "Must be a home you own in the US. Battery must have a capacity of at least 3 kWh. Does not need to be paired with solar."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do I need solar panels to get the battery tax credit?",
+        "answer": "No. As of 2023, standalone battery storage systems qualify for the 30% Residential Clean Energy Credit independently of solar panels."
+      },
+      {
+        "question": "How much does a home battery system cost?",
+        "answer": "Typical home battery systems cost $10,000–$20,000 installed. After the 30% federal credit, your net cost would be $7,000–$14,000."
+      },
+      {
+        "question": "Are there state incentives for batteries?",
+        "answer": "Several states (California, Massachusetts, Oregon, and others) offer additional battery storage rebates ranging from $1,000 to $5,000 or more."
+      }
+    ],
+    "related_affiliates": ["solar_quotes", "energy_devices", "financing"]
+  }
+]
