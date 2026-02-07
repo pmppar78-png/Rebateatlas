@@ -10,6 +10,19 @@
   <meta property="og:description" content="Type your ZIP code to see every rebate you can claim for energy-efficient home upgrades." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Rebate Atlas",
+    "description": "Free AI-powered platform helping US households discover energy-efficiency rebates, tax credits, and incentives.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://rebateatlas.netlify.app/chat.html?zip={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body class="page page-home">
   <header class="site-header">
@@ -214,9 +227,9 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only · Not tax or legal advice.</p>
+    <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only &middot; Not tax or legal advice.</p>
     <p>Some suggestions may include sponsored partners. This does not affect guidance.</p>
-    <p><a href="chat.html" class="inline-link">Prefer to just chat with the AI?</a> · <a href="privacy-policy.html" class="inline-link">Privacy Policy</a></p>
+    <p><a href="chat.html" class="inline-link">Ask the AI</a> &middot; <a href="about.html" class="inline-link">About</a> &middot; <a href="faq.html" class="inline-link">FAQ</a> &middot; <a href="privacy-policy.html" class="inline-link">Privacy Policy</a> &middot; <a href="terms.html" class="inline-link">Terms</a> &middot; <a href="contact.html" class="inline-link">Contact</a></p>
   </footer>
 
   <script src="/main.js"></script>

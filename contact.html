@@ -1,18 +1,56 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — Rebate Atlas</title>
-<meta name="description" content="Contact Rebate Atlas">
-<link rel="stylesheet" href="/styles.css">
-</head><body>
-<main class="container card">
-  <h1>Contact</h1>
-  <p>Use the form below for corrections, partnerships, or general questions.</p>
-  <form name="contact" method="POST" data-netlify="true" class="zip-form" style="grid-template-columns:1fr">
-    <input type="hidden" name="form-name" value="contact">
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="text" name="message" placeholder="Your message" required>
-    <button type="submit" class="btn">Send</button>
-  </form>
-</main>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Rebate Atlas</title>
+  <meta name="description" content="Contact Rebate Atlas for corrections, partnerships, or general questions." />
+  <meta property="og:title" content="Contact — Rebate Atlas" />
+  <meta property="og:description" content="Contact Rebate Atlas for corrections, partnerships, or general questions." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="site-brand">
+      <span class="site-logo-dot"></span>
+      <span class="site-title">Rebate Atlas</span>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="chat.html" class="nav-link">Ask the AI</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="explainer">
+      <h1>Contact</h1>
+      <p>Use the form below for corrections, partnerships, or general questions.</p>
+
+      <form name="contact" method="POST" data-netlify="true" class="zip-form" style="max-width:480px">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="field">
+          <span class="field-label">Your name</span>
+          <input type="text" name="name" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <span class="field-label">Email</span>
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="field">
+          <span class="field-label">Message</span>
+          <input type="text" name="message" placeholder="Your message" required />
+        </div>
+        <button class="btn-primary" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only &middot; Not tax or legal advice.</p>
+    <p><a href="index.html" class="inline-link">Home</a> &middot; <a href="chat.html" class="inline-link">Ask the AI</a> &middot; <a href="privacy-policy.html" class="inline-link">Privacy Policy</a> &middot; <a href="terms.html" class="inline-link">Terms</a></p>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

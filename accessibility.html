@@ -1,11 +1,46 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accessibility — Rebate Atlas</title>
-<meta name="description" content="Accessibility statement for Rebate Atlas">
-<link rel="stylesheet" href="/styles.css">
-</head><body>
-<main class="container card">
-  <h1>Accessibility</h1>
-  <p>We strive to make Rebate Atlas accessible to everyone. If you encounter an accessibility barrier, please contact us and we will work to address it.</p>
-</main>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility — Rebate Atlas</title>
+  <meta name="description" content="Accessibility statement for Rebate Atlas." />
+  <meta property="og:title" content="Accessibility — Rebate Atlas" />
+  <meta property="og:description" content="Accessibility statement for Rebate Atlas." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="site-brand">
+      <span class="site-logo-dot"></span>
+      <span class="site-title">Rebate Atlas</span>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="chat.html" class="nav-link">Ask the AI</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="explainer">
+      <h1>Accessibility</h1>
+      <p>
+        We strive to make Rebate Atlas accessible to everyone. Our site uses semantic HTML, sufficient
+        color contrast, keyboard-navigable elements, and responsive layouts that work across devices.
+      </p>
+      <p>
+        If you encounter an accessibility barrier, please <a href="contact.html" class="inline-link">contact us</a>
+        and we will work to address it.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only &middot; Not tax or legal advice.</p>
+    <p><a href="index.html" class="inline-link">Home</a> &middot; <a href="chat.html" class="inline-link">Ask the AI</a> &middot; <a href="privacy-policy.html" class="inline-link">Privacy Policy</a> &middot; <a href="terms.html" class="inline-link">Terms</a></p>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
