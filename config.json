@@ -1,8 +1,8 @@
 {
   "site": {
     "name": "Rebate Atlas",
-    "domain_placeholder": "your-domain.example",
-    "google_site_verification_placeholder": "PASTE_CODE_FROM_GOOGLE"
+    "domain": "rebateatlas.netlify.app",
+    "google_site_verification": ""
   },
   "features": {
     "adsense_enabled": false,
@@ -12,8 +12,8 @@
     "email_alerts_enabled": true
   },
   "ids": {
-    "adsense_client": "ca-pub-XXXXXXXXXXXXXXXX",
-    "ga4_id": "G-XXXXXXXXXX",
-    "skimlinks_site_id": "ENTER_YOUR_SKIMLINKS_SITE_ID"
+    "adsense_client": "",
+    "ga4_id": "",
+    "skimlinks_site_id": ""
   }
 }

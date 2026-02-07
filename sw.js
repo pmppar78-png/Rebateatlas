@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ra-v4';
+const CACHE_NAME = 'ra-v5';
 const ASSETS = ['/', '/index.html', '/chat.html', '/styles.css', '/main.js', '/partners.js'];
 
 self.addEventListener('install', e => {
