@@ -1,6 +1,6 @@
 // Cache version: auto-busted via deploy timestamp injected by build, or manual bump
-const CACHE_VERSION = '20260208';
-const CACHE_NAME = 'ra-v12-' + CACHE_VERSION;
+const CACHE_VERSION = '20260208b';
+const CACHE_NAME = 'ra-v13-' + CACHE_VERSION;
 
 const ASSETS = [
   '/', '/index.html', '/chat.html', '/404.html', '/form-success.html',
@@ -82,6 +82,22 @@ self.addEventListener('fetch', e => {
           return caches.match(e.request).then(cached => cached || caches.match('/404.html'));
         })
         .catch(() => caches.match(e.request).then(cached => cached || caches.match('/404.html')))
+    );
+    return;
+  }
+
+  // For CSS and JS: network-first to prevent stale assets
+  if (url.pathname.endsWith('.css') || url.pathname.endsWith('.js')) {
+    e.respondWith(
+      fetch(e.request)
+        .then(res => {
+          if (res.ok) {
+            const clone = res.clone();
+            caches.open(CACHE_NAME).then(c => c.put(e.request, clone));
+          }
+          return res;
+        })
+        .catch(() => caches.match(e.request))
     );
     return;
   }
