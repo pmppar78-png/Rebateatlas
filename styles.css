@@ -1271,3 +1271,23 @@ a, button, input, select, textarea {
 .partners-container-inner > .partners-category-heading:first-child {
   margin-top: 0.5rem;
 }
+
+/* ── Override any injected drawer/overlay snippets ── */
+/* Hide snippet-injected drawer and overlay so our built-in drawer is the only one */
+.ra-drawer,
+.ra-overlay {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Ensure the original site-nav is never hidden by injected scripts */
+#site-nav {
+  display: flex !important;
+}
+
+/* Prevent injected scroll-lock classes from breaking layout */
+html.ra-lock,
+body.ra-lock {
+  overflow: unset !important;
+}
