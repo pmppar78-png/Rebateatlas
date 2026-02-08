@@ -634,7 +634,8 @@ a.chip-link:hover {
 }
 
 .msg-affiliate a,
-.msg a {
+.msg a,
+.affiliate-link {
   color: #4fd1c5;
   font-weight: 600;
   text-decoration: underline;
@@ -642,7 +643,8 @@ a.chip-link:hover {
   text-underline-offset: 2px;
 }
 
-.msg a:hover {
+.msg a:hover,
+.affiliate-link:hover {
   color: #6ee7b7;
 }
 

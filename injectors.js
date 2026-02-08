@@ -85,6 +85,15 @@
       .then(function (config) {
         var features = config.features || {};
         var ids = config.ids || {};
+        var site = config.site || {};
+
+        // Inject Google Site Verification meta tag if configured
+        if (site.google_site_verification) {
+          var meta = document.createElement('meta');
+          meta.name = 'google-site-verification';
+          meta.content = site.google_site_verification;
+          document.head.appendChild(meta);
+        }
 
         if (features.adsense_enabled) {
           injectAdSense(ids);
