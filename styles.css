@@ -187,13 +187,11 @@ body {
 .nav-overlay {
   position: fixed;
   inset: 0;
-  z-index: 9998;
-  background: rgba(0, 0, 0, 0.6);
+  z-index: 10040;
+  background: rgba(0, 0, 0, 0.55);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  transition: opacity 180ms ease;
 }
 
 .nav-overlay.nav-overlay-active {
@@ -209,26 +207,24 @@ body.nav-locked {
 /* Drawer close button */
 .nav-close {
   display: none;
+  appearance: none;
   position: absolute;
-  top: 18px;
-  right: 18px;
-  width: 36px;
-  height: 36px;
-  border: none;
-  background: rgba(255, 255, 255, 0.06);
+  top: 14px;
+  right: 14px;
+  width: auto;
+  height: auto;
+  border: 0;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   cursor: pointer;
-  color: var(--text-muted);
-  transition: background 0.15s, color 0.15s;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
-  z-index: 10001;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8px 10px;
+  font-weight: 700;
+  z-index: 10051;
 }
 
 .nav-close:hover {
-  background: rgba(255, 255, 255, 0.12);
-  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .nav-close svg {
@@ -872,7 +868,7 @@ a.chip-link:hover {
 @media (max-width: 640px) {
   .nav-toggle {
     display: block;
-    z-index: 10000;
+    z-index: 10060;
   }
 
   /* Close button visible on mobile */
@@ -880,32 +876,27 @@ a.chip-link:hover {
     display: flex;
   }
 
-  /* Solid side drawer — slides in from right */
+  /* Compact off-canvas drawer — slides in from right */
   .site-nav {
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
-    left: auto;
-    width: 300px;
-    max-width: 85vw;
     height: 100vh;
-    height: 100dvh;
+    width: min(86vw, 360px);
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     gap: 2px;
-    padding: 68px 20px 32px;
-    background: #070b1e !important;
-    background-color: #070b1e !important;
-    border-left: 1px solid rgba(56, 241, 122, 0.12);
-    z-index: 9999;
+    padding: 14px;
+    padding-top: 58px;
+    background: #0b1220;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 10050;
     transform: translateX(100%);
     visibility: hidden;
     pointer-events: none;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0.3s;
+    transition: transform 180ms ease, visibility 0s 180ms;
     overflow-y: auto;
-    box-shadow: none;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -913,23 +904,25 @@ a.chip-link:hover {
     transform: translateX(0);
     visibility: visible;
     pointer-events: auto;
-    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0s;
+    transition: transform 180ms ease, visibility 0s 0s;
   }
 
   .site-nav .nav-link,
   .site-nav .nav-link:link,
   .site-nav .nav-link:visited {
-    font-size: 1.05rem;
-    padding: 14px 18px;
+    display: block;
+    font-size: 16px;
+    padding: 12px 10px;
+    margin: 6px 0;
     border-radius: 12px;
     transition: background 0.15s;
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.06);
     text-decoration: none;
   }
 
   .site-nav .nav-link:hover {
-    background: rgba(56, 241, 122, 0.08);
+    background: rgba(255, 255, 255, 0.10);
   }
 
   .site-nav .nav-link-secondary {
@@ -937,8 +930,8 @@ a.chip-link:hover {
   }
 
   .site-nav .nav-link-active {
-    background: var(--accent-soft);
-    color: var(--accent);
+    background: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.92);
   }
 
   /* Drawer divider between primary and secondary links */
@@ -950,19 +943,22 @@ a.chip-link:hover {
     border: none;
   }
 
-  /* AI CTA inside the drawer */
+  /* AI CTA inside the drawer — compact link style */
   .site-nav .header-ai-cta,
   .site-nav .header-ai-cta:link,
   .site-nav .header-ai-cta:visited {
-    display: flex;
-    margin-top: 14px;
-    justify-content: center;
-    padding: 14px 18px;
-    font-size: 1rem;
-    color: #fff !important;
+    display: block;
+    margin-top: 8px;
+    padding: 12px 10px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.92) !important;
     text-decoration: none !important;
-    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+  }
+
+  .site-nav .header-ai-cta:hover {
+    background: rgba(255, 255, 255, 0.10);
   }
 
   /* Header AI CTA — hidden on mobile, shown inside drawer instead */
