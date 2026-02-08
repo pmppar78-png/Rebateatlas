@@ -15,8 +15,8 @@
     "adsense_client": "",
     "adsense_publisher_id": "",
     "adsense_ad_slot_id": "",
-    "ga4_id": "G-XXXXXXXXXX",
-    "ga4_measurement_id": "G-XXXXXXXXXX",
+    "ga4_id": "",
+    "ga4_measurement_id": "",
     "skimlinks_site_id": ""
   }
 }

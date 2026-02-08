@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -149,7 +149,7 @@
     <section class="explainer" style="margin-top:18px;">
       <h2>Get Personalized Guidance</h2>
       <p>Enter your ZIP code to chat with our AI about how this program applies to your specific situation.</p>
-      <form class="zip-form" onsubmit="var zip=this.querySelector('input').value.trim();if(/^\d{5}$/.test(zip)){window.location.href='/chat.html?zip='+zip;return false}alert('Please enter a valid 5-digit ZIP code.');return false">
+      <form class="zip-form">
         <div class="field-row">
           <label class="field">
             <span class="field-label">Your ZIP code</span>
@@ -181,6 +181,7 @@
   </footer>
 
   <script src="/main.js"></script>
+  <script src="/forms.js"></script>
   <script src="/injectors.js"></script>
 </body>
 </html>

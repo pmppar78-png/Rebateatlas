@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -203,7 +203,7 @@
     <section class="explainer" style="margin-top:18px;">
       <h2>Get Personalized Guidance</h2>
       <p>Enter your ZIP code to chat with our AI about rebates for your specific situation.</p>
-      <form class="zip-form" onsubmit="var zip=this.querySelector('input').value.trim();if(/^\d{5}$/.test(zip)){window.location.href='/chat.html?zip='+zip;return false}alert('Please enter a valid 5-digit ZIP code.');return false">
+      <form class="zip-form">
         <div class="field-row"><label class="field"><span class="field-label">Your ZIP code</span><input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="5" placeholder="e.g. enter your ZIP" /></label></div>
         <button class="btn-primary" type="submit">Find my rebates</button>
       </form>
@@ -216,6 +216,7 @@
     <p><a href="/chat.html" class="inline-link">Ask the AI</a> &middot; <a href="/states/" class="inline-link">States</a> &middot; <a href="/categories/" class="inline-link">Categories</a> &middot; <a href="/guides/" class="inline-link">Guides</a> &middot; <a href="/about.html" class="inline-link">About</a> &middot; <a href="/faq.html" class="inline-link">FAQ</a> &middot; <a href="/privacy-policy.html" class="inline-link">Privacy Policy</a> &middot; <a href="/terms.html" class="inline-link">Terms</a> &middot; <a href="/contact.html" class="inline-link">Contact</a></p>
   </footer>
   <script src="/main.js"></script>
+  <script src="/forms.js"></script>
   <script src="/injectors.js"></script>
 </body>
 </html>

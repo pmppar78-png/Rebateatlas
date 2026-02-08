@@ -6,7 +6,7 @@ const ASSETS = [
   '/', '/index.html', '/chat.html', '/404.html', '/form-success.html',
   '/about.html', '/faq.html', '/contact.html',
   '/privacy-policy.html', '/terms.html', '/accessibility.html',
-  '/styles.css', '/main.js', '/partners.js', '/injectors.js',
+  '/styles.css', '/main.js', '/partners.js', '/injectors.js', '/forms.js',
   '/og-image.png', '/icon.svg', '/icon-192.png', '/icon-512.png',
   '/manifest.json',
   '/config.json', '/affiliates.json',
@@ -22,7 +22,9 @@ const ASSETS = [
   '/guides/solar-vs-battery.html', '/guides/renter-vs-homeowner-rebates.html',
   '/guides/stacking-rebates.html', '/guides/low-income-rebates.html',
   '/guides/moderate-income-eligibility.html', '/guides/manufactured-home-rebates.html',
-  '/guides/2026-rebate-deadlines.html'
+  '/guides/2026-rebate-deadlines.html',
+  '/blog/', '/blog/homes-hear-program-tracker-2026.html',
+  '/blog/2026-tax-credit-changes.html', '/blog/heat-pump-rebate-stacking-guide.html'
 ];
 
 self.addEventListener('install', e => {

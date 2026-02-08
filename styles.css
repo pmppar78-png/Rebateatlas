@@ -900,3 +900,89 @@ a.chip-link:hover {
   color: var(--text-muted);
   line-height: 1.5;
 }
+
+/* Affiliate disclosure banner */
+.affiliate-disclosure {
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  background: rgba(15, 23, 42, 0.75);
+  border-left: 3px solid #4fd1c5;
+  font-size: 0.82rem;
+  border-radius: 8px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* State page program cards */
+.program-card {
+  margin-top: 12px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.85));
+  border: 1px solid var(--border-subtle);
+}
+
+.program-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: var(--text-main);
+}
+
+.program-card h4 {
+  margin: 0 0 8px;
+  font-size: 0.98rem;
+  color: var(--text-main);
+}
+
+.program-card p {
+  margin: 0 0 6px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.program-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Blog / Updates section */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.blog-card {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.85));
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.blog-card:hover {
+  border-color: rgba(56, 241, 122, 0.4);
+  transform: translateY(-2px);
+}
+
+.blog-card h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.blog-card .blog-date {
+  font-size: 0.76rem;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.blog-card p {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}

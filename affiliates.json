@@ -72,11 +72,11 @@
       },
       {
         "name": "Thumbtack",
-        "url": "https://www.thumbtack.com/?utm_source=rebateatlas&utm_medium=affiliate",
+        "url": "https://www.thumbtack.com/?utm_source=rebateatlas&utm_medium=referral",
         "description": "Local professionals",
         "cta": "Find Local Pros",
-        "notes": "Local pros marketplace",
-        "tracked": true,
+        "notes": "Local pros marketplace — confirm tracking with Thumbtack partner team before relying on revenue attribution",
+        "tracked": false,
         "network": "direct"
       }
     ]
