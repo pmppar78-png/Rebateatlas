@@ -6,7 +6,7 @@
   },
   "features": {
     "adsense_enabled": false,
-    "ga4_enabled": true,
+    "ga4_enabled": false,
     "skimlinks_enabled": false,
     "pwa_enabled": true,
     "email_alerts_enabled": true

@@ -6,7 +6,7 @@
   'use strict';
 
   var AFFILIATES_URL = '/affiliates.json';
-  var CATEGORY_ORDER = ['solar_quotes', 'home_services', 'energy_devices', 'retail', 'financing'];
+  var CATEGORY_ORDER = ['solar_quotes', 'home_services', 'energy_devices', 'retail', 'financing', 'ev_chargers', 'battery_backup'];
 
   function createPartnerGrid(category) {
     var section = document.createDocumentFragment();
