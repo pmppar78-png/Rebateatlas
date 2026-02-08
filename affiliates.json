@@ -30,15 +30,6 @@
         "network": ""
       },
       {
-        "name": "ADT Solar",
-        "url": "https://www.adtsolar.com",
-        "description": "Solar installations",
-        "cta": "Get a Quote",
-        "notes": "Solar arm of ADT",
-        "tracked": false,
-        "network": ""
-      },
-      {
         "name": "Momentum Solar",
         "url": "https://momentumsolar.com",
         "description": "Regional installer",
