@@ -670,4 +670,111 @@ a.chip-link:hover {
   .advertise {
     padding: 16px 18px;
   }
+
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Savings calculator */
+.calculator {
+  margin-top: 28px;
+  padding: 18px 20px 22px;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid var(--border-subtle);
+}
+
+.calculator h2 {
+  margin-bottom: 8px;
+}
+
+.calculator-intro {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+}
+
+.calc-option {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.85));
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.calc-option:hover {
+  border-color: rgba(56, 241, 122, 0.3);
+}
+
+.calc-option:has(input:checked) {
+  border-color: rgba(56, 241, 122, 0.6);
+  background: linear-gradient(135deg, rgba(56, 241, 122, 0.08), rgba(15, 23, 42, 0.9));
+}
+
+.calc-option input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.calc-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.calc-amount {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.calc-results {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(56, 241, 122, 0.06), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(56, 241, 122, 0.2);
+}
+
+.calc-result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.calc-result-row strong {
+  color: var(--text-main);
+  font-size: 1.05rem;
+}
+
+.calc-total-row {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 6px;
+  padding-top: 10px;
+}
+
+.calc-total-row strong {
+  font-size: 1.2rem;
+}
+
+.calc-disclaimer {
+  margin-top: 12px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
 }

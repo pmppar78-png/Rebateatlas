@@ -9,6 +9,8 @@
   <meta property="og:title" content="Rebate Atlas · US Home Energy Credits & Incentives" />
   <meta property="og:description" content="Type your ZIP code to see every rebate you can claim for energy-efficient home upgrades." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rebateatlas.netlify.app/" />
+  <link rel="canonical" href="https://rebateatlas.netlify.app/" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -109,10 +111,72 @@
       <h2>How it works</h2>
       <ol class="steps">
         <li><strong>Tell the AI about your home.</strong> Zip, home type, and any upgrades you're considering.</li>
-        <li><strong>Get a plain‑English walkthrough.</strong> The AI lists likely federal, state, and utility incentives.</li>
+        <li><strong>Get a plain&#8209;English walkthrough.</strong> The AI lists likely federal, state, and utility incentives.</li>
         <li><strong>See next steps &amp; partners.</strong> When it makes sense, the AI suggests vetted tools and
           <a href="#affiliates-note" class="inline-link">partner links</a> that may help you claim your credits.</li>
       </ol>
+    </section>
+
+    <section class="calculator" id="calculator">
+      <h2>Quick savings estimator</h2>
+      <p class="calculator-intro">Select the upgrades you're planning. We'll estimate total federal credits and typical state/utility rebates you might qualify for.</p>
+      <div class="calculator-grid">
+        <label class="calc-option">
+          <input type="checkbox" value="heat_pump" data-federal="2000" data-state="1500" />
+          <span class="calc-label">Heat pump / HVAC</span>
+          <span class="calc-amount">Up to $2,000 federal</span>
+        </label>
+        <label class="calc-option">
+          <input type="checkbox" value="water_heater" data-federal="2000" data-state="1000" />
+          <span class="calc-label">Heat pump water heater</span>
+          <span class="calc-amount">Up to $2,000 federal</span>
+        </label>
+        <label class="calc-option">
+          <input type="checkbox" value="solar" data-federal="6000" data-state="2000" />
+          <span class="calc-label">Solar panels</span>
+          <span class="calc-amount">30% federal (avg ~$6,000)</span>
+        </label>
+        <label class="calc-option">
+          <input type="checkbox" value="battery" data-federal="4000" data-state="1500" />
+          <span class="calc-label">Battery storage</span>
+          <span class="calc-amount">30% federal (avg ~$4,000)</span>
+        </label>
+        <label class="calc-option">
+          <input type="checkbox" value="ev_charger" data-federal="1000" data-state="500" />
+          <span class="calc-label">EV charger</span>
+          <span class="calc-amount">Up to $1,000 federal</span>
+        </label>
+        <label class="calc-option">
+          <input type="checkbox" value="insulation" data-federal="1200" data-state="800" />
+          <span class="calc-label">Insulation &amp; weatherization</span>
+          <span class="calc-amount">Up to $1,200 federal</span>
+        </label>
+        <label class="calc-option">
+          <input type="checkbox" value="windows" data-federal="600" data-state="400" />
+          <span class="calc-label">Windows &amp; doors</span>
+          <span class="calc-amount">Up to $600 federal</span>
+        </label>
+        <label class="calc-option">
+          <input type="checkbox" value="thermostat" data-federal="150" data-state="100" />
+          <span class="calc-label">Smart thermostat</span>
+          <span class="calc-amount">Up to $150 federal</span>
+        </label>
+      </div>
+      <div class="calc-results" id="calc-results" style="display:none;">
+        <div class="calc-result-row">
+          <span>Estimated federal credits:</span>
+          <strong id="calc-federal">$0</strong>
+        </div>
+        <div class="calc-result-row">
+          <span>Typical state/utility rebates:</span>
+          <strong id="calc-state">$0</strong>
+        </div>
+        <div class="calc-result-row calc-total-row">
+          <span>Estimated total savings:</span>
+          <strong id="calc-total" class="accent">$0</strong>
+        </div>
+        <p class="calc-disclaimer">These are rough estimates based on typical values. Actual amounts depend on your location, income, and specific products. <a href="chat.html" class="inline-link">Ask the AI</a> for a personalized breakdown.</p>
+      </div>
     </section>
 
     <section class="about-us">
@@ -259,6 +323,36 @@
           window.location.href = 'chat.html?' + params.toString();
         });
       }
+
+      // Savings calculator
+      var checkboxes = document.querySelectorAll('.calc-option input[type="checkbox"]');
+      var resultsEl = document.getElementById('calc-results');
+      var federalEl = document.getElementById('calc-federal');
+      var stateEl = document.getElementById('calc-state');
+      var totalEl = document.getElementById('calc-total');
+
+      function updateCalc() {
+        var federal = 0;
+        var state = 0;
+        checkboxes.forEach(function(cb) {
+          if (cb.checked) {
+            federal += parseInt(cb.dataset.federal, 10) || 0;
+            state += parseInt(cb.dataset.state, 10) || 0;
+          }
+        });
+        if (federal > 0 || state > 0) {
+          resultsEl.style.display = 'block';
+          federalEl.textContent = '$' + federal.toLocaleString();
+          stateEl.textContent = '$' + state.toLocaleString();
+          totalEl.textContent = '$' + (federal + state).toLocaleString();
+        } else {
+          resultsEl.style.display = 'none';
+        }
+      }
+
+      checkboxes.forEach(function(cb) {
+        cb.addEventListener('change', updateCalc);
+      });
     });
   </script>
 </body>
