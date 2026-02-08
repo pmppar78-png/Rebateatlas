@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ra-v9';
+const CACHE_NAME = 'ra-v10';
 const ASSETS = [
   '/', '/index.html', '/chat.html', '/404.html', '/form-success.html',
   '/about.html', '/faq.html', '/contact.html',
@@ -6,7 +6,8 @@ const ASSETS = [
   '/categories/', '/categories/heat-pumps.html', '/categories/solar-panels.html',
   '/categories/ev-chargers.html', '/categories/water-heaters.html',
   '/categories/smart-thermostats.html', '/categories/insulation-weatherization.html',
-  '/categories/windows-doors.html', '/categories/battery-storage.html'
+  '/categories/windows-doors.html', '/categories/battery-storage.html',
+  '/states/'
 ];
 
 self.addEventListener('install', e => {

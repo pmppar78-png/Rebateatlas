@@ -12,6 +12,12 @@
   to = "/categories/index.html"
   status = 200
 
+# Redirect for clean states URL
+[[redirects]]
+  from = "/states"
+  to = "/states/index.html"
+  status = 200
+
 # Redirect common misspellings and variations
 [[redirects]]
   from = "/heat-pumps"
