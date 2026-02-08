@@ -411,11 +411,6 @@ function generatePage(data) {
   <meta name="twitter:image" content="${SITE_URL}/og-image.png" />
   <link rel="canonical" href="${SITE_URL}/states/${slug}/" />
   <link rel="stylesheet" href="/styles.css" />
-  <style>/* Critical: hide old nav on mobile, neutralize injected snippet */
-  @media(max-width:640px){nav#site-nav.site-nav,nav.site-nav#site-nav{display:none!important;visibility:hidden!important;width:0!important;height:0!important;overflow:hidden!important}div#nav-overlay,.nav-overlay{display:none!important}}
-  .ra-drawer,aside.ra-drawer,.ra-overlay,div.ra-overlay{display:none!important;visibility:hidden!important;pointer-events:none!important;width:0!important;height:0!important;overflow:hidden!important}
-  html.ra-lock,body.ra-lock{overflow:unset!important;height:auto!important}
-  </style>
   <link rel="manifest" href="/manifest.json" />
   <link rel="icon" href="/icon.svg" type="image/svg+xml" />
   <meta name="theme-color" content="#050816" />
@@ -449,11 +444,22 @@ function generatePage(data) {
       <a href="/chat.html" class="header-ai-cta">Try Rebate AI</a>
     </nav>
     <a href="/chat.html" class="header-ai-cta">Try Rebate AI</a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenuDrawer">
       <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </header>
-  <div class="nav-overlay" id="nav-overlay"></div>
+<div id="mobileMenuBackdrop" class="menu-backdrop" aria-hidden="true"></div>
+<nav id="mobileMenuDrawer" class="menu-drawer" aria-label="Mobile menu" aria-hidden="true">
+  <button type="button" class="menu-close" id="mobileMenuClose" aria-label="Close menu">\u2715</button>
+  <a href="/" class="menu-link">Home</a>
+  <a href="/chat.html" class="menu-link menu-link--ai">Ask the AI</a>
+  <a href="/states/" class="menu-link">States</a>
+  <a href="/categories/" class="menu-link">Categories</a>
+  <hr class="menu-sep" />
+  <a href="/about.html" class="menu-link">About</a>
+  <a href="/faq.html" class="menu-link">FAQ</a>
+  <a href="/contact.html" class="menu-link">Contact</a>
+</nav>
 
   <main class="content" id="main-content">
     <nav class="breadcrumb" aria-label="Breadcrumb">
