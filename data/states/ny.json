@@ -1,0 +1,102 @@
+{
+  "state_code": "NY",
+  "state_name": "New York",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "New York has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. NYSERDA (New York State Energy Research and Development Authority) is administering the programs, building on its existing robust energy efficiency infrastructure and EmPower+ program to deliver rebates for whole-home energy efficiency and high-efficiency electric equipment.",
+  "state_energy_office": "New York State Energy Research and Development Authority (NYSERDA)",
+  "state_energy_office_url": "https://www.nyserda.ny.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For New York, 80% of Area Median Income varies significantly by county. In New York City (all five boroughs), 80% AMI for a family of four is approximately $90,850. Upstate in Monroe County (Rochester), it is approximately $63,900.",
+    "moderate_income_150_ami": "For New York, 150% of Area Median Income varies significantly by county. In New York City, 150% AMI for a family of four is approximately $170,350. In Monroe County (Rochester), it is approximately $119,800."
+  },
+  "net_metering": "New York transitioned from traditional net metering to the Value of Distributed Energy Resources (VDER) or Value Stack compensation for new solar installations. Under VDER, solar customers are compensated based on when and where they generate energy, including energy value, capacity value, environmental value, and demand reduction value. Legacy net metering customers retain retail-rate credits.",
+  "state_tax_credits": [
+    {
+      "name": "New York State Solar Energy System Equipment Tax Credit",
+      "amount": "25% of the cost of a solar energy system, up to $5,000",
+      "eligible_items": "Solar photovoltaic systems installed on residential property",
+      "details": "New York offers a personal income tax credit for the purchase and installation of solar energy system equipment for residential use.",
+      "url": "https://www.tax.ny.gov/pit/credits/solar_energy_system_equipment_credit.htm"
+    },
+    {
+      "name": "New York State Real Property Tax Exemption for Solar and Wind",
+      "amount": "15-year exemption from any increase in property tax due to the installation of a solar or wind energy system",
+      "eligible_items": "Solar photovoltaic systems, solar thermal systems, wind energy systems",
+      "details": "Municipalities in New York may opt into this exemption. Most municipalities have adopted it, though some may opt out or impose a different exemption level.",
+      "url": "https://www.nyserda.ny.gov/All-Programs/NY-Sun/Solar-for-Your-Home/Financial-Support"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "NYSERDA EmPower+ Program",
+      "administrator": "NYSERDA",
+      "amount": "Up to $10,000+ in no-cost home energy improvements for income-qualifying households; reduced-cost improvements for moderate-income",
+      "eligible_items": "Insulation, air sealing, heating system replacement, heat pumps, health and safety measures",
+      "details": "EmPower+ combines the former EmPower New York and Assisted Home Performance programs. Provides free or reduced-cost energy efficiency improvements based on income level.",
+      "url": "https://www.nyserda.ny.gov/All-Programs/EmPower-New-York-Program"
+    },
+    {
+      "name": "NY-Sun Residential Solar Incentive",
+      "administrator": "NYSERDA",
+      "amount": "Per-watt incentive varying by utility territory and income; typically $0.20-$0.40/watt for market rate, higher for LMI",
+      "eligible_items": "Residential rooftop solar photovoltaic systems",
+      "details": "NY-Sun provides upfront incentives to reduce the cost of solar installation. Enhanced incentives are available for low-to-moderate income households and affordable housing.",
+      "url": "https://www.nyserda.ny.gov/All-Programs/NY-Sun"
+    },
+    {
+      "name": "Residential Clean Heating and Cooling Incentives",
+      "administrator": "NYSERDA",
+      "amount": "Up to $1,000-$15,000+ per home depending on system type and income",
+      "eligible_items": "Air-source heat pumps, ground-source heat pumps, heat pump water heaters",
+      "details": "NYSERDA provides incentives for the installation of clean heating and cooling systems as part of New York's Climate Act goals. Higher incentives are available for income-qualifying households.",
+      "url": "https://www.nyserda.ny.gov/All-Programs/Clean-Heat"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Consolidated Edison (Con Edison)",
+      "programs": [
+        {
+          "name": "Con Edison Residential Energy Efficiency Rebates",
+          "amount": "Up to $1,000 for heat pumps, $300 for smart thermostats, $500 for insulation",
+          "eligible_items": "High-efficiency heat pumps, smart thermostats, insulation, ENERGY STAR appliances, EV chargers",
+          "url": "https://www.coned.com/en/save-money/rebates-incentives-tax-credits"
+        },
+        {
+          "name": "Con Edison Marketplace",
+          "amount": "Instant discounts on qualifying products",
+          "eligible_items": "Smart thermostats, LED lighting, smart power strips, heat pump water heaters",
+          "url": "https://marketplace.coned.com/"
+        }
+      ]
+    },
+    {
+      "name": "National Grid (New York)",
+      "programs": [
+        {
+          "name": "National Grid Residential Rebates",
+          "amount": "Up to $1,000 for high-efficiency heating, $300 for insulation",
+          "eligible_items": "High-efficiency boilers, furnaces, heat pumps, insulation, smart thermostats, water heaters",
+          "url": "https://www.nationalgridus.com/NY-Home/Energy-Saving-Programs/"
+        }
+      ]
+    },
+    {
+      "name": "PSEG Long Island",
+      "programs": [
+        {
+          "name": "PSEG LI Home Comfort Program",
+          "amount": "Up to $1,500 for heat pumps, up to $1,000 for other HVAC",
+          "eligible_items": "Heat pumps, central air conditioning, insulation, duct sealing",
+          "url": "https://www.psegliny.com/saveenergyandmoney/residentialrebates"
+        },
+        {
+          "name": "PSEG LI Home Energy Assessment",
+          "amount": "Free home energy assessment",
+          "eligible_items": "Comprehensive home energy evaluation with direct-install measures including LEDs and smart power strips",
+          "url": "https://www.psegliny.com/saveenergyandmoney/homeenergy"
+        }
+      ]
+    }
+  ]
+}

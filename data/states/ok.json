@@ -1,0 +1,65 @@
+{
+  "state_code": "OK",
+  "state_name": "Oklahoma",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Oklahoma has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Oklahoma Department of Commerce - Division of Community Affairs and Development is the designated state entity coordinating with the U.S. Department of Energy.",
+  "state_energy_office": "Oklahoma Department of Commerce - Division of Community Affairs and Development",
+  "state_energy_office_url": "https://www.okcommerce.gov/community/energy/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Oklahoma, 80% of Area Median Income varies by county. In Oklahoma County (Oklahoma City), 80% AMI for a family of four is approximately $58,150. In Tulsa County, it is approximately $57,900.",
+    "moderate_income_150_ami": "For Oklahoma, 150% of Area Median Income varies by county. In Oklahoma County (Oklahoma City), 150% AMI for a family of four is approximately $109,050. In Tulsa County, it is approximately $108,600."
+  },
+  "net_metering": "Oklahoma adopted a net metering policy that applies to systems up to 100 kW for residential customers. However, in 2014, Oklahoma passed legislation allowing utilities to charge a fixed monthly surcharge to distributed generation customers. The Oklahoma Corporation Commission sets specific rates that may include demand charges for solar customers.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Oklahoma Department of Commerce",
+      "amount": "Average expenditure of approximately $6,500 per home",
+      "eligible_items": "Insulation, air sealing, heating/cooling system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies across Oklahoma.",
+      "url": "https://www.okcommerce.gov/community/energy/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "OG&E (Oklahoma Gas and Electric)",
+      "programs": [
+        {
+          "name": "OG&E Residential Rebates",
+          "amount": "Up to $500 for heat pumps, $200 for smart thermostats, $250 for insulation",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, smart thermostats, insulation, duct sealing",
+          "url": "https://oge.com/residential-customers/save-energy-money"
+        },
+        {
+          "name": "OG&E Home Energy Efficiency Audit",
+          "amount": "Free online home energy assessment",
+          "eligible_items": "Home energy evaluation identifying savings opportunities",
+          "url": "https://oge.com/residential-customers/save-energy-money"
+        }
+      ]
+    },
+    {
+      "name": "PSO (Public Service Company of Oklahoma)",
+      "programs": [
+        {
+          "name": "PSO Residential Energy Efficiency Rebates",
+          "amount": "Up to $500 for heat pumps, $150 for smart thermostats, $200 for insulation",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, smart thermostats, insulation, duct sealing, ENERGY STAR windows",
+          "url": "https://www.psoklahoma.com/savings/"
+        }
+      ]
+    },
+    {
+      "name": "Oklahoma Natural Gas (ONG)",
+      "programs": [
+        {
+          "name": "Residential Efficiency Rebates",
+          "amount": "Up to $400 for high-efficiency furnaces, $200 for water heaters",
+          "eligible_items": "High-efficiency natural gas furnaces, tankless water heaters, smart thermostats",
+          "url": "https://www.oklahomanaturalgas.com/save-money-energy"
+        }
+      ]
+    }
+  ]
+}

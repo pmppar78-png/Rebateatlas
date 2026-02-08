@@ -1,0 +1,85 @@
+{
+  "state_code": "MO",
+  "state_name": "Missouri",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Missouri's HOMES and HEAR programs are pending launch. The Missouri Department of Natural Resources - Division of Energy is developing implementation plans using approximately $77 million in IRA funding allocated to the state.",
+  "state_energy_office": "Missouri Department of Natural Resources - Division of Energy",
+  "state_energy_office_url": "https://energy.mo.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in St. Louis, 80% AMI is approximately $61,600. For Kansas City, 80% AMI is approximately $62,000. Low-income households will qualify for the highest rebate levels under HOMES when launched.",
+    "moderate_income_150_ami": "For a family of four in St. Louis, 150% AMI is approximately $115,500. For Kansas City, 150% AMI is approximately $116,250. Moderate-income households will qualify for partial rebates under HOMES when launched."
+  },
+  "net_metering": "Missouri's net metering law allows systems up to 100 kW for residential customers. Excess generation is credited at the retail rate. Monthly excess credits roll over, and annual surplus is purchased by the utility at the avoided cost rate. The Missouri Public Service Commission oversees net metering for investor-owned utilities.",
+  "state_tax_credits": [
+    {
+      "name": "Missouri does not currently offer state-level tax credits for residential renewable energy",
+      "amount": "N/A",
+      "eligible_items": "N/A",
+      "details": "Missouri does not have state solar tax credits or energy efficiency tax credits. However, Missouri does have a property tax exemption for solar energy systems under the Missouri Solar Property Tax Exemption, which excludes the added value of solar from property tax assessments. Residents can claim the federal 30% ITC.",
+      "url": "https://energy.mo.gov/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Missouri Weatherization Assistance Program",
+      "administrator": "Missouri Department of Economic Development / Community Action Agencies",
+      "amount": "Average of $7,000+ per home",
+      "eligible_items": "Insulation, air sealing, furnace repair and replacement, duct sealing, window and door repairs, water heater replacement",
+      "details": "Available to households at or below 200% of the federal poverty level. Administered by community action agencies statewide.",
+      "url": "https://energy.mo.gov/energy/weatherization"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Ameren Missouri",
+      "programs": [
+        {
+          "name": "Ameren Missouri Energy Efficiency Rebates",
+          "amount": "$25-$1,500 depending on measure",
+          "eligible_items": "HVAC systems, heat pumps, smart thermostats, insulation, air sealing, LED lighting, ENERGY STAR appliances, water heaters",
+          "url": "https://www.ameren.com/missouri/residential/energy-efficiency"
+        },
+        {
+          "name": "Ameren Missouri Home Energy Analysis",
+          "amount": "Free online assessment; $25 in-home assessment with direct install of efficiency products",
+          "eligible_items": "Comprehensive energy assessment, LED bulbs, smart power strips, faucet aerators, showerheads",
+          "url": "https://www.ameren.com/missouri/residential/energy-efficiency/home-energy-analysis"
+        },
+        {
+          "name": "Ameren Missouri Income-Eligible Program",
+          "amount": "Free comprehensive energy efficiency improvements",
+          "eligible_items": "Insulation, air sealing, HVAC repair/replacement, appliance replacement for income-qualified customers",
+          "url": "https://www.ameren.com/missouri/residential/energy-efficiency/income-eligible"
+        }
+      ]
+    },
+    {
+      "name": "Evergy Missouri",
+      "programs": [
+        {
+          "name": "Evergy Residential Rebates",
+          "amount": "$100-$1,000 depending on measure",
+          "eligible_items": "ENERGY STAR heat pumps, central air conditioners, ductless mini-splits, smart thermostats, insulation",
+          "url": "https://www.evergy.com/ways-to-save/rebates"
+        },
+        {
+          "name": "Evergy Home Energy Analyzer",
+          "amount": "Free online energy analysis tool with personalized recommendations",
+          "eligible_items": "Online home energy audit with customized saving recommendations",
+          "url": "https://www.evergy.com/ways-to-save/home-energy-analyzer"
+        }
+      ]
+    },
+    {
+      "name": "Spire Missouri (natural gas)",
+      "programs": [
+        {
+          "name": "Spire Energy Efficiency Rebates",
+          "amount": "$50-$600 depending on measure",
+          "eligible_items": "High-efficiency furnaces, boilers, water heaters, smart thermostats, insulation",
+          "url": "https://www.spireenergy.com/rebates-energy-savings"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "state_code": "IL",
+  "state_name": "Illinois",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Illinois has launched HOMES and HEAR programs administered through the Illinois Environmental Protection Agency and partner organizations. The state received approximately $240 million in IRA funding for energy efficiency and electrification rebates.",
+  "state_energy_office": "Illinois Energy Office (within DCEO)",
+  "state_energy_office_url": "https://dceo.illinois.gov/expandingcleanenergy.html",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in the Chicago metro area, 80% AMI is approximately $72,800. Downstate areas have lower thresholds. Low-income households qualify for up to 100% of project costs under HOMES.",
+    "moderate_income_150_ami": "For a family of four in the Chicago metro area, 150% AMI is approximately $136,500. Moderate-income households qualify for rebates covering up to 50% of project costs under HOMES."
+  },
+  "net_metering": "Illinois offers full retail-rate net metering for systems up to 2 MW under the Illinois Power Agency's distributed generation program. Monthly excess credits roll over, and annual true-up is at the avoided cost rate. The Climate and Equitable Jobs Act (CEJA) expanded support for community solar and distributed generation.",
+  "state_tax_credits": [
+    {
+      "name": "Illinois Solar Renewable Energy Credits (SRECs)",
+      "amount": "Varies by market; Illinois Shines (Adjustable Block Program) provides upfront incentive payments worth approximately $3,000-$10,000 for a typical residential system",
+      "eligible_items": "Solar PV systems installed on residential properties, community solar subscriptions",
+      "details": "The Illinois Shines program (Adjustable Block Program) provides upfront payments for SRECs over 15-year contracts. Prices vary by utility territory, system size, and whether the property is in an environmental justice community.",
+      "url": "https://www.illinoisshines.com/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Illinois Home Weatherization Assistance Program",
+      "administrator": "Illinois DCEO",
+      "amount": "Up to $8,000+ per home for eligible households",
+      "eligible_items": "Air sealing, insulation, furnace repair/replacement, water heater replacement, window repair",
+      "details": "Available to households at or below 200% of the federal poverty level. Priority given to elderly, disabled, and families with children.",
+      "url": "https://dceo.illinois.gov/communityservices/homeweatherization.html"
+    },
+    {
+      "name": "Illinois Solar for All",
+      "administrator": "Illinois Power Agency",
+      "amount": "Significant cost reductions making solar nearly free for qualifying households",
+      "eligible_items": "Rooftop solar PV, community solar subscriptions for low-income households, non-profits, and environmental justice communities",
+      "details": "Part of the Future Energy Jobs Act and expanded by CEJA. Approved vendors install solar at no cost to qualifying residents, who receive ongoing savings on electric bills.",
+      "url": "https://www.illinoissfa.com/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Commonwealth Edison (ComEd)",
+      "programs": [
+        {
+          "name": "ComEd Energy Efficiency Program",
+          "amount": "$25-$2,500 depending on measure",
+          "eligible_items": "Smart thermostats, HVAC upgrades, insulation, air sealing, LED lighting, appliances",
+          "url": "https://www.comed.com/WaysToSave/ForYourHome/Pages/default.aspx"
+        },
+        {
+          "name": "ComEd Hourly Pricing Program",
+          "amount": "Savings vary based on real-time pricing and usage shifting",
+          "eligible_items": "All residential customers in ComEd territory",
+          "url": "https://hourlypricing.comed.com/"
+        }
+      ]
+    },
+    {
+      "name": "Ameren Illinois",
+      "programs": [
+        {
+          "name": "Ameren Illinois Energy Efficiency Programs",
+          "amount": "$25-$2,000 depending on measure",
+          "eligible_items": "HVAC systems, insulation, air sealing, smart thermostats, appliances, heat pumps",
+          "url": "https://www.amerenillinoissavings.com/"
+        },
+        {
+          "name": "Ameren Illinois Income Qualified Program",
+          "amount": "Free energy efficiency upgrades for qualifying households",
+          "eligible_items": "Insulation, air sealing, LED lighting, appliance replacement, HVAC upgrades",
+          "url": "https://www.amerenillinoissavings.com/residential/income-qualified/"
+        }
+      ]
+    },
+    {
+      "name": "Nicor Gas",
+      "programs": [
+        {
+          "name": "Nicor Gas Energy Efficiency Program",
+          "amount": "$50-$1,200 depending on measure",
+          "eligible_items": "High-efficiency furnaces, boilers, water heaters, insulation, smart thermostats",
+          "url": "https://www.nicorgasrebates.com/"
+        }
+      ]
+    }
+  ]
+}

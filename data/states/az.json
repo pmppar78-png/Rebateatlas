@@ -1,0 +1,91 @@
+{
+  "state_code": "AZ",
+  "state_name": "Arizona",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Arizona has not yet launched its HOMES or HEAR rebate programs. The Arizona Department of Housing is the designated administering entity and is working with the U.S. Department of Energy on program design and implementation.",
+  "state_energy_office": "Arizona Energy Office (within the Governor's Office)",
+  "state_energy_office_url": "https://energy.az.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Arizona, 80% of Area Median Income varies by county. In Maricopa County (Phoenix metro), 80% AMI for a family of four is approximately $62,100.",
+    "moderate_income_150_ami": "For Arizona, 150% of Area Median Income in Maricopa County for a family of four is approximately $116,400."
+  },
+  "net_metering": "Arizona replaced traditional net metering with net billing (also called net export rate) for new solar customers as of 2017. Under the Arizona Corporation Commission decision, new solar customers receive a lower export rate for excess energy sent to the grid, which decreases over time. Grandfathered net metering customers retain their original rate structure for a set period.",
+  "state_tax_credits": [
+    {
+      "name": "Arizona Residential Solar and Wind Energy Systems Tax Credit",
+      "amount": "25% of the cost of the system, up to $1,000",
+      "eligible_items": "Solar electric (PV), solar thermal/hot water, and wind energy systems for residential use",
+      "details": "This is a personal income tax credit. The credit was historically higher but has been capped at $1,000. Unused credit can be carried forward for up to five years.",
+      "url": "https://azdor.gov/tax-credits/solar-energy-credit"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Arizona Department of Housing",
+      "amount": "Average expenditure of approximately $7,000-$8,000 per home",
+      "eligible_items": "Insulation, air sealing, duct repair, HVAC tune-ups, refrigerant charge correction, window shading",
+      "details": "Federally funded program for income-qualifying households. Arizona's program emphasizes cooling load reduction given the hot climate.",
+      "url": "https://housing.az.gov/general-public/weatherization-assistance"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Arizona Public Service (APS)",
+      "programs": [
+        {
+          "name": "Home Performance with ENERGY STAR",
+          "amount": "Up to $2,500 in rebates for comprehensive improvements",
+          "eligible_items": "Insulation, air sealing, duct sealing, HVAC upgrades, windows",
+          "url": "https://www.aps.com/residential/save-money-and-energy"
+        },
+        {
+          "name": "Cool Savings Rebate Program",
+          "amount": "Up to $500 for qualifying AC/heat pump systems",
+          "eligible_items": "High-efficiency air conditioners and heat pumps meeting minimum SEER2 requirements",
+          "url": "https://www.aps.com/residential/save-money-and-energy"
+        },
+        {
+          "name": "Shade Tree and Shade Screen Programs",
+          "amount": "Free shade trees (up to 2) or discounted shade screens",
+          "eligible_items": "Shade trees for eligible homes, exterior shade screens",
+          "url": "https://www.aps.com/residential/save-money-and-energy"
+        }
+      ]
+    },
+    {
+      "name": "Salt River Project (SRP)",
+      "programs": [
+        {
+          "name": "Rebates for Cool AC",
+          "amount": "Up to $500 for qualifying systems",
+          "eligible_items": "High-efficiency air conditioners and heat pumps, quality installation verification",
+          "url": "https://savewithsrp.com/"
+        },
+        {
+          "name": "Heat Pump Water Heater Rebate",
+          "amount": "Up to $600",
+          "eligible_items": "ENERGY STAR certified heat pump water heaters",
+          "url": "https://savewithsrp.com/"
+        },
+        {
+          "name": "Shade Tree Program",
+          "amount": "Free shade trees (up to 2)",
+          "eligible_items": "Desert-adapted shade trees to reduce cooling costs",
+          "url": "https://savewithsrp.com/"
+        }
+      ]
+    },
+    {
+      "name": "Tucson Electric Power (TEP)",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Varies; up to $400 for HVAC, up to $250 for insulation",
+          "eligible_items": "High-efficiency air conditioners, heat pumps, insulation, duct sealing, shade screens",
+          "url": "https://www.tep.com/save-energy/"
+        }
+      ]
+    }
+  ]
+}

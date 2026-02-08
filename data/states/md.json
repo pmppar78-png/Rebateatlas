@@ -1,0 +1,102 @@
+{
+  "state_code": "MD",
+  "state_name": "Maryland",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Maryland has launched HOMES and HEAR programs through the Maryland Energy Administration (MEA). The state received approximately $93 million in IRA funding for energy efficiency and electrification rebates, with programs designed to complement existing EmPOWER Maryland utility programs.",
+  "state_energy_office": "Maryland Energy Administration",
+  "state_energy_office_url": "https://energy.maryland.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in the Baltimore metro area, 80% AMI is approximately $78,300. In the DC suburbs (Montgomery/Prince George's), 80% AMI is approximately $99,250. Low-income households qualify for up to 100% of project costs under HOMES.",
+    "moderate_income_150_ami": "For a family of four in the Baltimore metro area, 150% AMI is approximately $146,800. In the DC suburbs, 150% AMI is approximately $186,100. Moderate-income households qualify for rebates covering up to 50% of project costs."
+  },
+  "net_metering": "Maryland offers net metering for systems up to 2 MW. Excess generation is credited at the full retail rate, including all supply and delivery charges. Credits roll over monthly and annually. Virtual net metering and community solar are permitted under the Community Solar Energy Generating Systems Pilot Program.",
+  "state_tax_credits": [
+    {
+      "name": "Maryland Clean Energy Grants (Solar)",
+      "amount": "$1,000 for residential solar PV systems",
+      "eligible_items": "Solar PV systems installed on residential properties in Maryland",
+      "details": "Administered by the Maryland Energy Administration. This is a grant (not a tax credit) and is available on a first-come, first-served basis with annual funding caps. Must be installed by a licensed Maryland electrician.",
+      "url": "https://energy.maryland.gov/residential/Pages/incentives/CleanEnergyGrants.aspx"
+    },
+    {
+      "name": "Maryland Solar Renewable Energy Certificates (SRECs)",
+      "amount": "Market-based; historically $50-$80 per SREC (1 SREC = 1 MWh)",
+      "eligible_items": "Solar PV systems generating electricity in Maryland",
+      "details": "Maryland's Renewable Portfolio Standard requires utilities to procure SRECs from in-state solar generation. Residential solar owners can sell SRECs on the open market or through aggregators for additional income.",
+      "url": "https://energy.maryland.gov/residential/Pages/incentives/solarenergygranttaxcredit.aspx"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "EmPOWER Maryland Residential Programs",
+      "administrator": "Maryland utilities (BGE, Pepco, Delmarva, SMECO, PE) under PSC oversight",
+      "amount": "Varies by utility and measure: $100-$3,000+",
+      "eligible_items": "HVAC systems, heat pumps, insulation, air sealing, smart thermostats, appliances, lighting, home energy audits",
+      "details": "EmPOWER Maryland is the state's flagship energy efficiency program, requiring utilities to achieve specific energy savings targets. Each utility administers its own suite of rebates. Programs include Quick Home Energy Check-ups and more comprehensive offerings.",
+      "url": "https://energy.maryland.gov/Pages/Incentives/empower.aspx"
+    },
+    {
+      "name": "Maryland Weatherization Assistance Program",
+      "administrator": "Maryland Department of Housing and Community Development",
+      "amount": "Average of $8,000+ per home",
+      "eligible_items": "Insulation, air sealing, HVAC repair and replacement, health and safety improvements",
+      "details": "Available to households at or below 200% of the federal poverty level. Administered through local community action agencies.",
+      "url": "https://dhcd.maryland.gov/Residents/Pages/wap/default.aspx"
+    },
+    {
+      "name": "Maryland HEAT Loan Program",
+      "administrator": "Maryland Energy Administration with Maryland Clean Energy Center",
+      "amount": "Low-interest loans (below market rate) up to $20,000 for energy efficiency improvements",
+      "eligible_items": "HVAC systems, insulation, windows, doors, heat pumps, solar thermal, geothermal",
+      "details": "Interest rates significantly below market rates with terms up to 10 years. Available through participating credit unions and banks.",
+      "url": "https://energy.maryland.gov/residential/Pages/incentives/MEHeatLoan.aspx"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Baltimore Gas and Electric (BGE)",
+      "programs": [
+        {
+          "name": "BGE Smart Energy Savers Program",
+          "amount": "$75-$3,000 depending on measure",
+          "eligible_items": "HVAC upgrades, heat pumps, smart thermostats, insulation, air sealing, ENERGY STAR appliances, LED lighting",
+          "url": "https://bgesmartenergy.com/residential"
+        },
+        {
+          "name": "BGE Quick Home Energy Check-Up",
+          "amount": "Free home energy assessment with instant savings measures installed at no cost",
+          "eligible_items": "LED bulbs, smart power strips, faucet aerators, pipe insulation, door sweeps",
+          "url": "https://bgesmartenergy.com/residential/quick-home-energy-check"
+        }
+      ]
+    },
+    {
+      "name": "Pepco",
+      "programs": [
+        {
+          "name": "Pepco Energy Savings Program",
+          "amount": "$50-$2,500 depending on measure",
+          "eligible_items": "HVAC systems, heat pumps, smart thermostats, insulation, air sealing, appliances",
+          "url": "https://www.pepco.com/WaysToSave/ForYourHome/Pages/default.aspx"
+        },
+        {
+          "name": "Pepco Home Energy Assessment",
+          "amount": "Free or low-cost assessment with instant savings measures",
+          "eligible_items": "Comprehensive energy audit, LED lighting, smart power strips, weatherization products",
+          "url": "https://www.pepco.com/WaysToSave/ForYourHome/Pages/HomePerformance.aspx"
+        }
+      ]
+    },
+    {
+      "name": "Delmarva Power",
+      "programs": [
+        {
+          "name": "Delmarva Power Energy Efficiency Rebates",
+          "amount": "$50-$2,000 depending on measure",
+          "eligible_items": "HVAC upgrades, heat pumps, insulation, air sealing, smart thermostats, water heaters",
+          "url": "https://www.delmarva.com/WaysToSave/ForYourHome/Pages/default.aspx"
+        }
+      ]
+    }
+  ]
+}

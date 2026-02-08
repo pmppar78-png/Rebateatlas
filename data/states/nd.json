@@ -1,0 +1,73 @@
+{
+  "state_code": "ND",
+  "state_name": "North Dakota",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "North Dakota has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The North Dakota Department of Mineral Resources / Division of Community Services is the designated state entity coordinating with the U.S. Department of Energy.",
+  "state_energy_office": "North Dakota Division of Community Services",
+  "state_energy_office_url": "https://www.communityservices.nd.gov/energy/",
+  "income_thresholds": {
+    "low_income_80_ami": "For North Dakota, 80% of Area Median Income varies by county. In Cass County (Fargo), 80% AMI for a family of four is approximately $68,100. In Burleigh County (Bismarck), it is approximately $65,700.",
+    "moderate_income_150_ami": "For North Dakota, 150% of Area Median Income varies by county. In Cass County (Fargo), 150% AMI for a family of four is approximately $127,700. In Burleigh County (Bismarck), it is approximately $123,200."
+  },
+  "net_metering": "North Dakota has a net metering law that applies to investor-owned utilities for systems up to 100 kW. Customers receive credit at the retail rate for excess generation. However, implementation varies by utility.",
+  "state_tax_credits": [
+    {
+      "name": "North Dakota Geothermal, Solar, and Wind Tax Credit",
+      "amount": "Residential installation credit has expired. Previously offered credits for renewable installations; no active state tax credit program for residential solar or wind as of current date.",
+      "eligible_items": "Previously covered geothermal, solar, and wind installations",
+      "details": "North Dakota's renewable energy tax credits for residential installations have largely expired. Check with the North Dakota Tax Department for any updated programs.",
+      "url": "https://www.tax.nd.gov/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "North Dakota Division of Community Services",
+      "amount": "Average expenditure of approximately $7,000 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies across North Dakota.",
+      "url": "https://www.communityservices.nd.gov/energy/weatherization/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Xcel Energy (North Dakota)",
+      "programs": [
+        {
+          "name": "Xcel Energy Residential Rebates",
+          "amount": "Up to $800 for heat pumps, $400 for insulation, $75 for smart thermostats",
+          "eligible_items": "High-efficiency furnaces, central air conditioners, heat pumps, insulation, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.xcelenergy.com/programs_and_rebates/residential_programs_and_rebates"
+        },
+        {
+          "name": "Home Energy Audit",
+          "amount": "$50-$100 for in-home energy assessment (reduced cost)",
+          "eligible_items": "Comprehensive home energy assessment with recommendations",
+          "url": "https://www.xcelenergy.com/programs_and_rebates/residential_programs_and_rebates"
+        }
+      ]
+    },
+    {
+      "name": "Montana-Dakota Utilities (MDU)",
+      "programs": [
+        {
+          "name": "MDU Residential Energy Efficiency Rebates",
+          "amount": "Up to $500 for high-efficiency furnaces, $200 for water heaters, $50 for smart thermostats",
+          "eligible_items": "High-efficiency natural gas furnaces, water heaters, smart thermostats, insulation",
+          "url": "https://www.montana-dakota.com/save-energy-money"
+        }
+      ]
+    },
+    {
+      "name": "Cass County Electric Cooperative",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Varies by measure",
+          "eligible_items": "High-efficiency HVAC systems, heat pumps, insulation, LED lighting",
+          "url": "https://www.casscountyelectric.com/"
+        }
+      ]
+    }
+  ]
+}

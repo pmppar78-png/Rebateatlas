@@ -1,0 +1,95 @@
+{
+  "state_code": "DE",
+  "state_name": "Delaware",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Delaware has not yet launched its HOMES or HEAR rebate programs. The Delaware Division of Climate, Coastal and Energy within the Department of Natural Resources and Environmental Control (DNREC) is the designated administrator working with the U.S. Department of Energy on program implementation.",
+  "state_energy_office": "Delaware Division of Climate, Coastal and Energy (DNREC)",
+  "state_energy_office_url": "https://dnrec.delaware.gov/climate-coastal-energy/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Delaware, 80% of Area Median Income varies by county. In New Castle County (Wilmington metro), 80% AMI for a family of four is approximately $68,650.",
+    "moderate_income_150_ami": "For Delaware, 150% of Area Median Income in New Castle County for a family of four is approximately $128,700."
+  },
+  "net_metering": "Delaware has net metering under Delaware Code Title 26, Section 1014. Residential systems up to 25 kW qualify. Customers receive credits at the full retail rate. Excess credits roll forward monthly for up to 12 months. The state also has a renewable portfolio standard requiring 40% renewable energy by 2035, including a solar carve-out.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Energize Delaware - Green Energy Program Rebates",
+      "administrator": "Delaware Sustainable Energy Utility (DESEU) / Energize Delaware",
+      "amount": "Up to $3,000 for heat pumps; up to $500 for heat pump water heaters; up to $300 for smart thermostats and other measures",
+      "eligible_items": "Air source heat pumps, heat pump water heaters, smart thermostats, insulation, air sealing, duct sealing, ENERGY STAR appliances",
+      "details": "Energize Delaware is the state's comprehensive energy efficiency and renewable energy program, administered by the Delaware Sustainable Energy Utility. Rebate amounts and availability vary by technology and may change.",
+      "url": "https://www.energizedelaware.org/"
+    },
+    {
+      "name": "Energize Delaware - Home Performance with ENERGY STAR",
+      "administrator": "Delaware Sustainable Energy Utility (DESEU)",
+      "amount": "Up to $4,000 for comprehensive home energy improvements",
+      "eligible_items": "Comprehensive package of insulation, air sealing, HVAC upgrades, duct sealing, and other measures identified through a home energy audit",
+      "details": "Requires a certified home energy audit. Rebate amount depends on projected energy savings. Must use a participating BPI-certified contractor.",
+      "url": "https://www.energizedelaware.org/"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Delaware Division of Climate, Coastal and Energy",
+      "amount": "Free comprehensive weatherization for qualifying households",
+      "eligible_items": "Insulation, air sealing, HVAC repair/replacement, duct sealing, water heater measures",
+      "details": "For income-qualifying households at or below 200% of federal poverty level.",
+      "url": "https://dnrec.delaware.gov/climate-coastal-energy/"
+    },
+    {
+      "name": "Delaware Green Energy Fund Solar Rebate",
+      "administrator": "Energize Delaware",
+      "amount": "Historically $0.30-$0.70/watt; program terms may change. Check current availability.",
+      "eligible_items": "Residential solar PV systems",
+      "details": "Delaware has offered rebates for residential solar installations through the Green Energy Fund. Program availability and funding levels are subject to change.",
+      "url": "https://www.energizedelaware.org/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Delmarva Power (Exelon)",
+      "programs": [
+        {
+          "name": "Home Performance Rebates",
+          "amount": "Varies; up to $2,000 for qualifying efficiency improvements",
+          "eligible_items": "HVAC upgrades, insulation, air sealing, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.delmarva.com/SmartEnergy/residential"
+        },
+        {
+          "name": "Quick Home Energy Check-Up",
+          "amount": "Free or low-cost home energy assessment",
+          "eligible_items": "Energy assessment including free LED lighting and water-saving measures",
+          "url": "https://www.delmarva.com/SmartEnergy/residential"
+        },
+        {
+          "name": "Appliance Rebates",
+          "amount": "Varies by appliance; $50-$300",
+          "eligible_items": "ENERGY STAR certified appliances including clothes washers, heat pump water heaters, smart thermostats",
+          "url": "https://www.delmarva.com/SmartEnergy/residential"
+        }
+      ]
+    },
+    {
+      "name": "Delaware Electric Cooperative (DEC)",
+      "programs": [
+        {
+          "name": "Energy Efficiency Rebates",
+          "amount": "Varies by measure",
+          "eligible_items": "Heat pumps, heat pump water heaters, LED lighting, smart thermostats",
+          "url": "https://www.delaware.coop/"
+        }
+      ]
+    },
+    {
+      "name": "Delaware Municipal Electric Corporation (DEMEC)",
+      "programs": [
+        {
+          "name": "Residential Efficiency Programs",
+          "amount": "Varies by member utility",
+          "eligible_items": "Energy-efficient appliances, lighting, HVAC equipment (availability varies by member municipality)",
+          "url": "https://www.demecinc.net/"
+        }
+      ]
+    }
+  ]
+}

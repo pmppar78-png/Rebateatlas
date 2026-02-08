@@ -1,0 +1,109 @@
+{
+  "state_code": "CT",
+  "state_name": "Connecticut",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Connecticut has launched its HOMES and HEAR rebate programs. The Connecticut Department of Energy and Environmental Protection (DEEP) administers the programs, leveraging the existing Energize CT infrastructure and the Connecticut Green Bank.",
+  "state_energy_office": "Connecticut Department of Energy and Environmental Protection (DEEP)",
+  "state_energy_office_url": "https://portal.ct.gov/deep",
+  "income_thresholds": {
+    "low_income_80_ami": "For Connecticut, 80% of Area Median Income varies by county. In Hartford County, 80% AMI for a family of four is approximately $72,800. Fairfield County (near NYC) has higher thresholds.",
+    "moderate_income_150_ami": "For Connecticut, 150% of Area Median Income in Hartford County for a family of four is approximately $136,500."
+  },
+  "net_metering": "Connecticut has net metering for residential systems up to 25 kW. Under Public Act 18-50, the state transitioned to a tariff-based structure. Residential customers receive a net metering credit at the retail rate for projects up to 25 kW. The program has a statewide cap that is periodically reviewed and adjusted by the Public Utilities Regulatory Authority (PURA).",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Energize CT Home Energy Solutions",
+      "administrator": "Eversource and United Illuminating (UI), through Energize CT",
+      "amount": "Subsidized home energy audit for $50 (or free for income-qualifying households); includes free LED bulbs, water-saving devices, and air sealing",
+      "eligible_items": "Home energy assessment, air sealing, duct sealing, LED lighting, pipe insulation, smart power strips, programmable thermostats",
+      "details": "This is the core residential energy efficiency program in Connecticut. The audit identifies opportunities for deeper retrofits with additional rebates. Income-qualifying households (up to 60% of state median income) receive the assessment and measures at no cost.",
+      "url": "https://energizect.com/your-home/solutions-list/home-energy-solutions"
+    },
+    {
+      "name": "Energize CT Heating and Cooling Rebates",
+      "administrator": "Eversource and United Illuminating (UI), through Energize CT",
+      "amount": "Up to $15,000 for ground source heat pumps; up to $3,000 for air source heat pumps; up to $750 for heat pump water heaters",
+      "eligible_items": "Air source heat pumps, ductless mini-splits, ground source heat pumps, heat pump water heaters, high-efficiency boilers and furnaces",
+      "details": "Connecticut has been aggressively promoting heat pump adoption. Rebate amounts vary by system type and efficiency. Additional incentives may be available for income-qualifying households.",
+      "url": "https://energizect.com/your-home/solutions-list/heat-pumps"
+    },
+    {
+      "name": "Connecticut Green Bank Residential Programs",
+      "administrator": "Connecticut Green Bank",
+      "amount": "Low-interest financing; Smart-E Loan rates starting at approximately 4.49%-6.99% APR",
+      "eligible_items": "Solar PV, battery storage, heat pumps, insulation, windows, energy efficiency improvements, electric vehicle chargers",
+      "details": "The Connecticut Green Bank (the nation's first state green bank) offers low-interest financing products for residential clean energy. The Smart-E Loan program is available through participating local lenders.",
+      "url": "https://www.ctgreenbank.com/"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Connecticut Department of Social Services, through community action agencies",
+      "amount": "Free comprehensive weatherization for qualifying households",
+      "eligible_items": "Insulation, air sealing, HVAC repair/replacement, windows, health and safety measures",
+      "details": "For income-qualifying households at or below 200% of federal poverty level.",
+      "url": "https://portal.ct.gov/deep"
+    },
+    {
+      "name": "Residential Solar Investment Program (RSIP) - Legacy",
+      "administrator": "Connecticut Green Bank",
+      "amount": "Program fully subscribed; replaced by Residential Solar Energy Credits (RSEC)",
+      "eligible_items": "Solar PV systems for residential properties",
+      "details": "The original RSIP program is fully subscribed. Connecticut now uses a tariff-based incentive (RSEC) for new residential solar installations, administered through PURA.",
+      "url": "https://www.ctgreenbank.com/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Eversource Energy",
+      "programs": [
+        {
+          "name": "Home Energy Solutions",
+          "amount": "$50 comprehensive home energy assessment (free for income-qualified)",
+          "eligible_items": "Air sealing, duct sealing, LED lighting, water-saving devices, insulation assessment",
+          "url": "https://www.eversource.com/content/ct-c/residential/save-money-energy"
+        },
+        {
+          "name": "Heating and Cooling Equipment Rebates",
+          "amount": "Up to $3,000 for heat pumps; up to $500 for furnaces/boilers",
+          "eligible_items": "Air source heat pumps, ductless mini-splits, heat pump water heaters, high-efficiency furnaces, boilers",
+          "url": "https://www.eversource.com/content/ct-c/residential/save-money-energy"
+        },
+        {
+          "name": "Residential Insulation Rebates",
+          "amount": "Up to 75% of insulation cost (after Home Energy Solutions assessment)",
+          "eligible_items": "Attic insulation, wall insulation, rim joist insulation, basement insulation",
+          "url": "https://www.eversource.com/content/ct-c/residential/save-money-energy"
+        }
+      ]
+    },
+    {
+      "name": "United Illuminating (UI) / Avangrid",
+      "programs": [
+        {
+          "name": "Home Energy Solutions",
+          "amount": "$50 comprehensive home energy assessment (free for income-qualified)",
+          "eligible_items": "Air sealing, duct sealing, LED lighting, water-saving devices, insulation assessment",
+          "url": "https://www.uinet.com/wps/portal/uinet/saveenergy/residential"
+        },
+        {
+          "name": "Heating and Cooling Rebates",
+          "amount": "Up to $3,000 for qualifying heat pumps",
+          "eligible_items": "Air source heat pumps, ductless mini-splits, heat pump water heaters, high-efficiency boilers",
+          "url": "https://www.uinet.com/wps/portal/uinet/saveenergy/residential"
+        }
+      ]
+    },
+    {
+      "name": "Southern Connecticut Gas / Connecticut Natural Gas (Eversource subsidiaries)",
+      "programs": [
+        {
+          "name": "Gas Equipment Rebates",
+          "amount": "Up to $500 for qualifying furnaces/boilers; up to $300 for water heaters",
+          "eligible_items": "High-efficiency natural gas furnaces, boilers, and water heaters",
+          "url": "https://www.eversource.com/content/ct-c/residential/save-money-energy"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "state_code": "TX",
+  "state_name": "Texas",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Texas has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Texas State Energy Conservation Office (SECO) within the Texas Comptroller's office is the designated state entity coordinating with the U.S. Department of Energy on program planning.",
+  "state_energy_office": "State Energy Conservation Office (SECO) - Texas Comptroller of Public Accounts",
+  "state_energy_office_url": "https://comptroller.texas.gov/programs/seco/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Texas, 80% of Area Median Income varies significantly by county. In Harris County (Houston), 80% AMI for a family of four is approximately $66,250. In Travis County (Austin), it is approximately $72,750. In Dallas County, it is approximately $67,500.",
+    "moderate_income_150_ami": "For Texas, 150% of Area Median Income varies significantly by county. In Harris County (Houston), 150% AMI for a family of four is approximately $124,200. In Travis County (Austin), it is approximately $136,400. In Dallas County, it is approximately $126,550."
+  },
+  "net_metering": "Texas does not have a statewide net metering policy. However, some utilities and retail electric providers offer buyback programs for excess solar generation. In the deregulated ERCOT market, customers can shop for plans that offer solar buyback at varying rates. Municipal utilities like Austin Energy and CPS Energy have their own value-of-solar programs.",
+  "state_tax_credits": [
+    {
+      "name": "Texas Property Tax Exemption for Solar and Wind",
+      "amount": "100% property tax exemption for the appraised value added by solar or wind energy devices installed on residential property",
+      "eligible_items": "Solar photovoltaic systems, solar thermal systems, wind energy devices",
+      "details": "Texas Tax Code Section 11.27 provides that the appraised value of a property may not be increased based on the installation of a solar or wind-powered energy device.",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Texas Department of Housing and Community Affairs (TDHCA)",
+      "amount": "Average expenditure of approximately $7,000 per home",
+      "eligible_items": "Insulation, air sealing, heating/cooling system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies and subrecipients across Texas.",
+      "url": "https://www.tdhca.state.tx.us/community-affairs/wap/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Oncor Electric Delivery",
+      "programs": [
+        {
+          "name": "Oncor Take A Load Off Texas Residential Program",
+          "amount": "Varies by measure; up to $500 for HVAC, $250 for insulation",
+          "eligible_items": "High-efficiency HVAC systems, insulation, duct sealing, smart thermostats",
+          "url": "https://www.takealoadofftexas.com/"
+        },
+        {
+          "name": "Oncor Home Energy Efficiency",
+          "amount": "Free home energy audit and direct-install measures",
+          "eligible_items": "Home energy assessment with LED bulbs, advanced power strips, and efficiency recommendations",
+          "url": "https://www.takealoadofftexas.com/"
+        }
+      ]
+    },
+    {
+      "name": "CenterPoint Energy (Houston)",
+      "programs": [
+        {
+          "name": "CenterPoint Hard-to-Reach and Standard Offer Programs",
+          "amount": "Up to $500 for HVAC, $300 for insulation, free weatherization for income-qualifying",
+          "eligible_items": "High-efficiency HVAC, insulation, duct sealing, smart thermostats; enhanced measures for income-qualifying customers",
+          "url": "https://www.centerpointenergy.com/en-us/residential/save-energy-money"
+        }
+      ]
+    },
+    {
+      "name": "Austin Energy",
+      "programs": [
+        {
+          "name": "Austin Energy Power Saver Rebates",
+          "amount": "Up to $1,300 for heat pumps, $600 for insulation, $300 for heat pump water heaters",
+          "eligible_items": "Heat pumps, central air conditioners, insulation, air sealing, duct sealing, heat pump water heaters, solar",
+          "url": "https://savings.austinenergy.com/rebates/residential/"
+        },
+        {
+          "name": "Austin Energy Solar Rebate",
+          "amount": "Per-watt rebate varying by income level; up to $2,500 for standard, higher for income-qualifying",
+          "eligible_items": "Residential rooftop solar photovoltaic systems",
+          "url": "https://savings.austinenergy.com/rebates/residential/offerings/solar/solar-photovoltaics-res/"
+        },
+        {
+          "name": "Austin Energy Value of Solar Tariff",
+          "amount": "Credit at a value-of-solar rate for excess generation (approximately $0.097/kWh, varies annually)",
+          "eligible_items": "Residential solar PV systems connected to the Austin Energy grid",
+          "url": "https://savings.austinenergy.com/rebates/residential/offerings/solar/solar-photovoltaics-res/"
+        }
+      ]
+    }
+  ]
+}

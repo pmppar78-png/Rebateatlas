@@ -233,6 +233,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (activeZip) {
           payload.zip = activeZip;
         }
+        if (stateCode) {
+          payload.state = stateCode.toUpperCase();
+        }
 
         const res = await fetch('/.netlify/functions/ai-chat', {
           method: 'POST',

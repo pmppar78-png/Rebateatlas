@@ -1,0 +1,87 @@
+{
+  "state_code": "WI",
+  "state_name": "Wisconsin",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Wisconsin has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. The Wisconsin Office of Sustainability and Clean Energy (OSCE), in coordination with Focus on Energy, is administering the programs to provide rebates for whole-home energy efficiency and high-efficiency electric equipment.",
+  "state_energy_office": "Wisconsin Office of Sustainability and Clean Energy (OSCE)",
+  "state_energy_office_url": "https://osce.wi.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Wisconsin, 80% of Area Median Income varies by county. In Milwaukee County, 80% AMI for a family of four is approximately $60,600. In Dane County (Madison), it is approximately $72,650.",
+    "moderate_income_150_ami": "For Wisconsin, 150% of Area Median Income varies by county. In Milwaukee County, 150% AMI for a family of four is approximately $113,600. In Dane County (Madison), it is approximately $136,200."
+  },
+  "net_metering": "Wisconsin has net metering rules for systems up to 20 kW for residential customers. Customers receive credit at the retail rate for excess generation. Credits carry forward monthly. However, specific buyback rates and policies vary by utility and are set by the Public Service Commission of Wisconsin.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Focus on Energy Residential Programs",
+      "administrator": "Focus on Energy (Wisconsin's statewide energy efficiency program)",
+      "amount": "Up to $1,200 for heat pumps, $500 for insulation, $200 for smart thermostats, $750 for heat pump water heaters, $500 for ENERGY STAR appliances",
+      "eligible_items": "Heat pumps (ductless and ducted), insulation, air sealing, smart thermostats, heat pump water heaters, ENERGY STAR appliances, furnaces, boilers",
+      "details": "Focus on Energy is Wisconsin's statewide energy efficiency and renewable resource program funded by participating utilities. It offers cash-back rewards, free home energy assessments, and technical assistance for residential customers.",
+      "url": "https://focusonenergy.com/residential"
+    },
+    {
+      "name": "Focus on Energy Renewable Energy Programs",
+      "administrator": "Focus on Energy",
+      "amount": "Per-watt incentives for solar PV; varies by year and budget availability",
+      "eligible_items": "Residential solar photovoltaic systems, solar thermal, small wind, and biogas systems",
+      "details": "Focus on Energy provides cash-back rewards for the installation of qualifying renewable energy systems.",
+      "url": "https://focusonenergy.com/residential/renewable-energy"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Wisconsin Department of Administration - Division of Energy, Housing and Community Resources",
+      "amount": "Average expenditure of approximately $7,500 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors, health and safety improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through local weatherization agencies and community action agencies.",
+      "url": "https://doa.wi.gov/Pages/LocalGovtsGrants/Weatherization-for-Renters-and-Homeowners.aspx"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "WE Energies (Wisconsin Electric / Wisconsin Gas)",
+      "programs": [
+        {
+          "name": "Focus on Energy Rebates (WE Energies territory)",
+          "amount": "Up to $1,200 for heat pumps, $500 for insulation, $200 for smart thermostats",
+          "eligible_items": "Heat pumps, insulation, air sealing, smart thermostats, heat pump water heaters, ENERGY STAR appliances",
+          "url": "https://focusonenergy.com/residential"
+        },
+        {
+          "name": "WE Energies Income-Qualified Programs",
+          "amount": "Free energy efficiency improvements for income-qualifying customers",
+          "eligible_items": "Insulation, air sealing, lighting, appliance replacement for income-qualifying households",
+          "url": "https://www.we-energies.com/home/save-energy/"
+        }
+      ]
+    },
+    {
+      "name": "Alliant Energy (Wisconsin Power and Light)",
+      "programs": [
+        {
+          "name": "Focus on Energy Rebates (Alliant territory)",
+          "amount": "Up to $1,200 for heat pumps, $500 for insulation, $200 for smart thermostats",
+          "eligible_items": "Heat pumps, insulation, air sealing, smart thermostats, heat pump water heaters, ENERGY STAR appliances",
+          "url": "https://focusonenergy.com/residential"
+        }
+      ]
+    },
+    {
+      "name": "Madison Gas and Electric (MGE)",
+      "programs": [
+        {
+          "name": "Focus on Energy Rebates (MGE territory)",
+          "amount": "Up to $1,200 for heat pumps, $500 for insulation, $200 for smart thermostats",
+          "eligible_items": "Heat pumps, insulation, air sealing, smart thermostats, heat pump water heaters",
+          "url": "https://focusonenergy.com/residential"
+        },
+        {
+          "name": "MGE Shared Solar Program",
+          "amount": "Monthly bill credit based on solar production share",
+          "eligible_items": "Subscription to community solar garden for customers who cannot install rooftop solar",
+          "url": "https://www.mge.com/our-environment/green-power/shared-solar"
+        }
+      ]
+    }
+  ]
+}

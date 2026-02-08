@@ -1,0 +1,134 @@
+{
+  "state_code": "CA",
+  "state_name": "California",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "California has launched its HOMES and HEAR rebate programs. The California Energy Commission (CEC) administers the programs, branded in part through existing infrastructure. California was among the first states to begin accepting applications, leveraging its existing energy efficiency program ecosystem.",
+  "state_energy_office": "California Energy Commission (CEC)",
+  "state_energy_office_url": "https://www.energy.ca.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For California, 80% of Area Median Income varies significantly by county due to high cost of living. In Los Angeles County, 80% AMI for a family of four is approximately $76,100. In the San Francisco Bay Area, it can exceed $100,000.",
+    "moderate_income_150_ami": "For California, 150% of Area Median Income in Los Angeles County for a family of four is approximately $142,700. In the San Francisco Bay Area, 150% AMI can exceed $190,000."
+  },
+  "net_metering": "California transitioned from NEM 2.0 to Net Billing (NEM 3.0) in April 2023. Under NEM 3.0, export compensation rates are based on the avoided cost calculator and vary by time of day, significantly reducing the value of exported solar energy compared to NEM 2.0. This change strongly incentivizes battery storage paired with solar. Existing NEM 1.0 and 2.0 customers are grandfathered for 20 years from their interconnection date.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "TECH Clean California",
+      "administrator": "California Energy Commission (CEC), administered by Energy Solutions",
+      "amount": "Up to $3,000 for heat pump HVAC systems; up to $4,885 for heat pump water heaters (income-qualified)",
+      "eligible_items": "Heat pump space heaters, heat pump water heaters, heat pump clothes dryers. Higher incentives available in disadvantaged communities and for low-income households.",
+      "details": "TECH Clean California is a statewide program to accelerate the adoption of clean heating technologies. Incentives vary by technology, income level, and community designation.",
+      "url": "https://techcleanca.com/"
+    },
+    {
+      "name": "Self-Generation Incentive Program (SGIP)",
+      "administrator": "California Public Utilities Commission (CPUC), administered by investor-owned utilities",
+      "amount": "Varies; residential battery storage incentive is approximately $150-$1,000/kWh depending on equity category",
+      "eligible_items": "Battery energy storage systems, fuel cells, and other distributed energy resources",
+      "details": "SGIP provides incentives for energy storage, particularly for customers in fire-threat areas (Equity Resiliency Budget) and low-income customers. The program has been extended and modified multiple times.",
+      "url": "https://www.selfgenca.com/"
+    },
+    {
+      "name": "Energy Savings Assistance (ESA) Program",
+      "administrator": "California Public Utilities Commission, implemented by PG&E, SCE, SDG&E, and SoCalGas",
+      "amount": "Free energy efficiency upgrades for qualifying households",
+      "eligible_items": "Weatherization (insulation, weatherstripping), lighting, refrigerators, HVAC maintenance, smart thermostats, and other energy-saving measures",
+      "details": "Available to income-qualifying customers at or below 200% of federal poverty level. No cost to the customer for qualifying measures.",
+      "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/energy-savings-assistance"
+    },
+    {
+      "name": "CaliforniaFIRST / PACE Programs",
+      "administrator": "Various PACE administrators (Ygrene, Renew Financial)",
+      "amount": "Financing for 100% of project cost; no upfront payment required",
+      "eligible_items": "Solar panels, battery storage, energy-efficient HVAC, windows, insulation, cool roofs, water efficiency measures",
+      "details": "Property Assessed Clean Energy (PACE) financing repaid through property tax assessments. Note: PACE programs have faced regulatory scrutiny and restrictions. Check current availability.",
+      "url": "https://www.energy.ca.gov/"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "California Department of Community Services and Development",
+      "amount": "Average of approximately $7,000-$10,000 per home",
+      "eligible_items": "Insulation, air sealing, HVAC repair/replacement, water heater replacement, weatherstripping",
+      "details": "Federally funded program for income-qualifying households. California supplements federal funding with state resources.",
+      "url": "https://www.csd.ca.gov/Pages/Weatherization-Assistance-Program.aspx"
+    },
+    {
+      "name": "Low-Income Weatherization Program (LIWP)",
+      "administrator": "California Department of Community Services and Development",
+      "amount": "Free solar PV and energy efficiency upgrades for qualifying households",
+      "eligible_items": "Solar PV installation, energy efficiency measures, and in some cases energy storage for low-income households",
+      "details": "Funded by California Climate Investments (cap-and-trade auction proceeds). Serves low-income households, farmworkers, and residents of disadvantaged communities.",
+      "url": "https://www.csd.ca.gov/Pages/Low-Income-Weatherization-Program.aspx"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Pacific Gas & Electric (PG&E)",
+      "programs": [
+        {
+          "name": "Energy Efficiency Rebates",
+          "amount": "Varies; up to $3,200 for qualifying heat pump HVAC systems through TECH Clean California",
+          "eligible_items": "Heat pump HVAC, heat pump water heaters, smart thermostats, insulation, pool pumps",
+          "url": "https://www.pge.com/en/save-energy-and-money/energy-saving-programs.html"
+        },
+        {
+          "name": "Home Energy Checkup",
+          "amount": "Free online and in-home options",
+          "eligible_items": "Energy assessment identifying savings opportunities",
+          "url": "https://www.pge.com/en/save-energy-and-money/energy-saving-programs.html"
+        },
+        {
+          "name": "SGIP Battery Storage",
+          "amount": "$150-$1,000/kWh depending on customer category",
+          "eligible_items": "Battery energy storage systems (e.g., Tesla Powerwall, Enphase, LG)",
+          "url": "https://www.selfgenca.com/"
+        }
+      ]
+    },
+    {
+      "name": "Southern California Edison (SCE)",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Varies by measure; TECH Clean California incentives available",
+          "eligible_items": "Heat pump HVAC, heat pump water heaters, smart thermostats, pool pumps, whole-house fans",
+          "url": "https://www.sce.com/residential/rebates-savings"
+        },
+        {
+          "name": "Clean Fuel Reward (EV Charger)",
+          "amount": "Up to $1,000 off purchase of qualifying EV or Level 2 charger rebate",
+          "eligible_items": "Electric vehicle charger installation and related electrical panel upgrades",
+          "url": "https://www.sce.com/residential/electric-vehicles"
+        }
+      ]
+    },
+    {
+      "name": "San Diego Gas & Electric (SDG&E)",
+      "programs": [
+        {
+          "name": "Energy Efficiency Rebates",
+          "amount": "Varies; aligned with TECH Clean California incentive levels",
+          "eligible_items": "Heat pump HVAC, heat pump water heaters, smart thermostats, weatherization measures",
+          "url": "https://www.sdge.com/residential/savings-center"
+        },
+        {
+          "name": "Power Your Drive (EV Charging)",
+          "amount": "Reduced installation costs for EV charging in multi-family housing",
+          "eligible_items": "EV charging infrastructure for multi-family residential properties",
+          "url": "https://www.sdge.com/residential/electric-vehicles"
+        }
+      ]
+    },
+    {
+      "name": "Southern California Gas Company (SoCalGas)",
+      "programs": [
+        {
+          "name": "Residential Rebates",
+          "amount": "Varies; up to $1,000 for qualifying equipment",
+          "eligible_items": "High-efficiency furnaces, tankless water heaters, smart thermostats, clothes washers",
+          "url": "https://www.socalgas.com/save-money-and-energy/rebates"
+        }
+      ]
+    }
+  ]
+}

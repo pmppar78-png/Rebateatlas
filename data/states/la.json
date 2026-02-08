@@ -1,0 +1,81 @@
+{
+  "state_code": "LA",
+  "state_name": "Louisiana",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Louisiana's HOMES and HEAR programs are pending launch. The Louisiana Department of Natural Resources is developing program guidelines and implementation plans using approximately $63 million in IRA funding allocated to the state.",
+  "state_energy_office": "Louisiana Department of Natural Resources - Technology Assessment Division",
+  "state_energy_office_url": "https://www.dnr.louisiana.gov/index.cfm/page/889",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in New Orleans, 80% AMI is approximately $55,900. Low-income households will qualify for the highest rebate levels under HOMES when the program launches.",
+    "moderate_income_150_ami": "For a family of four in New Orleans, 150% AMI is approximately $104,850. Moderate-income households will qualify for partial rebates under HOMES when the program launches."
+  },
+  "net_metering": "Louisiana requires investor-owned utilities to offer net metering for solar systems up to 300 kW. Under Act 147 (2019), the Louisiana Public Service Commission established new rules where net metering customers receive credits at a rate that may be lower than full retail, based on avoided cost methodology plus additional value factors. Grandfathered customers retain previous rates.",
+  "state_tax_credits": [
+    {
+      "name": "Louisiana Solar Energy System Tax Credit",
+      "amount": "50% of the first $25,000 of installed cost (up to $12,500 credit) for systems installed through 2025. Note: this credit has been modified and reduced in recent years; check current status.",
+      "eligible_items": "Solar PV systems, solar thermal systems installed on residential properties in Louisiana",
+      "details": "Louisiana's solar tax credit has been one of the most generous in the nation. The credit is refundable and can be claimed in the year the system is placed in service. The program has undergone legislative changes, with the credit amount being gradually reduced. Verify current availability and rates with the Louisiana Department of Revenue.",
+      "url": "https://www.revenue.louisiana.gov/IndividualIncomeTax/SolarEnergySystemsCredit"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Louisiana Weatherization Assistance Program",
+      "administrator": "Louisiana Housing Corporation",
+      "amount": "Average of $7,000+ per home",
+      "eligible_items": "Insulation, air sealing, HVAC repair and replacement, duct sealing, window and door repairs",
+      "details": "Available to households at or below 200% of the federal poverty level. Administered by community action agencies across Louisiana.",
+      "url": "https://www.lhc.louisiana.gov/weatherization-assistance-program/"
+    },
+    {
+      "name": "Louisiana Home Energy Loan Program (HELP)",
+      "administrator": "Louisiana Department of Natural Resources",
+      "amount": "Low-interest loans up to $20,000 for energy efficiency improvements",
+      "eligible_items": "Insulation, HVAC upgrades, windows, doors, solar systems, and other energy efficiency improvements",
+      "details": "Provides low-interest financing for residential energy efficiency improvements. Must get a home energy audit prior to receiving the loan.",
+      "url": "https://www.dnr.louisiana.gov/index.cfm/page/890"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Entergy Louisiana",
+      "programs": [
+        {
+          "name": "Entergy Solutions Residential Program",
+          "amount": "$25-$1,000 depending on measure",
+          "eligible_items": "Smart thermostats, HVAC tune-ups, duct sealing, insulation, LED lighting, ENERGY STAR appliances",
+          "url": "https://www.entergy.com/residential/energy-efficiency/"
+        },
+        {
+          "name": "Entergy Louisiana Income-Qualified Weatherization",
+          "amount": "Free weatherization for qualifying customers",
+          "eligible_items": "Air sealing, insulation, HVAC repair, LED lighting for income-qualified households",
+          "url": "https://www.entergy.com/residential/energy-efficiency/"
+        }
+      ]
+    },
+    {
+      "name": "SWEPCO (AEP)",
+      "programs": [
+        {
+          "name": "SWEPCO Residential Energy Efficiency Rebates",
+          "amount": "$50-$600 depending on measure",
+          "eligible_items": "Heat pumps, central air conditioners, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.swepco.com/savings/"
+        }
+      ]
+    },
+    {
+      "name": "Cleco Power",
+      "programs": [
+        {
+          "name": "Cleco Energy Efficiency Programs",
+          "amount": "$25-$400 depending on measure",
+          "eligible_items": "HVAC upgrades, smart thermostats, weatherization measures, LED lighting",
+          "url": "https://www.cleco.com/save-energy"
+        }
+      ]
+    }
+  ]
+}

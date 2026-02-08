@@ -1,0 +1,73 @@
+{
+  "state_code": "PA",
+  "state_name": "Pennsylvania",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Pennsylvania has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. The Pennsylvania Department of Environmental Protection (DEP) is administering the programs, providing rebates for whole-home energy efficiency improvements and high-efficiency electric equipment.",
+  "state_energy_office": "Pennsylvania Department of Environmental Protection - Energy Programs Office",
+  "state_energy_office_url": "https://www.dep.pa.gov/Citizens/Energy/Pages/default.aspx",
+  "income_thresholds": {
+    "low_income_80_ami": "For Pennsylvania, 80% of Area Median Income varies by county. In Philadelphia County, 80% AMI for a family of four is approximately $65,400. In Allegheny County (Pittsburgh), it is approximately $64,150.",
+    "moderate_income_150_ami": "For Pennsylvania, 150% of Area Median Income varies by county. In Philadelphia County, 150% AMI for a family of four is approximately $122,650. In Allegheny County (Pittsburgh), it is approximately $120,300."
+  },
+  "net_metering": "Pennsylvania has net metering rules for systems up to 50 kW for residential customers. Customers receive credit at the full retail rate for excess generation. Credits carry forward at the price-to-compare rate and any annual excess is compensated at the price-to-compare rate.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Pennsylvania Whole Home Rebate Program (HOMES)",
+      "administrator": "Pennsylvania Department of Environmental Protection",
+      "amount": "Up to $8,000 for low-income households, up to $4,000 for moderate-income households for whole-home efficiency improvements",
+      "eligible_items": "Whole-home energy efficiency retrofits including insulation, air sealing, HVAC upgrades, windows, and doors",
+      "details": "Rebates based on modeled or measured energy savings, with higher rebates available for low and moderate-income households.",
+      "url": "https://www.dep.pa.gov/Citizens/Energy/Pages/default.aspx"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Pennsylvania Department of Community and Economic Development (DCED)",
+      "amount": "Average expenditure of approximately $7,500 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors, health and safety improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through local weatherization agencies.",
+      "url": "https://dced.pa.gov/programs/weatherization-assistance-program-wap/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "PECO (an Exelon Company)",
+      "programs": [
+        {
+          "name": "PECO Residential Energy Efficiency Rebates",
+          "amount": "Up to $500 for heat pumps, $200 for smart thermostats, $250 for insulation, $50-$150 for ENERGY STAR appliances",
+          "eligible_items": "High-efficiency HVAC systems, heat pumps, smart thermostats, insulation, ENERGY STAR appliances, LED lighting",
+          "url": "https://www.peco.com/ways-to-save/for-your-home"
+        },
+        {
+          "name": "PECO Home Energy Assessment",
+          "amount": "Free or reduced-cost home energy assessment",
+          "eligible_items": "Comprehensive home energy evaluation with energy-saving recommendations and free direct-install measures",
+          "url": "https://www.peco.com/ways-to-save/for-your-home"
+        }
+      ]
+    },
+    {
+      "name": "PPL Electric Utilities",
+      "programs": [
+        {
+          "name": "PPL Residential Rebate Programs",
+          "amount": "Up to $500 for heat pumps, $300 for insulation, $100 for smart thermostats",
+          "eligible_items": "High-efficiency HVAC, heat pumps, heat pump water heaters, smart thermostats, insulation",
+          "url": "https://www.pplelectric.com/save-energy-and-money/for-your-home.aspx"
+        }
+      ]
+    },
+    {
+      "name": "Duquesne Light",
+      "programs": [
+        {
+          "name": "Duquesne Light Watt Choices Residential Rebates",
+          "amount": "Up to $500 for HVAC, $200 for insulation, $100 for smart thermostats",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, insulation, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.duquesnelight.com/energy-money-savings/residential-savings"
+        }
+      ]
+    }
+  ]
+}

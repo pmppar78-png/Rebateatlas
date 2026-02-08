@@ -1,0 +1,79 @@
+{
+  "state_code": "UT",
+  "state_name": "Utah",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Utah has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Utah Office of Energy Development is the designated state entity coordinating with the U.S. Department of Energy on program planning and implementation.",
+  "state_energy_office": "Utah Office of Energy Development",
+  "state_energy_office_url": "https://energy.utah.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Utah, 80% of Area Median Income varies by county. In Salt Lake County, 80% AMI for a family of four is approximately $68,100. In Utah County (Provo), it is approximately $63,300.",
+    "moderate_income_150_ami": "For Utah, 150% of Area Median Income varies by county. In Salt Lake County, 150% AMI for a family of four is approximately $127,700. In Utah County (Provo), it is approximately $118,700."
+  },
+  "net_metering": "Utah transitioned from traditional net metering to a new export credit rate structure in 2020. Under the current framework, Rocky Mountain Power customers with solar systems receive credit for exported energy at a rate set by the Public Service Commission, which is typically below the full retail rate. The export credit rate is reviewed periodically.",
+  "state_tax_credits": [
+    {
+      "name": "Utah Renewable Energy Systems Tax Credit",
+      "amount": "25% of the cost of a qualifying system, up to $1,600 for residential solar and other renewable energy systems",
+      "eligible_items": "Solar photovoltaic systems, wind energy systems, geothermal systems, and other qualifying renewable energy installations on residential property",
+      "details": "Utah offers a personal income tax credit for the installation of renewable energy systems. The credit applies to the cost of the system after any federal credits.",
+      "url": "https://incometax.utah.gov/credits/renewable-energy-systems"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Utah Department of Workforce Services - Housing and Community Development Division",
+      "amount": "Average expenditure of approximately $7,000 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies across Utah.",
+      "url": "https://jobs.utah.gov/housing/scso/seal/weatherization.html"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Rocky Mountain Power (Utah)",
+      "programs": [
+        {
+          "name": "Wattsmart Residential Rebates",
+          "amount": "Up to $1,400 for heat pumps, $300 for insulation, $100 for smart thermostats, $300 for heat pump water heaters",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, insulation, smart thermostats, heat pump water heaters, ENERGY STAR windows",
+          "url": "https://www.rockymountainpower.net/savings-energy-choices/home/utah.html"
+        },
+        {
+          "name": "Home Energy Savings Program",
+          "amount": "Free home energy assessment",
+          "eligible_items": "Comprehensive home energy evaluation with recommendations and free direct-install measures",
+          "url": "https://www.rockymountainpower.net/savings-energy-choices/home/utah.html"
+        }
+      ]
+    },
+    {
+      "name": "Dominion Energy Utah (Questar Gas)",
+      "programs": [
+        {
+          "name": "ThermWise Residential Rebates",
+          "amount": "Up to $600 for high-efficiency furnaces, $300 for water heaters, $100 for smart thermostats",
+          "eligible_items": "High-efficiency natural gas furnaces, tankless water heaters, smart thermostats, insulation, duct sealing, windows",
+          "url": "https://www.dominionenergy.com/utah/save-energy/thermwise"
+        },
+        {
+          "name": "ThermWise Home Energy Plan",
+          "amount": "Free home energy assessment",
+          "eligible_items": "Home energy evaluation with personalized energy-saving recommendations",
+          "url": "https://www.dominionenergy.com/utah/save-energy/thermwise"
+        }
+      ]
+    },
+    {
+      "name": "Murray City Power",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Varies by measure",
+          "eligible_items": "High-efficiency HVAC, insulation, ENERGY STAR appliances",
+          "url": "https://www.murray.utah.gov/159/Power"
+        }
+      ]
+    }
+  ]
+}
