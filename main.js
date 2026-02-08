@@ -40,10 +40,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
   const zipCode = urlParams.get('zip');
   const homeType = urlParams.get('home');
+  const stateCode = urlParams.get('state');
 
   if (zipCode && /^\d{5}$/.test(zipCode)) {
     activeZip = zipCode;
   }
+
+  // State code to full name mapping
+  const stateNames = {
+    AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',
+    CO:'Colorado',CT:'Connecticut',DE:'Delaware',FL:'Florida',GA:'Georgia',
+    HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',
+    KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',
+    MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',
+    MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',
+    NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',
+    OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',
+    SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',
+    VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming',
+    DC:'Washington, D.C.'
+  };
 
   // Build initial context message if we have parameters
   if (zipCode) {
@@ -55,6 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     const homeTypeText = homeType && homeTypeLabels[homeType] ? homeTypeLabels[homeType] : 'a home';
     const contextMessage = `I'm looking for energy rebates. My ZIP code is ${zipCode} and I live in ${homeTypeText}. What rebates and credits might I qualify for?`;
+    input.value = contextMessage;
+    input.focus();
+    input.setSelectionRange(0, 0);
+  } else if (stateCode && stateNames[stateCode.toUpperCase()]) {
+    const stateName = stateNames[stateCode.toUpperCase()];
+    const contextMessage = `I live in ${stateName}. What energy rebates, tax credits, and incentives are available in my state?`;
     input.value = contextMessage;
     input.focus();
     input.setSelectionRange(0, 0);
