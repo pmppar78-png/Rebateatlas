@@ -815,17 +815,23 @@ a.chip-link:hover {
 }
 
 @media (max-width: 640px) {
+  /* Hamburger button — permanently hidden on mobile (Quick Links replaces it) */
   .nav-toggle {
-    display: block;
-    z-index: 10060;
+    display: none !important;
   }
 
-  /* Hide desktop nav on mobile — #mobileMenuDrawer is used instead */
+  /* Hide desktop nav on mobile */
   .site-nav {
     display: none;
   }
 
-  /* Header AI CTA — hidden on mobile, shown inside drawer instead */
+  /* Hide drawer + backdrop on mobile — replaced by Quick Links */
+  .menu-drawer,
+  .menu-backdrop {
+    display: none !important;
+  }
+
+  /* Header AI CTA — hidden on mobile */
   .site-header > .header-ai-cta {
     display: none;
   }
@@ -1224,10 +1230,46 @@ body.menu-open {
   overflow: hidden;
 }
 
-/* Hide dedicated drawer on desktop */
+/* Hide drawer on desktop (641px+) */
 @media (min-width: 641px) {
   .menu-drawer,
   .menu-backdrop {
     display: none !important;
+  }
+}
+
+/* ── Mobile Quick Links (replaces hamburger menu) ── */
+.mobile-quick-links {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .mobile-quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 16px 12px;
+    background: rgba(11, 18, 32, 0.85);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .mobile-quick-links a {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.82);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: background 120ms ease, color 120ms ease;
+  }
+
+  .mobile-quick-links a:hover,
+  .mobile-quick-links a:active {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
   }
 }
