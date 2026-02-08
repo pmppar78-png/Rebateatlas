@@ -48,10 +48,34 @@ document.addEventListener('DOMContentLoaded', () => {
     return match ? match[1] : '';
   };
 
+  const formatAIResponse = (html) => {
+    // Convert double newlines into paragraph breaks for readability
+    let formatted = html.replace(/\n{2,}/g, '</p><p>');
+    // Convert single newlines to line breaks
+    formatted = formatted.replace(/\n/g, '<br>');
+    // Wrap in paragraph if not already wrapped
+    if (!formatted.startsWith('<p>')) {
+      formatted = '<p>' + formatted + '</p>';
+    }
+    return formatted;
+  };
+
   const appendMessage = (text, who = 'ai') => {
     const div = document.createElement('div');
     div.className = 'msg ' + (who === 'user' ? 'msg-user' : 'msg-ai');
-    div.innerHTML = text;
+    if (who === 'ai') {
+      // Parse the label and content separately
+      const labelMatch = text.match(/^(<strong>.*?<\/strong>)\s*/);
+      if (labelMatch) {
+        const label = labelMatch[1];
+        const content = text.slice(labelMatch[0].length);
+        div.innerHTML = label + ' ' + formatAIResponse(content);
+      } else {
+        div.innerHTML = formatAIResponse(text);
+      }
+    } else {
+      div.innerHTML = text;
+    }
     log.appendChild(div);
     log.scrollTop = log.scrollHeight;
   };
@@ -65,12 +89,24 @@ document.addEventListener('DOMContentLoaded', () => {
     return div;
   };
 
+  // Clear chat button
+  const clearBtn = document.getElementById('clear-chat');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      conversationHistory.length = 0;
+      activeZip = '';
+      log.innerHTML = '<div class="msg msg-ai"><p><strong>Rebate Atlas AI:</strong> Chat cleared. Share your ZIP code, home type, and an upgrade you\'re considering to get started.</p></div>';
+      input.focus();
+    });
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const content = input.value.trim();
     if (!content) return;
 
-    appendMessage(`<strong>You:</strong> ${content}`, 'user');
+    const safeContent = content.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    appendMessage(`<strong>You:</strong> ${safeContent}`, 'user');
     conversationHistory.push({ role: 'user', content });
 
     // Update active ZIP if the user mentions one

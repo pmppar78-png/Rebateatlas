@@ -6,6 +6,43 @@
 [functions]
   node_bundler = "esbuild"
 
+# Redirects for clean category URLs
+[[redirects]]
+  from = "/categories"
+  to = "/categories/index.html"
+  status = 200
+
+# Redirect common misspellings and variations
+[[redirects]]
+  from = "/heat-pumps"
+  to = "/categories/heat-pumps.html"
+  status = 301
+
+[[redirects]]
+  from = "/solar"
+  to = "/categories/solar-panels.html"
+  status = 301
+
+[[redirects]]
+  from = "/solar-panels"
+  to = "/categories/solar-panels.html"
+  status = 301
+
+[[redirects]]
+  from = "/ev-chargers"
+  to = "/categories/ev-chargers.html"
+  status = 301
+
+[[redirects]]
+  from = "/insulation"
+  to = "/categories/insulation-weatherization.html"
+  status = 301
+
+[[redirects]]
+  from = "/battery"
+  to = "/categories/battery-storage.html"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -28,3 +65,13 @@
   for = "/*.js"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
