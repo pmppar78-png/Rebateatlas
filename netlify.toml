@@ -5,6 +5,7 @@
 
 [functions]
   node_bundler = "esbuild"
+  included_files = ["data/zip-lookup.json"]
 
 # Redirects for clean category URLs
 [[redirects]]
