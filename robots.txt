@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /.netlify/
 
-Sitemap: https://rebateatlas.netlify.app/sitemap.xml
+Sitemap: https://rebateatlas.org/sitemap.xml

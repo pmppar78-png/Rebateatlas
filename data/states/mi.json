@@ -1,0 +1,93 @@
+{
+  "state_code": "MI",
+  "state_name": "Michigan",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Michigan has launched HOMES and HEAR programs through the Michigan Department of Environment, Great Lakes, and Energy (EGLE). The state received approximately $142 million in IRA funding for energy efficiency and electrification rebates.",
+  "state_energy_office": "Michigan Department of Environment, Great Lakes, and Energy (EGLE) - Office of Climate and Energy",
+  "state_energy_office_url": "https://www.michigan.gov/egle/about/organization/materials-management/energy",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in Detroit, 80% AMI is approximately $58,000. Low-income households qualify for up to 100% of project costs under HOMES.",
+    "moderate_income_150_ami": "For a family of four in Detroit, 150% AMI is approximately $108,750. Moderate-income households qualify for rebates covering up to 50% of project costs under HOMES."
+  },
+  "net_metering": "Michigan's distributed generation program replaced traditional net metering under PA 342 of 2016. The program has a cap of 1% of each utility's peak load. Customers in the program receive an inflow/outflow billing rate: energy consumed is billed at retail rate, and excess energy sent to the grid is credited at the utility's outflow rate, which is less than retail. Legacy net metering customers are grandfathered for 10 years.",
+  "state_tax_credits": [
+    {
+      "name": "Michigan does not currently offer state tax credits for residential renewable energy or energy efficiency",
+      "amount": "N/A",
+      "eligible_items": "N/A",
+      "details": "Michigan does not have state-level solar tax credits or energy efficiency tax credits. Residents can claim the federal 30% ITC for solar PV and battery storage. Michigan does have a property tax exemption for alternative energy systems under PA 378.",
+      "url": "https://www.michigan.gov/egle/about/organization/materials-management/energy"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Michigan Saves Home Energy Loan Program",
+      "administrator": "Michigan Saves (green bank)",
+      "amount": "Low-interest loans from $1,000 to $50,000 for energy improvements",
+      "eligible_items": "Solar PV, heat pumps, insulation, windows, HVAC systems, geothermal, battery storage, EV chargers",
+      "details": "Michigan Saves is a nonprofit green bank that provides financing through a statewide network of lenders and contractors. Loans feature below-market interest rates and flexible terms.",
+      "url": "https://michigansaves.org/residential/"
+    },
+    {
+      "name": "Michigan Weatherization Assistance Program",
+      "administrator": "Michigan Department of Health and Human Services / Community Action Agencies",
+      "amount": "Average of $7,500+ per home",
+      "eligible_items": "Insulation, air sealing, furnace repair and replacement, water heater replacement, health and safety improvements",
+      "details": "Available to households at or below 200% of the federal poverty level. Michigan has one of the largest weatherization programs in the nation.",
+      "url": "https://www.michigan.gov/mdhhs/assistance-programs/energy/weatherization"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "DTE Energy",
+      "programs": [
+        {
+          "name": "DTE Energy Efficiency Rebates",
+          "amount": "$25-$2,500 depending on measure",
+          "eligible_items": "Smart thermostats, HVAC upgrades, heat pumps, insulation, air sealing, ENERGY STAR appliances, LED lighting",
+          "url": "https://www.dteenergy.com/us/en/residential/save-money-energy.html"
+        },
+        {
+          "name": "DTE Home Energy Consultation",
+          "amount": "Free in-home energy assessment with free efficiency products installed",
+          "eligible_items": "LED bulbs, smart power strips, faucet aerators, pipe insulation, programmable thermostats",
+          "url": "https://www.dteenergy.com/us/en/residential/save-money-energy/home-energy-consultation.html"
+        },
+        {
+          "name": "DTE Income-Qualified Home Energy Services",
+          "amount": "Free comprehensive energy efficiency improvements for qualifying households",
+          "eligible_items": "Insulation, air sealing, HVAC upgrades, appliance replacement, LED lighting for income-qualified customers",
+          "url": "https://www.dteenergy.com/us/en/residential/save-money-energy/income-qualified.html"
+        }
+      ]
+    },
+    {
+      "name": "Consumers Energy",
+      "programs": [
+        {
+          "name": "Consumers Energy Residential Rebates",
+          "amount": "$25-$2,500 depending on measure",
+          "eligible_items": "Heat pumps, smart thermostats, HVAC systems, insulation, air sealing, appliances, water heaters",
+          "url": "https://www.consumersenergy.com/residential/save-money-and-energy/rebates"
+        },
+        {
+          "name": "Consumers Energy Home Energy Analysis",
+          "amount": "Free online and in-home energy assessment options",
+          "eligible_items": "Comprehensive energy assessment with personalized efficiency recommendations",
+          "url": "https://www.consumersenergy.com/residential/save-money-and-energy/home-energy-analysis"
+        }
+      ]
+    },
+    {
+      "name": "Indiana Michigan Power (AEP)",
+      "programs": [
+        {
+          "name": "Indiana Michigan Power Residential Efficiency Programs",
+          "amount": "$50-$500 depending on measure",
+          "eligible_items": "Smart thermostats, HVAC systems, weatherization, ENERGY STAR appliances",
+          "url": "https://www.indianamichiganpower.com/savings/"
+        }
+      ]
+    }
+  ]
+}

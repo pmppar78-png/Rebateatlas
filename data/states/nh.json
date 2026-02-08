@@ -1,0 +1,79 @@
+{
+  "state_code": "NH",
+  "state_name": "New Hampshire",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "New Hampshire has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. The New Hampshire Office of Strategic Initiatives, in coordination with NHSaves, is administering the programs to provide rebates for whole-home energy efficiency improvements and high-efficiency electric appliances.",
+  "state_energy_office": "New Hampshire Office of Strategic Initiatives - Energy Division",
+  "state_energy_office_url": "https://www.nh.gov/osi/energy/",
+  "income_thresholds": {
+    "low_income_80_ami": "For New Hampshire, 80% of Area Median Income varies by county. In Hillsborough County (Manchester/Nashua), 80% AMI for a family of four is approximately $78,550. Rural counties may be lower.",
+    "moderate_income_150_ami": "For New Hampshire, 150% of Area Median Income varies by county. In Hillsborough County (Manchester/Nashua), 150% AMI for a family of four is approximately $147,300."
+  },
+  "net_metering": "New Hampshire has a net metering policy for systems up to 1 MW. Residential customers receive a credit for excess generation at the default energy service rate. The state adopted a net metering replacement framework in 2017, with credits reflecting the value of distributed generation.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "NHSaves Residential Rebate Programs",
+      "administrator": "NHSaves (collaboration of NH utilities)",
+      "amount": "Up to $500 for heat pumps per head, up to $4,000 for weatherization, $50-$150 for ENERGY STAR appliances",
+      "eligible_items": "Heat pumps (ductless mini-splits and ducted), insulation, air sealing, smart thermostats, ENERGY STAR appliances, heat pump water heaters",
+      "details": "NHSaves is a collaborative of New Hampshire's electric and gas utilities offering energy efficiency programs funded through the System Benefits Charge. Programs include Home Performance with ENERGY STAR, appliance rebates, and weatherization incentives.",
+      "url": "https://nhsaves.com/"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "New Hampshire Office of Strategic Initiatives",
+      "amount": "Average expenditure of approximately $8,000 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, window and door improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through Community Action Agencies.",
+      "url": "https://www.nh.gov/osi/energy/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Eversource New Hampshire",
+      "programs": [
+        {
+          "name": "NHSaves Heat Pump Rebates",
+          "amount": "Up to $500 per indoor head for qualifying ductless mini-split heat pumps",
+          "eligible_items": "ENERGY STAR certified ductless mini-split heat pumps and ducted heat pump systems",
+          "url": "https://nhsaves.com/residential/heating-cooling/"
+        },
+        {
+          "name": "NHSaves Home Performance with ENERGY STAR",
+          "amount": "Up to 50% of project cost, up to $4,000 for weatherization improvements",
+          "eligible_items": "Insulation, air sealing, duct sealing, heating system upgrades following a home energy audit",
+          "url": "https://nhsaves.com/residential/home-improvements/"
+        },
+        {
+          "name": "NHSaves Appliance Rebates",
+          "amount": "$50-$750 depending on appliance type",
+          "eligible_items": "Heat pump water heaters, smart thermostats, ENERGY STAR dryers, dehumidifiers",
+          "url": "https://nhsaves.com/residential/appliances-electronics/"
+        }
+      ]
+    },
+    {
+      "name": "Liberty Utilities (New Hampshire)",
+      "programs": [
+        {
+          "name": "NHSaves Residential Efficiency Rebates",
+          "amount": "Up to $500 per heat pump head, up to $4,000 for weatherization",
+          "eligible_items": "Heat pumps, insulation, air sealing, ENERGY STAR appliances",
+          "url": "https://nhsaves.com/"
+        }
+      ]
+    },
+    {
+      "name": "Unitil (New Hampshire)",
+      "programs": [
+        {
+          "name": "NHSaves Residential Programs",
+          "amount": "Up to $500 per heat pump head, up to $4,000 for weatherization",
+          "eligible_items": "Heat pumps, insulation, air sealing, ENERGY STAR appliances, heat pump water heaters",
+          "url": "https://nhsaves.com/"
+        }
+      ]
+    }
+  ]
+}

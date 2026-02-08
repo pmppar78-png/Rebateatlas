@@ -1,0 +1,96 @@
+{
+  "state_code": "NJ",
+  "state_name": "New Jersey",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "New Jersey has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. The New Jersey Board of Public Utilities (NJBPU) is administering the programs in coordination with utility-run efficiency programs and the state's clean energy initiative.",
+  "state_energy_office": "New Jersey Board of Public Utilities (NJBPU)",
+  "state_energy_office_url": "https://www.nj.gov/bpu/",
+  "income_thresholds": {
+    "low_income_80_ami": "For New Jersey, 80% of Area Median Income varies by county. In Essex County (Newark), 80% AMI for a family of four is approximately $79,900. In Bergen County, it is approximately $88,650.",
+    "moderate_income_150_ami": "For New Jersey, 150% of Area Median Income varies by county. In Essex County (Newark), 150% AMI for a family of four is approximately $149,800. In Bergen County, it is approximately $166,200."
+  },
+  "net_metering": "New Jersey has strong net metering rules. Residential customers can net meter systems up to 10 MW. Customers receive a full retail rate credit for excess generation, carried forward monthly and trued up annually. New Jersey also has a successor solar incentive program (SREC-II/ADI) that provides additional compensation.",
+  "state_tax_credits": [
+    {
+      "name": "New Jersey Sales Tax Exemption for Solar",
+      "amount": "100% sales tax exemption on solar energy system equipment",
+      "eligible_items": "Solar photovoltaic systems, solar energy equipment and components",
+      "details": "New Jersey exempts solar energy system equipment from the state sales tax, reducing the upfront cost of installation.",
+      "url": "https://www.nj.gov/bpu/commercial/solarsales.html"
+    },
+    {
+      "name": "New Jersey Property Tax Exemption for Renewable Energy",
+      "amount": "100% property tax exemption for the added value of renewable energy systems",
+      "eligible_items": "Solar panels, wind energy systems, and other renewable energy installations",
+      "details": "The added value of a renewable energy system is exempt from local property taxes in New Jersey.",
+      "url": "https://www.nj.gov/bpu/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "NJ Clean Energy Program - Residential New Construction and HVAC",
+      "administrator": "New Jersey Board of Public Utilities / TRC (program administrator)",
+      "amount": "Up to $1,000 for heat pumps, $500-$1,000 for HVAC upgrades, $250-$500 for insulation",
+      "eligible_items": "High-efficiency HVAC systems, heat pumps, insulation, air sealing, duct sealing, ENERGY STAR windows",
+      "details": "The NJ Clean Energy Program provides rebates for residential energy efficiency improvements funded through the Societal Benefits Charge on utility bills.",
+      "url": "https://njcleanenergy.com/residential/programs/programs"
+    },
+    {
+      "name": "Successor Solar Incentive Program (SuSI) / ADI",
+      "administrator": "New Jersey Board of Public Utilities",
+      "amount": "Fixed incentive payments per kWh of solar generation for 15 years (Administratively Determined Incentive)",
+      "eligible_items": "Residential rooftop solar photovoltaic systems",
+      "details": "The ADI program replaced the legacy SREC program and SREC-II transitional program. It provides a fixed, long-term incentive payment for solar energy generation.",
+      "url": "https://njcleanenergy.com/renewable-energy/programs/susi-program"
+    },
+    {
+      "name": "Whole-House Pilot Program",
+      "administrator": "NJ Clean Energy Program",
+      "amount": "Up to $4,000 for moderate-income, up to $8,000 for low-income households for comprehensive improvements",
+      "eligible_items": "Comprehensive whole-home energy efficiency improvements including insulation, air sealing, HVAC, and water heaters",
+      "details": "Pilot program providing enhanced incentives for whole-house energy efficiency improvements, with higher rebates available for income-qualifying households.",
+      "url": "https://njcleanenergy.com/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "PSE&G (Public Service Electric and Gas)",
+      "programs": [
+        {
+          "name": "PSE&G Residential Efficiency Rebates",
+          "amount": "Up to $500 for HVAC, $200-$500 for insulation, $100 for smart thermostats",
+          "eligible_items": "High-efficiency furnaces, central air conditioners, heat pumps, insulation, smart thermostats",
+          "url": "https://www.pseg.com/residential/save-money-and-energy"
+        },
+        {
+          "name": "PSE&G Home Energy Assessment",
+          "amount": "Free or reduced-cost home energy assessment",
+          "eligible_items": "Comprehensive home energy evaluation with direct-install measures",
+          "url": "https://www.pseg.com/residential/save-money-and-energy"
+        }
+      ]
+    },
+    {
+      "name": "JCP&L (Jersey Central Power & Light)",
+      "programs": [
+        {
+          "name": "JCP&L Energy Efficiency Rebates",
+          "amount": "Varies by measure; up to $500 for heat pumps, $50-$200 for appliances",
+          "eligible_items": "ENERGY STAR heat pumps, central air conditioners, heat pump water heaters, smart thermostats",
+          "url": "https://www.firstenergycorp.com/jerseycentral/save_energy.html"
+        }
+      ]
+    },
+    {
+      "name": "Atlantic City Electric",
+      "programs": [
+        {
+          "name": "Residential Efficiency Programs",
+          "amount": "Varies by measure; rebates for qualifying equipment",
+          "eligible_items": "High-efficiency HVAC systems, heat pumps, smart thermostats, insulation",
+          "url": "https://www.atlanticcityelectric.com/WaysToSave/"
+        }
+      ]
+    }
+  ]
+}

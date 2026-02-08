@@ -1,0 +1,89 @@
+{
+  "state_code": "OR",
+  "state_name": "Oregon",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Oregon has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. The Oregon Department of Energy (ODOE) is administering the programs in coordination with the Energy Trust of Oregon, leveraging existing energy efficiency program infrastructure.",
+  "state_energy_office": "Oregon Department of Energy (ODOE)",
+  "state_energy_office_url": "https://www.oregon.gov/energy/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Oregon, 80% of Area Median Income varies by county. In Multnomah County (Portland), 80% AMI for a family of four is approximately $71,600. In Lane County (Eugene), it is approximately $58,150.",
+    "moderate_income_150_ami": "For Oregon, 150% of Area Median Income varies by county. In Multnomah County (Portland), 150% AMI for a family of four is approximately $134,250. In Lane County (Eugene), it is approximately $109,050."
+  },
+  "net_metering": "Oregon has a net metering policy for systems up to 25 kW for residential customers connected to investor-owned utilities. Customers receive credit at the retail rate for excess generation. Credits carry forward monthly with an annual true-up in April, with any remaining balance purchased by the utility at the avoided cost rate.",
+  "state_tax_credits": [
+    {
+      "name": "Oregon Residential Energy Tax Credit (RETC) - Expired/Replaced",
+      "amount": "The Oregon RETC for residential energy has been discontinued. Oregon now channels incentives primarily through the Energy Trust of Oregon and utility programs.",
+      "eligible_items": "Previously covered heat pumps, solar, insulation, and other energy efficiency measures",
+      "details": "The Oregon RETC was phased out. Current incentives are primarily available through the Energy Trust of Oregon and Oregon Department of Energy programs.",
+      "url": "https://www.oregon.gov/energy/incentives/pages/default.aspx"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Energy Trust of Oregon Residential Programs",
+      "administrator": "Energy Trust of Oregon",
+      "amount": "Up to $3,000 for heat pumps, $2,500 for weatherization, $1,000 for heat pump water heaters, $5,000 for solar",
+      "eligible_items": "Heat pumps (ductless and ducted), insulation, air sealing, windows, heat pump water heaters, smart thermostats, solar photovoltaic systems",
+      "details": "The Energy Trust of Oregon administers energy efficiency and renewable energy programs funded by ratepayers of Portland General Electric, Pacific Power, NW Natural, Cascade Natural Gas, and Avista. Provides cash incentives for a wide range of energy improvements. Enhanced incentives available for income-qualifying households.",
+      "url": "https://www.energytrust.org/residential/"
+    },
+    {
+      "name": "Oregon Clean Energy Homes Program",
+      "administrator": "Oregon Department of Energy",
+      "amount": "Varies; up to $8,000+ for income-qualifying households for comprehensive retrofits",
+      "eligible_items": "Whole-home energy efficiency retrofits, heat pumps, insulation, air sealing, windows",
+      "details": "State-administered program for home energy improvements with enhanced rebates for low and moderate-income households.",
+      "url": "https://www.oregon.gov/energy/"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Oregon Housing and Community Services",
+      "amount": "Average expenditure of approximately $8,000 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level.",
+      "url": "https://www.oregon.gov/ohcs/energy-weatherization/pages/weatherization-programs.aspx"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Portland General Electric (PGE)",
+      "programs": [
+        {
+          "name": "Energy Trust Residential Rebates (PGE territory)",
+          "amount": "Up to $3,000 for heat pumps, $2,500 for insulation, $1,000 for heat pump water heaters",
+          "eligible_items": "Heat pumps, insulation, air sealing, smart thermostats, heat pump water heaters, windows",
+          "url": "https://www.energytrust.org/residential/"
+        },
+        {
+          "name": "PGE Smart Thermostat Program",
+          "amount": "Up to $100 instant rebate or free smart thermostat",
+          "eligible_items": "Qualifying smart thermostats",
+          "url": "https://portlandgeneral.com/save-money"
+        }
+      ]
+    },
+    {
+      "name": "Pacific Power (Oregon)",
+      "programs": [
+        {
+          "name": "Energy Trust Residential Rebates (Pacific Power territory)",
+          "amount": "Up to $3,000 for heat pumps, $2,500 for insulation, $1,000 for heat pump water heaters",
+          "eligible_items": "Heat pumps, insulation, air sealing, smart thermostats, heat pump water heaters, windows",
+          "url": "https://www.energytrust.org/residential/"
+        }
+      ]
+    },
+    {
+      "name": "NW Natural",
+      "programs": [
+        {
+          "name": "Energy Trust Gas Efficiency Rebates",
+          "amount": "Up to $1,000 for high-efficiency furnaces, $600 for insulation, $300 for water heaters",
+          "eligible_items": "High-efficiency natural gas furnaces, tankless water heaters, insulation, smart thermostats",
+          "url": "https://www.energytrust.org/residential/"
+        }
+      ]
+    }
+  ]
+}

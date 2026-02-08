@@ -1,0 +1,87 @@
+{
+  "state_code": "WA",
+  "state_name": "Washington",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Washington has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. The Washington State Department of Commerce is administering the programs, building on existing utility efficiency programs and the state's strong commitment to clean energy under the Clean Energy Transformation Act.",
+  "state_energy_office": "Washington State Department of Commerce - State Energy Office",
+  "state_energy_office_url": "https://www.commerce.wa.gov/growing-the-economy/energy/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Washington, 80% of Area Median Income varies by county. In King County (Seattle), 80% AMI for a family of four is approximately $89,600. In Spokane County, it is approximately $61,200.",
+    "moderate_income_150_ami": "For Washington, 150% of Area Median Income varies by county. In King County (Seattle), 150% AMI for a family of four is approximately $168,000. In Spokane County, it is approximately $114,800."
+  },
+  "net_metering": "Washington has net metering for systems up to 100 kW under state law (RCW 80.60). Customers receive credit at the retail rate for excess generation. Credits carry forward monthly, with an annual true-up in April where excess credits are granted to the utility. Washington does not have a state sales tax on solar installations (tax exemption for solar energy systems).",
+  "state_tax_credits": [
+    {
+      "name": "Washington State Sales Tax Exemption for Solar Energy Systems",
+      "amount": "100% exemption from the state's 6.5% sales tax (plus applicable local sales tax) on solar energy systems",
+      "eligible_items": "Solar photovoltaic systems, solar thermal systems, and associated equipment",
+      "details": "Washington exempts solar energy systems from the state and local sales and use tax, significantly reducing installation costs. This exemption is codified in RCW 82.08.962.",
+      "url": "https://dor.wa.gov/taxes-rates/tax-incentives/incentive-programs"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Washington State Department of Commerce",
+      "amount": "Average expenditure of approximately $8,000 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors, health and safety improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through local community action agencies across Washington.",
+      "url": "https://www.commerce.wa.gov/growing-the-economy/energy/weatherization-and-energy-efficiency/"
+    },
+    {
+      "name": "Washington State Weatherization Plus Health Program",
+      "administrator": "Washington State Department of Commerce",
+      "amount": "Additional health-related home improvements in conjunction with weatherization",
+      "eligible_items": "Healthy home measures including ventilation, moisture control, mold remediation, and asthma-trigger reduction in conjunction with energy efficiency improvements",
+      "details": "An innovative program that combines weatherization with health-related home improvements to address both energy efficiency and occupant health.",
+      "url": "https://www.commerce.wa.gov/growing-the-economy/energy/weatherization-and-energy-efficiency/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Puget Sound Energy (PSE)",
+      "programs": [
+        {
+          "name": "PSE Residential Rebates",
+          "amount": "Up to $2,000 for heat pumps, $1,500 for ductless heat pumps, $600 for insulation, $100 for smart thermostats",
+          "eligible_items": "Heat pumps (ductless and ducted), insulation, air sealing, smart thermostats, heat pump water heaters, ENERGY STAR windows",
+          "url": "https://www.pse.com/rebates"
+        },
+        {
+          "name": "PSE Home Energy Assessment",
+          "amount": "Free online or reduced-cost in-home energy assessment",
+          "eligible_items": "Comprehensive home energy evaluation with recommendations",
+          "url": "https://www.pse.com/rebates"
+        }
+      ]
+    },
+    {
+      "name": "Seattle City Light",
+      "programs": [
+        {
+          "name": "Seattle City Light HomeWise Weatherization",
+          "amount": "Free weatherization improvements for income-qualifying customers (up to full cost of improvements)",
+          "eligible_items": "Insulation, air sealing, duct sealing, lighting upgrades, and other energy efficiency measures for income-qualifying households",
+          "url": "https://www.seattle.gov/city-light/residential-services/home-energy-solutions/homewise-weatherization"
+        },
+        {
+          "name": "Seattle City Light Rebates",
+          "amount": "Up to $2,000 for heat pumps, $500 for heat pump water heaters, $200 for smart thermostats",
+          "eligible_items": "Heat pumps, heat pump water heaters, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.seattle.gov/city-light/residential-services/home-energy-solutions"
+        }
+      ]
+    },
+    {
+      "name": "Tacoma Power",
+      "programs": [
+        {
+          "name": "Tacoma Power Residential Rebates",
+          "amount": "Up to $1,500 for heat pumps, $500 for insulation, $100 for smart thermostats",
+          "eligible_items": "Heat pumps, insulation, air sealing, duct sealing, heat pump water heaters, smart thermostats",
+          "url": "https://www.mytpu.org/save-money-energy/"
+        }
+      ]
+    }
+  ]
+}

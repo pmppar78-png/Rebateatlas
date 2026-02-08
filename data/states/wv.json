@@ -1,0 +1,65 @@
+{
+  "state_code": "WV",
+  "state_name": "West Virginia",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "West Virginia has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The West Virginia Division of Energy (within the Department of Economic Development) is the designated state entity coordinating with the U.S. Department of Energy on program planning.",
+  "state_energy_office": "West Virginia Division of Energy",
+  "state_energy_office_url": "https://energywv.org/",
+  "income_thresholds": {
+    "low_income_80_ami": "For West Virginia, 80% of Area Median Income varies by county. In Kanawha County (Charleston), 80% AMI for a family of four is approximately $52,400. In Monongalia County (Morgantown), it is approximately $60,550.",
+    "moderate_income_150_ami": "For West Virginia, 150% of Area Median Income varies by county. In Kanawha County (Charleston), 150% AMI for a family of four is approximately $98,250. In Monongalia County (Morgantown), it is approximately $113,550."
+  },
+  "net_metering": "West Virginia has a net metering law for systems up to 50 kW for residential customers. Customers receive credit at the retail rate for excess generation. However, the state has considered legislation to modify net metering compensation, and rules may vary by utility service territory.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "West Virginia Office of Economic Opportunity",
+      "amount": "Average expenditure of approximately $7,000 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors, health and safety improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies across West Virginia.",
+      "url": "https://oeo.wv.gov/Pages/weatherization.aspx"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Appalachian Power (AEP Appalachian Power - West Virginia)",
+      "programs": [
+        {
+          "name": "Take Charge West Virginia Residential Rebates",
+          "amount": "Up to $500 for heat pumps, $200 for insulation, $75 for smart thermostats",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, insulation, duct sealing, smart thermostats",
+          "url": "https://takechargewv.com/"
+        },
+        {
+          "name": "Take Charge WV Home Energy Audit",
+          "amount": "Free home energy assessment",
+          "eligible_items": "Comprehensive home energy evaluation with energy-saving recommendations and direct-install measures",
+          "url": "https://takechargewv.com/"
+        }
+      ]
+    },
+    {
+      "name": "Mon Power (FirstEnergy)",
+      "programs": [
+        {
+          "name": "Mon Power Residential Energy Efficiency Programs",
+          "amount": "Varies by measure; rebates for qualifying equipment",
+          "eligible_items": "High-efficiency HVAC, smart thermostats, insulation, ENERGY STAR appliances",
+          "url": "https://www.firstenergycorp.com/monpower/save_energy.html"
+        }
+      ]
+    },
+    {
+      "name": "Mountaineer Gas Company",
+      "programs": [
+        {
+          "name": "Residential Efficiency Rebates",
+          "amount": "Up to $300 for high-efficiency furnaces, $100 for smart thermostats",
+          "eligible_items": "High-efficiency natural gas furnaces, programmable and smart thermostats",
+          "url": "https://www.mountaineergas.com/"
+        }
+      ]
+    }
+  ]
+}

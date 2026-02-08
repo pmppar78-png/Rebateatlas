@@ -1,0 +1,73 @@
+{
+  "state_code": "TN",
+  "state_name": "Tennessee",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Tennessee has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Tennessee Department of Environment and Conservation (TDEC) - Office of Energy Programs is the designated state entity coordinating with the U.S. Department of Energy on program design.",
+  "state_energy_office": "Tennessee Department of Environment and Conservation (TDEC) - Office of Energy Programs",
+  "state_energy_office_url": "https://www.tn.gov/environment/program-areas/energy.html",
+  "income_thresholds": {
+    "low_income_80_ami": "For Tennessee, 80% of Area Median Income varies by county. In Davidson County (Nashville), 80% AMI for a family of four is approximately $64,750. In Shelby County (Memphis), it is approximately $56,200.",
+    "moderate_income_150_ami": "For Tennessee, 150% of Area Median Income varies by county. In Davidson County (Nashville), 150% AMI for a family of four is approximately $121,400. In Shelby County (Memphis), it is approximately $105,350."
+  },
+  "net_metering": "Tennessee does not have a statewide net metering mandate. The Tennessee Valley Authority (TVA) sets distributed generation policies for its local power companies. TVA's current program offers credits for excess solar generation at a rate that varies but is generally below the retail rate.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "TVA EnergyRight Residential Services",
+      "administrator": "Tennessee Valley Authority (TVA) and local power companies",
+      "amount": "Up to $1,500 for qualifying heat pumps, $500 for insulation, $75 for smart thermostats",
+      "eligible_items": "Heat pumps, insulation, air sealing, duct sealing, ENERGY STAR appliances, smart thermostats",
+      "details": "TVA's EnergyRight program offers energy efficiency rebates through local power companies across Tennessee. Includes home energy evaluations and rebates for qualifying improvements.",
+      "url": "https://energyright.com/"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Tennessee Housing Development Agency (THDA)",
+      "amount": "Average expenditure of approximately $7,000 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies and non-profit organizations.",
+      "url": "https://thda.org/help-for-homeowners/weatherization"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Nashville Electric Service (NES)",
+      "programs": [
+        {
+          "name": "TVA EnergyRight Heat Pump Rebates",
+          "amount": "Up to $1,500 for qualifying heat pumps",
+          "eligible_items": "ENERGY STAR certified heat pumps meeting minimum efficiency requirements",
+          "url": "https://www.nespower.com/save-energy/"
+        },
+        {
+          "name": "TVA EnergyRight Home Uplift",
+          "amount": "Free energy upgrades for income-qualifying customers (up to $5,000 in improvements)",
+          "eligible_items": "Insulation, air sealing, HVAC repair or replacement, lighting upgrades",
+          "url": "https://energyright.com/residential/home-uplift/"
+        }
+      ]
+    },
+    {
+      "name": "Memphis Light, Gas and Water (MLGW)",
+      "programs": [
+        {
+          "name": "TVA EnergyRight Residential Rebates",
+          "amount": "Up to $1,500 for heat pumps, $500 for insulation",
+          "eligible_items": "Heat pumps, insulation, air sealing, duct sealing, smart thermostats",
+          "url": "https://www.mlgw.com/residential/saveenergy"
+        }
+      ]
+    },
+    {
+      "name": "Knoxville Utilities Board (KUB)",
+      "programs": [
+        {
+          "name": "TVA EnergyRight Rebates",
+          "amount": "Up to $1,500 for heat pumps, $500 for insulation",
+          "eligible_items": "Heat pumps, insulation, air sealing, duct sealing, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.kub.org/save-energy-and-money"
+        }
+      ]
+    }
+  ]
+}

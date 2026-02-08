@@ -1,0 +1,75 @@
+{
+  "state_code": "AK",
+  "state_name": "Alaska",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Alaska has not yet launched its HOMES or HEAR rebate programs. The Alaska Housing Finance Corporation (AHFC) is the designated state entity working with the U.S. Department of Energy to develop implementation plans for these IRA rebate programs.",
+  "state_energy_office": "Alaska Housing Finance Corporation (AHFC)",
+  "state_energy_office_url": "https://www.ahfc.us/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Alaska, 80% of Area Median Income is adjusted for the high cost of living. In Anchorage, 80% AMI for a family of four is approximately $72,100. Remote areas may have different thresholds.",
+    "moderate_income_150_ami": "For Alaska, 150% of Area Median Income in Anchorage for a family of four is approximately $135,200."
+  },
+  "net_metering": "Alaska does not have a statewide net metering mandate. Some utilities, such as Chugach Electric Association and Matanuska Electric Association, offer net metering programs for small-scale renewable energy systems, typically up to 25 kW.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "AHFC Home Energy Rebate Program",
+      "administrator": "Alaska Housing Finance Corporation",
+      "amount": "Up to $10,000 based on energy rating improvement",
+      "eligible_items": "Insulation, windows, doors, heating systems, ventilation, air sealing. Rebate amount is tied to improvement in the home's energy rating (AKWarm rating).",
+      "details": "Homeowners must get a pre-upgrade and post-upgrade energy rating from a certified energy rater. The rebate is calculated based on the number of energy rating points improved. This is one of the longest-running state residential energy efficiency programs in the U.S.",
+      "url": "https://www.ahfc.us/efficiency/energy-programs/home-energy-rebate"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Alaska Housing Finance Corporation",
+      "amount": "Average of approximately $15,000 per home (higher than national average due to cold climate)",
+      "eligible_items": "Air sealing, insulation, heating system repair/replacement, ventilation, windows, doors",
+      "details": "For income-qualifying households at or below 200% of federal poverty level. Alaska's program is more extensive than most states due to extreme cold climate conditions.",
+      "url": "https://www.ahfc.us/efficiency/energy-programs/weatherization"
+    },
+    {
+      "name": "Second Mortgage for Energy Conservation",
+      "administrator": "Alaska Housing Finance Corporation",
+      "amount": "Up to $30,000 as a second mortgage",
+      "eligible_items": "Energy efficiency improvements including insulation, windows, heating systems, and other qualifying measures",
+      "details": "Low-interest loan available to homeowners for energy efficiency improvements. Can be combined with the Home Energy Rebate Program.",
+      "url": "https://www.ahfc.us/efficiency/energy-programs"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Chugach Electric Association",
+      "programs": [
+        {
+          "name": "Residential Rebate Program",
+          "amount": "Varies by measure; up to $500 for heat pumps",
+          "eligible_items": "Cold-climate air source heat pumps, heat pump water heaters, LED lighting",
+          "url": "https://www.chugachelectric.com/"
+        }
+      ]
+    },
+    {
+      "name": "Matanuska Electric Association",
+      "programs": [
+        {
+          "name": "Member Rebate Program",
+          "amount": "Varies by measure",
+          "eligible_items": "Energy-efficient heating equipment, cold-climate heat pumps",
+          "url": "https://www.mea.coop/"
+        }
+      ]
+    },
+    {
+      "name": "Golden Valley Electric Association",
+      "programs": [
+        {
+          "name": "Energy Efficiency Rebates",
+          "amount": "Varies by measure",
+          "eligible_items": "Insulation, cold-climate heat pumps, efficient heating systems",
+          "url": "https://www.gvea.com/"
+        }
+      ]
+    }
+  ]
+}

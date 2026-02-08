@@ -1,0 +1,108 @@
+{
+  "state_code": "MN",
+  "state_name": "Minnesota",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Minnesota has launched HOMES and HEAR programs through the Minnesota Department of Commerce. The state received approximately $80 million in IRA funding for energy efficiency and electrification rebates, complementing existing Conservation Improvement Programs (CIP) run by utilities.",
+  "state_energy_office": "Minnesota Department of Commerce - Division of Energy Resources",
+  "state_energy_office_url": "https://mn.gov/commerce/energy/",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in the Minneapolis-St. Paul metro area, 80% AMI is approximately $80,200. Low-income households qualify for up to 100% of project costs under HOMES and for enhanced utility CIP programs.",
+    "moderate_income_150_ami": "For a family of four in the Minneapolis-St. Paul metro area, 150% AMI is approximately $150,375. Moderate-income households qualify for rebates covering up to 50% of project costs under HOMES."
+  },
+  "net_metering": "Minnesota requires all utilities to offer net metering for systems up to 1 MW. Customers receive credit at the retail rate for excess generation. Minnesota also has a strong community solar garden program, particularly through Xcel Energy, allowing subscribers to receive bill credits for their share of a community solar project.",
+  "state_tax_credits": [
+    {
+      "name": "Minnesota Solar Energy Sales Tax Exemption",
+      "amount": "100% exemption from state sales tax on solar energy systems",
+      "eligible_items": "Solar PV systems, solar thermal systems, and associated equipment",
+      "details": "Minnesota exempts solar energy equipment from the state sales tax (6.875%) and local sales taxes. This effectively reduces the cost of a solar installation by the sales tax amount. No application required; the exemption is applied at point of sale.",
+      "url": "https://mn.gov/commerce/energy/solar/"
+    },
+    {
+      "name": "Minnesota Solar Energy Production Incentive (Xcel Energy)",
+      "amount": "Performance-based incentive of approximately $0.08/kWh for 10 years (program now has a waitlist/limited availability)",
+      "eligible_items": "Solar PV systems installed by Xcel Energy customers in Minnesota",
+      "details": "Xcel Energy's Solar*Rewards program provides production-based incentives. The program has been very popular and may have limited availability or waitlists. Check with Xcel Energy for current program status and rates.",
+      "url": "https://mn.gov/commerce/energy/solar/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Minnesota Conservation Improvement Programs (CIP)",
+      "administrator": "All Minnesota utilities under Department of Commerce oversight",
+      "amount": "Varies by utility: $50-$3,000+ depending on measure",
+      "eligible_items": "Insulation, air sealing, HVAC systems, heat pumps, smart thermostats, ENERGY STAR appliances, LED lighting, water heaters",
+      "details": "Minnesota law requires utilities to invest at least 1.5% of gross operating revenue in energy conservation programs. Each utility offers its own suite of rebates and programs. This is one of the most comprehensive statewide efficiency program mandates in the country.",
+      "url": "https://mn.gov/commerce/energy/energy-efficiency/"
+    },
+    {
+      "name": "Minnesota Weatherization Assistance Program",
+      "administrator": "Minnesota Department of Commerce / Community Action Agencies",
+      "amount": "Average of $8,000+ per home",
+      "eligible_items": "Insulation, air sealing, furnace repair and replacement, water heater replacement, health and safety improvements",
+      "details": "Available to households at or below 200% of the federal poverty level. Minnesota's program is among the most active in the nation given the cold climate.",
+      "url": "https://mn.gov/commerce/consumers/consumer-assistance/weatherization/"
+    },
+    {
+      "name": "Minnesota Fix-Up Fund / Home Energy Loans",
+      "administrator": "Minnesota Housing Finance Agency",
+      "amount": "Low-interest loans up to $50,000 for home improvements including energy efficiency",
+      "eligible_items": "Energy efficiency improvements, HVAC systems, windows, insulation, solar PV, and other home improvements",
+      "details": "Below-market interest rate loans available through participating lenders. Income limits apply. Can be combined with utility rebates.",
+      "url": "https://www.mnhousing.gov/sites/np/fixup"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Xcel Energy (Northern States Power)",
+      "programs": [
+        {
+          "name": "Xcel Energy Home Energy Squad",
+          "amount": "$50-$100 for a comprehensive visit; free for income-qualified customers. Includes direct installation of efficiency measures.",
+          "eligible_items": "LED lighting, programmable thermostats, insulation assessment, blower door testing, water heater blankets, showerheads",
+          "url": "https://www.xcelenergy.com/programs_and_rebates/residential_programs_and_rebates/home_energy_squad"
+        },
+        {
+          "name": "Xcel Energy Residential Heating and Cooling Rebates",
+          "amount": "$200-$2,500 depending on equipment type and efficiency level",
+          "eligible_items": "Air source heat pumps, ground source heat pumps, ductless mini-splits, high-efficiency furnaces, central air conditioners, smart thermostats",
+          "url": "https://www.xcelenergy.com/programs_and_rebates/residential_programs_and_rebates/heating_and_cooling"
+        },
+        {
+          "name": "Xcel Energy Solar*Rewards Program",
+          "amount": "Performance-based incentive; rates vary by program year and availability",
+          "eligible_items": "Solar PV systems installed on homes in Xcel Energy service territory",
+          "url": "https://www.xcelenergy.com/programs_and_rebates/residential_programs_and_rebates/renewable_energy/solar_rewards"
+        }
+      ]
+    },
+    {
+      "name": "CenterPoint Energy Minnesota",
+      "programs": [
+        {
+          "name": "CenterPoint Energy Home Energy Rebates",
+          "amount": "$50-$1,500 depending on measure",
+          "eligible_items": "High-efficiency furnaces, boilers, water heaters, insulation, air sealing, smart thermostats",
+          "url": "https://www.centerpointenergy.com/en-us/residential/save-energy-money/rebates-and-programs"
+        },
+        {
+          "name": "CenterPoint Energy Home Energy Squad (co-delivered with Xcel)",
+          "amount": "$50-$100 for comprehensive visit; free for income-qualified",
+          "eligible_items": "Direct install of efficiency measures, energy assessment, insulation recommendations",
+          "url": "https://www.centerpointenergy.com/en-us/residential/save-energy-money"
+        }
+      ]
+    },
+    {
+      "name": "Minnesota Power (ALLETE)",
+      "programs": [
+        {
+          "name": "Minnesota Power Residential Energy Efficiency Rebates",
+          "amount": "$50-$1,000 depending on measure",
+          "eligible_items": "Heat pumps, insulation, LED lighting, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.mnpower.com/EnergyConservation/Residential"
+        }
+      ]
+    }
+  ]
+}

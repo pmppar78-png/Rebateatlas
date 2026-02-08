@@ -1,0 +1,79 @@
+{
+  "state_code": "NE",
+  "state_name": "Nebraska",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Nebraska has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Nebraska Energy Office is the designated state entity coordinating with the U.S. Department of Energy on program design and implementation.",
+  "state_energy_office": "Nebraska Energy Office",
+  "state_energy_office_url": "https://neo.ne.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Nebraska, 80% of Area Median Income varies by county. In Douglas County (Omaha), 80% AMI for a family of four is approximately $66,250. Rural counties may be lower.",
+    "moderate_income_150_ami": "For Nebraska, 150% of Area Median Income varies by county. In Douglas County (Omaha), 150% AMI for a family of four is approximately $124,200."
+  },
+  "net_metering": "Nebraska has statewide net metering rules established by the Nebraska Power Review Board. Customers with systems up to 25 kW can net meter with their local public power district. Excess generation is credited at the utility's avoided cost rate, which is typically below the retail rate.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Nebraska Dollar and Energy Saving Loans",
+      "administrator": "Nebraska Energy Office",
+      "amount": "Low-interest loans (5% or below) up to $100,000 for residential projects",
+      "eligible_items": "Energy efficiency improvements, insulation, HVAC upgrades, solar panels, geothermal systems, windows",
+      "details": "The Nebraska Energy Office partners with local lending institutions to provide reduced-interest loans for energy efficiency and renewable energy improvements. Available to homeowners, businesses, and agricultural operations.",
+      "url": "https://neo.ne.gov/programs/loans/loans.html"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Nebraska Energy Office",
+      "amount": "Average expenditure of approximately $7,500 per home",
+      "eligible_items": "Insulation, air sealing, heating/cooling system repair or replacement, window and door improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies across Nebraska.",
+      "url": "https://neo.ne.gov/programs/wx/weatherization.html"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Omaha Public Power District (OPPD)",
+      "programs": [
+        {
+          "name": "Residential Efficiency Rebates",
+          "amount": "Up to $1,000 for HVAC, $500 for insulation, $100 for smart thermostats",
+          "eligible_items": "High-efficiency HVAC systems, insulation, air sealing, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.oppd.com/residential/save-energy-money/"
+        },
+        {
+          "name": "Home Energy Audit",
+          "amount": "Free or reduced-cost home energy assessment",
+          "eligible_items": "Comprehensive home energy evaluation identifying savings opportunities",
+          "url": "https://www.oppd.com/residential/save-energy-money/"
+        }
+      ]
+    },
+    {
+      "name": "Lincoln Electric System (LES)",
+      "programs": [
+        {
+          "name": "Sustainable Energy Program (SEP)",
+          "amount": "Up to $600 for HVAC, $250 for insulation, $50 for smart thermostats",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, insulation, smart thermostats",
+          "url": "https://www.les.com/efficiency-programs"
+        },
+        {
+          "name": "LES Home Energy Audit",
+          "amount": "Free home energy assessment",
+          "eligible_items": "Home energy audit identifying efficiency improvement opportunities",
+          "url": "https://www.les.com/efficiency-programs"
+        }
+      ]
+    },
+    {
+      "name": "Nebraska Public Power District (NPPD)",
+      "programs": [
+        {
+          "name": "EnergyWise Residential Rebates",
+          "amount": "Varies by measure; up to $500 for qualifying equipment",
+          "eligible_items": "High-efficiency HVAC systems, water heaters, insulation",
+          "url": "https://www.nppd.com/save-energy"
+        }
+      ]
+    }
+  ]
+}

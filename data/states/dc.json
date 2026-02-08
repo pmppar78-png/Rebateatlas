@@ -1,0 +1,84 @@
+{
+  "state_code": "DC",
+  "state_name": "District of Columbia",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Washington D.C. has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. The D.C. Department of Energy and Environment (DOEE) is administering the programs in coordination with the DC Sustainable Energy Utility (DCSEU), leveraging existing robust energy efficiency infrastructure.",
+  "state_energy_office": "District of Columbia Department of Energy and Environment (DOEE)",
+  "state_energy_office_url": "https://doee.dc.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Washington D.C., 80% of Area Median Income for a family of four is approximately $92,800 based on the Washington-Arlington-Alexandria metropolitan area.",
+    "moderate_income_150_ami": "For Washington D.C., 150% of Area Median Income for a family of four is approximately $174,000 based on the Washington-Arlington-Alexandria metropolitan area."
+  },
+  "net_metering": "Washington D.C. has strong net metering for systems up to 1 MW. Customers receive credit at the full retail rate for excess generation. D.C. also has a Renewable Portfolio Standard requiring 100% renewable energy by 2032 and a Solar Renewable Energy Credit (SREC) market that provides additional compensation for solar generation.",
+  "state_tax_credits": [
+    {
+      "name": "D.C. Property Tax Exemption for Renewable Energy",
+      "amount": "5-year property tax exemption for the added value of qualifying renewable energy improvements",
+      "eligible_items": "Solar photovoltaic systems, solar thermal systems, and other qualifying renewable energy installations",
+      "details": "D.C. provides a temporary property tax exemption for the increased property value attributable to renewable energy systems.",
+      "url": "https://doee.dc.gov/service/solar-energy"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "DC Sustainable Energy Utility (DCSEU) Residential Programs",
+      "administrator": "DCSEU (operated by Vermont Energy Investment Corporation - VEIC)",
+      "amount": "Up to $2,500 for heat pumps, up to $3,500 for weatherization, $300-$750 for heat pump water heaters, $50-$200 for ENERGY STAR appliances",
+      "eligible_items": "Heat pumps (ductless and ducted), insulation, air sealing, heat pump water heaters, smart thermostats, ENERGY STAR appliances, LED lighting",
+      "details": "The DCSEU is D.C.'s energy efficiency utility, providing rebates, technical assistance, and financing for energy efficiency improvements. Enhanced incentives are available for income-qualifying households. Funded by the Sustainable Energy Trust Fund.",
+      "url": "https://www.dcseu.com/residential"
+    },
+    {
+      "name": "Solar for All",
+      "administrator": "DOEE / DCSEU",
+      "amount": "Free solar installation for income-qualifying households; estimated savings of $500+ per year on electricity bills",
+      "eligible_items": "Residential rooftop solar PV or community solar subscriptions for low-to-moderate income households",
+      "details": "D.C.'s Solar for All program provides free solar energy to income-qualifying D.C. residents, with a goal of reducing energy bills by at least 50% for 100,000 low-income households by 2032.",
+      "url": "https://doee.dc.gov/solarforall"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "District of Columbia Department of Energy and Environment (DOEE)",
+      "amount": "Average expenditure of approximately $8,000 per home",
+      "eligible_items": "Insulation, air sealing, heating/cooling system repair or replacement, windows, doors, health and safety improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level.",
+      "url": "https://doee.dc.gov/service/weatherization-assistance-program"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Pepco (Potomac Electric Power Company)",
+      "programs": [
+        {
+          "name": "Pepco Residential Energy Savings Rebates",
+          "amount": "Up to $1,500 for heat pumps, $500 for insulation, $200 for smart thermostats, $100-$300 for ENERGY STAR appliances",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, insulation, air sealing, smart thermostats, ENERGY STAR appliances, heat pump water heaters",
+          "url": "https://www.pepco.com/WaysToSave/ForYourHome/Pages/default.aspx"
+        },
+        {
+          "name": "Pepco Home Energy Assessment",
+          "amount": "Free or reduced-cost ($50) comprehensive home energy assessment with direct-install measures",
+          "eligible_items": "Home energy audit including free LED bulbs, smart power strips, water-saving devices, and personalized energy-saving recommendations",
+          "url": "https://www.pepco.com/WaysToSave/ForYourHome/Pages/HomeEnergyAssessments.aspx"
+        },
+        {
+          "name": "Pepco Income-Qualified Efficiency Programs",
+          "amount": "Free energy efficiency improvements for income-qualifying customers (full cost covered)",
+          "eligible_items": "Complete home energy efficiency improvements including insulation, HVAC, appliance replacement, lighting for income-qualifying households",
+          "url": "https://www.pepco.com/WaysToSave/ForYourHome/Pages/default.aspx"
+        }
+      ]
+    },
+    {
+      "name": "Washington Gas (D.C. territory)",
+      "programs": [
+        {
+          "name": "Washington Gas Residential Rebates",
+          "amount": "Up to $500 for high-efficiency furnaces, $300 for water heaters, $50 for smart thermostats",
+          "eligible_items": "High-efficiency natural gas furnaces, boilers, tankless water heaters, smart thermostats",
+          "url": "https://www.washingtongas.com/save-energy-money"
+        }
+      ]
+    }
+  ]
+}

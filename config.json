@@ -1,12 +1,12 @@
 {
   "site": {
     "name": "Rebate Atlas",
-    "domain": "rebateatlas.netlify.app",
+    "domain": "rebateatlas.org",
     "google_site_verification": ""
   },
   "features": {
     "adsense_enabled": false,
-    "ga4_enabled": false,
+    "ga4_enabled": true,
     "skimlinks_enabled": false,
     "pwa_enabled": true,
     "email_alerts_enabled": true
@@ -15,8 +15,8 @@
     "adsense_client": "",
     "adsense_publisher_id": "",
     "adsense_ad_slot_id": "",
-    "ga4_id": "",
-    "ga4_measurement_id": "",
+    "ga4_id": "G-XXXXXXXXXX",
+    "ga4_measurement_id": "G-XXXXXXXXXX",
     "skimlinks_site_id": ""
   }
 }

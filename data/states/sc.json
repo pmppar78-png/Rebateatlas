@@ -1,0 +1,73 @@
+{
+  "state_code": "SC",
+  "state_name": "South Carolina",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "South Carolina has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The South Carolina Office of Regulatory Staff - Energy Office is the designated state entity coordinating with the U.S. Department of Energy on program design.",
+  "state_energy_office": "South Carolina Office of Regulatory Staff - Energy Office",
+  "state_energy_office_url": "https://ors.sc.gov/energy-office",
+  "income_thresholds": {
+    "low_income_80_ami": "For South Carolina, 80% of Area Median Income varies by county. In Richland County (Columbia), 80% AMI for a family of four is approximately $59,500. In Charleston County, it is approximately $64,750.",
+    "moderate_income_150_ami": "For South Carolina, 150% of Area Median Income varies by county. In Richland County (Columbia), 150% AMI for a family of four is approximately $111,600. In Charleston County, it is approximately $121,400."
+  },
+  "net_metering": "South Carolina has net metering for systems up to 20 kW for residential customers under the Energy Freedom Act (2019). Customers of investor-owned utilities receive credit at the retail rate for excess generation under the current net metering tariff, though the state is transitioning to a successor rate structure.",
+  "state_tax_credits": [
+    {
+      "name": "South Carolina Solar Energy and Small Hydroelectric Tax Credit",
+      "amount": "25% of the cost of a solar energy system, up to $3,500 per year (or 50% of tax liability), with unused credit carried forward for up to 10 years",
+      "eligible_items": "Solar photovoltaic systems, solar thermal systems, and small hydroelectric systems installed on residential property",
+      "details": "South Carolina offers one of the more generous state solar tax credits. The credit can be spread over multiple years if it exceeds the taxpayer's annual liability.",
+      "url": "https://dor.sc.gov/tax/individual-income"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "South Carolina Office of Economic Opportunity",
+      "amount": "Average expenditure of approximately $7,000 per home",
+      "eligible_items": "Insulation, air sealing, heating/cooling system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies across South Carolina.",
+      "url": "https://ors.sc.gov/energy-office"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Duke Energy Carolinas (South Carolina)",
+      "programs": [
+        {
+          "name": "Duke Energy Smart $aver Rebates",
+          "amount": "Up to $600 for heat pumps, $200 for smart thermostats, $300 for insulation",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, smart thermostats, insulation, duct sealing",
+          "url": "https://www.duke-energy.com/home/products/smart-saver"
+        },
+        {
+          "name": "Duke Energy Home Energy Assessment",
+          "amount": "Free online energy assessment",
+          "eligible_items": "Home energy evaluation identifying savings opportunities",
+          "url": "https://www.duke-energy.com/home/products/home-energy-house-call"
+        }
+      ]
+    },
+    {
+      "name": "Dominion Energy South Carolina",
+      "programs": [
+        {
+          "name": "Dominion Energy Conservation Programs",
+          "amount": "Up to $500 for heat pumps, $200 for insulation, $100 for smart thermostats",
+          "eligible_items": "High-efficiency HVAC systems, heat pumps, insulation, smart thermostats",
+          "url": "https://www.dominionenergy.com/south-carolina/save-energy"
+        }
+      ]
+    },
+    {
+      "name": "Santee Cooper (South Carolina Public Service Authority)",
+      "programs": [
+        {
+          "name": "Residential Rebate Programs",
+          "amount": "Up to $500 for heat pumps, $200 for insulation",
+          "eligible_items": "High-efficiency heat pumps, water heaters, insulation, duct sealing",
+          "url": "https://www.santeecooper.com/save-energy-money/"
+        }
+      ]
+    }
+  ]
+}

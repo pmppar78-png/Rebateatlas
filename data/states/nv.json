@@ -1,0 +1,76 @@
+{
+  "state_code": "NV",
+  "state_name": "Nevada",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Nevada has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Governor's Office of Energy is coordinating with the U.S. Department of Energy on program planning and implementation.",
+  "state_energy_office": "Governor's Office of Energy",
+  "state_energy_office_url": "https://energy.nv.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Nevada, 80% of Area Median Income varies by county. In Clark County (Las Vegas), 80% AMI for a family of four is approximately $60,100. In Washoe County (Reno), it is approximately $65,500.",
+    "moderate_income_150_ami": "For Nevada, 150% of Area Median Income varies by county. In Clark County (Las Vegas), 150% AMI for a family of four is approximately $112,700. In Washoe County (Reno), it is approximately $122,800."
+  },
+  "net_metering": "Nevada restored net metering in 2017 after a controversial rollback. Under current rules, residential solar customers receive credits at approximately 75% of the retail rate for excess generation, with the rate declining over time as solar adoption increases. Systems up to 1 MW are eligible.",
+  "state_tax_credits": [
+    {
+      "name": "Nevada Solar Energy Systems Tax Abatement",
+      "amount": "Property tax abatement for solar installations; assessed value of solar equipment is partially exempt from property taxes",
+      "eligible_items": "Solar photovoltaic systems, solar thermal systems installed on residential property",
+      "details": "Nevada provides a property tax exemption for renewable energy systems. The assessed value of qualifying solar energy systems is not included in the property valuation for tax purposes.",
+      "url": "https://energy.nv.gov/programs/renewable-energy-tax-abatements/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Home Energy Retrofit Opportunities for Seniors (HEROS)",
+      "administrator": "Governor's Office of Energy",
+      "amount": "Up to $6,000 per home for qualifying improvements",
+      "eligible_items": "Insulation, air sealing, HVAC upgrades, duct sealing, water heater replacement",
+      "details": "Program designed for low-income senior homeowners (62+) to improve home energy efficiency and reduce energy costs. Income qualification required.",
+      "url": "https://energy.nv.gov/"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Nevada Housing Division",
+      "amount": "Average expenditure of approximately $7,500 per home",
+      "eligible_items": "Insulation, air sealing, heating/cooling system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level.",
+      "url": "https://housing.nv.gov/programs/WAP/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "NV Energy",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Up to $1,800 for heat pumps, $750 for smart thermostats and insulation, $50-$200 for ENERGY STAR appliances",
+          "eligible_items": "High-efficiency HVAC systems, heat pumps, insulation, smart thermostats, ENERGY STAR windows, duct sealing",
+          "url": "https://www.nvenergy.com/save-with-powershift"
+        },
+        {
+          "name": "Free Home Energy Assessment",
+          "amount": "Free",
+          "eligible_items": "Comprehensive home energy evaluation with free installation of LEDs, smart power strips, and low-flow devices",
+          "url": "https://www.nvenergy.com/save-with-powershift"
+        },
+        {
+          "name": "Solar Generations Rebate Program",
+          "amount": "Rebates vary; declining block structure as capacity is filled",
+          "eligible_items": "Rooftop solar photovoltaic systems",
+          "url": "https://www.nvenergy.com/cleanenergy/solar-generations"
+        }
+      ]
+    },
+    {
+      "name": "Valley Electric Association",
+      "programs": [
+        {
+          "name": "Energy Efficiency Rebates",
+          "amount": "Varies by measure",
+          "eligible_items": "High-efficiency HVAC, water heaters, insulation",
+          "url": "https://www.vea.coop/"
+        }
+      ]
+    }
+  ]
+}

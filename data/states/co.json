@@ -1,0 +1,108 @@
+{
+  "state_code": "CO",
+  "state_name": "Colorado",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Colorado has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. The Colorado Energy Office (CEO) administers the programs, building on the state's strong existing energy efficiency infrastructure and commitment to climate goals.",
+  "state_energy_office": "Colorado Energy Office (CEO)",
+  "state_energy_office_url": "https://energyoffice.colorado.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Colorado, 80% of Area Median Income varies by county. In Denver County, 80% AMI for a family of four is approximately $72,250. Mountain resort communities may have higher AMI thresholds.",
+    "moderate_income_150_ami": "For Colorado, 150% of Area Median Income in Denver County for a family of four is approximately $135,450."
+  },
+  "net_metering": "Colorado requires net metering for investor-owned utilities and most cooperative utilities under Colorado Revised Statutes 40-2-124. Residential systems up to 25 kW qualify. Customers receive credits at the full retail rate. Excess credits roll over monthly and are trued up annually. Some co-ops have adopted different compensation structures.",
+  "state_tax_credits": [
+    {
+      "name": "Colorado Heat Pump and Energy Efficiency Tax Credit",
+      "amount": "Up to $1,500 for qualifying heat pump systems; varies by measure for other improvements",
+      "eligible_items": "Heat pumps (air source and ground source), heat pump water heaters, electric panel upgrades, insulation, air sealing, energy-efficient windows",
+      "details": "Colorado enacted tax credits for residential energy efficiency and electrification as part of its climate legislation. Credits can be combined with federal 25C credits and IRA rebates. Income-qualified residents may receive enhanced benefits.",
+      "url": "https://energyoffice.colorado.gov/"
+    },
+    {
+      "name": "Colorado Residential Renewable Energy Tax Credit",
+      "amount": "Varies; state has phased down its additional credit as federal credit remains available",
+      "eligible_items": "Solar photovoltaic systems, solar thermal systems, small wind systems",
+      "details": "Colorado previously offered a state tax credit for residential renewables. The credit has been modified over time. Check current availability as the state has adjusted incentives alongside federal ITC availability.",
+      "url": "https://energyoffice.colorado.gov/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Colorado Heat Pump Incentive Program",
+      "administrator": "Colorado Energy Office",
+      "amount": "Up to $4,000 for cold-climate heat pumps; up to $1,500 for heat pump water heaters; higher amounts for income-qualified households",
+      "eligible_items": "Cold-climate air source heat pumps, ground source heat pumps, heat pump water heaters, related electrical upgrades",
+      "details": "Colorado has been a leader in promoting heat pump adoption with dedicated state funding supplementing federal IRA incentives. Income-qualified households may receive up to $12,000 in combined state and federal rebates.",
+      "url": "https://energyoffice.colorado.gov/"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Colorado Energy Office, administered by local agencies",
+      "amount": "Average of approximately $7,000-$10,000 per home",
+      "eligible_items": "Insulation, air sealing, HVAC repair/replacement, duct sealing, window replacement, health and safety measures",
+      "details": "Colorado supplements federal WAP funding with state resources. Serves households at or below 200% of federal poverty level or 60% of state median income.",
+      "url": "https://energyoffice.colorado.gov/weatherization-assistance-program"
+    },
+    {
+      "name": "Affordable Residential Energy (ARE) Program",
+      "administrator": "Energy Outreach Colorado",
+      "amount": "Free furnace replacement, insulation, and other measures for qualifying households",
+      "eligible_items": "Furnace replacement, insulation, air sealing, water heaters for income-qualifying homeowners",
+      "details": "Non-profit administered program providing free energy efficiency improvements to low-income Colorado households. Funded by utility contributions and state resources.",
+      "url": "https://www.energyoutreach.org/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Xcel Energy",
+      "programs": [
+        {
+          "name": "Residential Heating Efficiency Rebates",
+          "amount": "Up to $2,500 for qualifying heat pumps; up to $800 for furnaces",
+          "eligible_items": "Cold-climate air source heat pumps, ground source heat pumps, high-efficiency furnaces, boilers, smart thermostats",
+          "url": "https://co.my.xcelenergy.com/s/residential/heating-cooling"
+        },
+        {
+          "name": "Home Insulation Rebate",
+          "amount": "Up to $700 for attic insulation; up to $2,000 for comprehensive improvements",
+          "eligible_items": "Attic insulation, wall insulation, air sealing, duct sealing",
+          "url": "https://co.my.xcelenergy.com/s/residential/home-insulation"
+        },
+        {
+          "name": "Refrigerator and Freezer Recycling",
+          "amount": "$50 per unit picked up",
+          "eligible_items": "Old, working refrigerators and freezers",
+          "url": "https://co.my.xcelenergy.com/s/residential"
+        },
+        {
+          "name": "Income-Qualified Weatherization",
+          "amount": "Free comprehensive weatherization for qualifying customers",
+          "eligible_items": "Insulation, air sealing, HVAC repair, LED lighting, smart thermostat, and more",
+          "url": "https://co.my.xcelenergy.com/s/residential"
+        }
+      ]
+    },
+    {
+      "name": "Colorado Springs Utilities",
+      "programs": [
+        {
+          "name": "Residential Rebate Program",
+          "amount": "Up to $1,000 for heat pumps; varies for other measures",
+          "eligible_items": "Heat pumps, high-efficiency water heaters, smart thermostats, insulation",
+          "url": "https://www.csu.org/Pages/Residential-Rebates.aspx"
+        }
+      ]
+    },
+    {
+      "name": "Black Hills Energy",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Up to $500 for qualifying heating equipment",
+          "eligible_items": "High-efficiency furnaces, boilers, smart thermostats, insulation",
+          "url": "https://www.blackhillsenergy.com/efficiency-and-savings"
+        }
+      ]
+    }
+  ]
+}

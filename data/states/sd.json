@@ -1,0 +1,65 @@
+{
+  "state_code": "SD",
+  "state_name": "South Dakota",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "South Dakota has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The South Dakota Governor's Office of Economic Development is the designated state entity, and program design is still in early stages.",
+  "state_energy_office": "South Dakota Governor's Office of Economic Development",
+  "state_energy_office_url": "https://sdgoed.com/",
+  "income_thresholds": {
+    "low_income_80_ami": "For South Dakota, 80% of Area Median Income varies by county. In Minnehaha County (Sioux Falls), 80% AMI for a family of four is approximately $66,300. In Pennington County (Rapid City), it is approximately $59,050.",
+    "moderate_income_150_ami": "For South Dakota, 150% of Area Median Income varies by county. In Minnehaha County (Sioux Falls), 150% AMI for a family of four is approximately $124,350. In Pennington County (Rapid City), it is approximately $110,700."
+  },
+  "net_metering": "South Dakota has a net metering policy for systems up to 100 kW. Investor-owned utilities are required to offer net metering, with customers receiving credit at the retail rate for excess generation. Credits carry forward monthly with an annual true-up.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "South Dakota Department of Social Services",
+      "amount": "Average expenditure of approximately $6,500 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies across South Dakota.",
+      "url": "https://dss.sd.gov/economicassistance/energyassistance.aspx"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Black Hills Energy (South Dakota)",
+      "programs": [
+        {
+          "name": "Black Hills Energy Residential Rebates",
+          "amount": "Up to $500 for high-efficiency furnaces, $200 for water heaters, $50 for smart thermostats",
+          "eligible_items": "High-efficiency natural gas furnaces, tankless water heaters, smart thermostats, insulation",
+          "url": "https://www.blackhillsenergy.com/efficiency-and-savings/residential-rebates"
+        },
+        {
+          "name": "Home Energy Audit",
+          "amount": "Free or reduced-cost home energy assessment",
+          "eligible_items": "Comprehensive home energy evaluation with recommendations",
+          "url": "https://www.blackhillsenergy.com/efficiency-and-savings"
+        }
+      ]
+    },
+    {
+      "name": "Xcel Energy (South Dakota)",
+      "programs": [
+        {
+          "name": "Xcel Energy Residential Rebates",
+          "amount": "Up to $800 for heat pumps, $300 for insulation, $75 for smart thermostats",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, insulation, smart thermostats",
+          "url": "https://www.xcelenergy.com/programs_and_rebates/residential_programs_and_rebates"
+        }
+      ]
+    },
+    {
+      "name": "MidAmerican Energy (South Dakota)",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Varies by measure",
+          "eligible_items": "High-efficiency HVAC, insulation, ENERGY STAR appliances",
+          "url": "https://www.midamericanenergy.com/savings-and-efficiency"
+        }
+      ]
+    }
+  ]
+}

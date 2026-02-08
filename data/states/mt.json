@@ -1,0 +1,94 @@
+{
+  "state_code": "MT",
+  "state_name": "Montana",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Montana's HOMES and HEAR programs are pending launch. The Montana Department of Environmental Quality is developing program guidelines and implementation plans using approximately $30 million in IRA funding allocated to the state.",
+  "state_energy_office": "Montana Department of Environmental Quality - Energy Bureau",
+  "state_energy_office_url": "https://deq.mt.gov/energy",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in Billings, 80% AMI is approximately $56,950. Low-income households will qualify for the highest rebate levels under HOMES when the program launches.",
+    "moderate_income_150_ami": "For a family of four in Billings, 150% AMI is approximately $106,800. Moderate-income households will qualify for partial rebates under HOMES when the program launches."
+  },
+  "net_metering": "Montana requires investor-owned utilities (NorthWestern Energy) to offer net metering for systems up to 50 kW. Excess generation is credited at the retail rate. Monthly excess credits roll over, and the annual surplus is credited at the utility's avoided cost rate. Net metering is available for solar, wind, and hydroelectric systems.",
+  "state_tax_credits": [
+    {
+      "name": "Montana Alternative Energy System Tax Credit",
+      "amount": "Up to $1,000 for residential alternative energy systems (credit equals the lesser of $1,000 or the taxpayer's income tax liability)",
+      "eligible_items": "Solar PV, wind, geothermal, and other qualifying alternative energy systems installed on residential properties",
+      "details": "Non-refundable state income tax credit. Can be carried forward for up to 4 years if the credit exceeds the tax liability. Must be for the taxpayer's primary residence. The system must be new (not used equipment).",
+      "url": "https://deq.mt.gov/energy/renewableenergy/taxincentrenew"
+    },
+    {
+      "name": "Montana Property Tax Exemption for Renewable Energy",
+      "amount": "Reduces the taxable value of a property with a new renewable energy system for 10 years following installation",
+      "eligible_items": "Solar PV, solar thermal, wind, geothermal, and other renewable energy systems",
+      "details": "For the first 5 years, the property is assessed as if the system were not there. For years 6-10, the exemption is gradually phased out. Applies to both residential and commercial properties.",
+      "url": "https://deq.mt.gov/energy/renewableenergy/taxincentrenew"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Montana Weatherization Assistance Program",
+      "administrator": "Montana Department of Public Health and Human Services / Human Resource Development Councils",
+      "amount": "Average of $7,000+ per home",
+      "eligible_items": "Insulation, air sealing, furnace repair and replacement, duct sealing, window and door repairs, water heater replacement",
+      "details": "Available to households at or below 200% of the federal poverty level. Administered by local Human Resource Development Councils (HRDCs) across Montana.",
+      "url": "https://dphhs.mt.gov/hcsd/weatherization"
+    },
+    {
+      "name": "Montana Alternative Energy Revolving Loan Program",
+      "administrator": "Montana Department of Environmental Quality",
+      "amount": "Low-interest loans up to $40,000 for residential projects",
+      "eligible_items": "Solar PV, solar thermal, wind, geothermal, biomass, and energy efficiency improvements",
+      "details": "Provides below-market interest rate loans for residential and commercial alternative energy installations. The program is funded through a revolving loan fund.",
+      "url": "https://deq.mt.gov/energy/renewableenergy/altenergyloans"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "NorthWestern Energy",
+      "programs": [
+        {
+          "name": "NorthWestern Energy E+ Home Rebates",
+          "amount": "$50-$1,500 depending on measure",
+          "eligible_items": "Insulation, air sealing, heat pumps, smart thermostats, ENERGY STAR windows, high-efficiency furnaces, water heaters",
+          "url": "https://www.northwesternenergy.com/save-energy-money/rebates-programs/residential"
+        },
+        {
+          "name": "NorthWestern Energy Net Metering Program",
+          "amount": "Monthly retail-rate credits for excess solar or wind generation",
+          "eligible_items": "Solar PV, wind, and qualifying renewable energy systems up to 50 kW",
+          "url": "https://www.northwesternenergy.com/renewable-energy/net-metering"
+        },
+        {
+          "name": "NorthWestern Energy Low-Income Weatherization",
+          "amount": "Free weatherization for income-qualified customers",
+          "eligible_items": "Insulation, air sealing, furnace repair, LED lighting for qualifying low-income households",
+          "url": "https://www.northwesternenergy.com/save-energy-money/rebates-programs/residential"
+        }
+      ]
+    },
+    {
+      "name": "Montana-Dakota Utilities",
+      "programs": [
+        {
+          "name": "Montana-Dakota Utilities Energy Efficiency Rebates",
+          "amount": "$50-$500 depending on measure",
+          "eligible_items": "High-efficiency furnaces, boilers, water heaters, smart thermostats, insulation",
+          "url": "https://www.montana-dakota.com/save-energy/rebates"
+        }
+      ]
+    },
+    {
+      "name": "Flathead Electric Cooperative",
+      "programs": [
+        {
+          "name": "Flathead Electric Efficiency Rebates",
+          "amount": "$50-$300 depending on measure",
+          "eligible_items": "Heat pumps, ENERGY STAR appliances, LED lighting, smart thermostats",
+          "url": "https://www.flatheadelectric.com/energy-efficiency/"
+        }
+      ]
+    }
+  ]
+}

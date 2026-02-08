@@ -4,45 +4,57 @@
     "partners": [
       {
         "name": "EnergySage",
-        "url": "https://www.energysage.com",
+        "url": "https://www.energysage.com/?rc=rebateatlas",
         "description": "Solar quote marketplace",
         "cta": "Compare Solar Quotes",
-        "notes": "Solar quote marketplace, very high EPC"
+        "notes": "Solar quote marketplace, very high EPC",
+        "tracked": true,
+        "network": "direct"
       },
       {
         "name": "Project Solar",
-        "url": "https://www.projectsolar.com",
+        "url": "https://www.projectsolar.com/?ref=rebateatlas",
         "description": "Direct-to-consumer installer",
         "cta": "Get a Quote",
-        "notes": "Direct-to-consumer solar installer"
+        "notes": "Direct-to-consumer solar installer",
+        "tracked": true,
+        "network": "direct"
       },
       {
         "name": "SunPower",
         "url": "https://us.sunpower.com",
         "description": "Premium national brand",
         "cta": "Explore SunPower",
-        "notes": "Premium national solar brand"
+        "notes": "Premium national solar brand",
+        "tracked": false,
+        "network": ""
       },
       {
         "name": "ADT Solar",
         "url": "https://www.adtsolar.com",
         "description": "Solar installations",
         "cta": "Get a Quote",
-        "notes": "Solar arm of ADT"
+        "notes": "Solar arm of ADT",
+        "tracked": false,
+        "network": ""
       },
       {
         "name": "Momentum Solar",
         "url": "https://momentumsolar.com",
         "description": "Regional installer",
         "cta": "Get a Quote",
-        "notes": "Regional US solar installer"
+        "notes": "Regional US solar installer",
+        "tracked": false,
+        "network": ""
       },
       {
         "name": "SolarReviews",
         "url": "https://www.solarreviews.com",
         "description": "Solar reviews & quotes",
         "cta": "Read Reviews",
-        "notes": "Solar reviews and lead-gen"
+        "notes": "Solar reviews and lead-gen",
+        "tracked": false,
+        "network": ""
       }
     ]
   },
@@ -54,21 +66,27 @@
         "url": "https://modernize.com",
         "description": "HVAC, windows, roofing pros",
         "cta": "Find Pros",
-        "notes": "Leads for HVAC, windows, roofing, etc."
+        "notes": "Leads for HVAC, windows, roofing, etc.",
+        "tracked": false,
+        "network": ""
       },
       {
         "name": "Angi",
-        "url": "https://www.angi.com",
+        "url": "https://www.angi.com/?ref=rebateatlas",
         "description": "Home services marketplace",
         "cta": "Find Pros",
-        "notes": "Home services marketplace"
+        "notes": "Home services marketplace",
+        "tracked": true,
+        "network": "cj_affiliate"
       },
       {
         "name": "Thumbtack",
-        "url": "https://www.thumbtack.com",
+        "url": "https://www.thumbtack.com/?utm_source=rebateatlas&utm_medium=affiliate",
         "description": "Local professionals",
         "cta": "Find Local Pros",
-        "notes": "Local pros marketplace"
+        "notes": "Local pros marketplace",
+        "tracked": true,
+        "network": "direct"
       }
     ]
   },
@@ -80,35 +98,45 @@
         "url": "https://sense.com",
         "description": "Home energy monitoring",
         "cta": "Shop Now",
-        "notes": "Home energy monitoring"
+        "notes": "Home energy monitoring",
+        "tracked": false,
+        "network": ""
       },
       {
         "name": "Emporia Energy",
         "url": "https://www.emporiaenergy.com",
         "description": "Energy monitors & smart plugs",
         "cta": "Shop Now",
-        "notes": "Energy monitors & smart plugs"
+        "notes": "Energy monitors & smart plugs",
+        "tracked": false,
+        "network": ""
       },
       {
         "name": "Ecobee",
-        "url": "https://www.ecobee.com",
+        "url": "https://www.ecobee.com/?ref=rebateatlas",
         "description": "Smart thermostats",
         "cta": "Shop Now",
-        "notes": "Smart thermostats"
+        "notes": "Smart thermostats",
+        "tracked": true,
+        "network": "shareasale"
       },
       {
         "name": "Google Nest",
-        "url": "https://store.google.com/us/category/connected_home",
+        "url": "https://store.google.com/us/category/connected_home?ref=rebateatlas",
         "description": "Nest thermostats & devices",
         "cta": "Shop Now",
-        "notes": "Nest thermostats & devices"
+        "notes": "Nest thermostats & devices",
+        "tracked": true,
+        "network": "direct"
       },
       {
         "name": "Wyze",
         "url": "https://www.wyze.com",
         "description": "Affordable smart products",
         "cta": "Shop Now",
-        "notes": "Affordable smart home products"
+        "notes": "Affordable smart home products",
+        "tracked": false,
+        "network": ""
       }
     ]
   },
@@ -117,24 +145,30 @@
     "partners": [
       {
         "name": "Amazon",
-        "url": "https://www.amazon.com",
+        "url": "https://www.amazon.com/?tag=rebateatlas-20",
         "description": "Smart thermostats & energy devices",
         "cta": "Shop Now",
-        "notes": "Smart thermostats, energy devices, etc."
+        "notes": "Smart thermostats, energy devices, etc.",
+        "tracked": true,
+        "network": "amazon_associates"
       },
       {
         "name": "Home Depot",
-        "url": "https://www.homedepot.com",
+        "url": "https://www.homedepot.com/?mtc=rebateatlas",
         "description": "Home improvement supplies",
         "cta": "Shop Now",
-        "notes": "Home improvement retailer"
+        "notes": "Home improvement retailer",
+        "tracked": true,
+        "network": "impact"
       },
       {
         "name": "Lowe's",
         "url": "https://www.lowes.com",
         "description": "Tools & materials",
         "cta": "Shop Now",
-        "notes": "Home improvement retailer"
+        "notes": "Home improvement retailer",
+        "tracked": false,
+        "network": ""
       }
     ]
   },
@@ -146,35 +180,73 @@
         "url": "https://www.upgrade.com",
         "description": "Personal loans",
         "cta": "Check Rates",
-        "notes": "Personal loans"
+        "notes": "Personal loans",
+        "tracked": false,
+        "network": ""
       },
       {
         "name": "LendingTree",
-        "url": "https://www.lendingtree.com",
+        "url": "https://www.lendingtree.com/?esource=rebateatlas",
         "description": "Loan comparison marketplace",
         "cta": "Compare Rates",
-        "notes": "Loan comparison marketplace"
+        "notes": "Loan comparison marketplace",
+        "tracked": true,
+        "network": "flexoffers"
       },
       {
         "name": "LightStream",
         "url": "https://www.lightstream.com",
         "description": "Home improvement loans",
         "cta": "Check Rates",
-        "notes": "Home improvement & solar loans"
+        "notes": "Home improvement & solar loans",
+        "tracked": false,
+        "network": ""
       },
       {
         "name": "SoFi",
-        "url": "https://www.sofi.com",
+        "url": "https://www.sofi.com/?ref=rebateatlas",
         "description": "Loans & refinancing",
         "cta": "Check Rates",
-        "notes": "Loans & refinancing"
+        "notes": "Loans & refinancing",
+        "tracked": true,
+        "network": "impact"
       },
       {
         "name": "Credible",
         "url": "https://www.credible.com",
         "description": "Compare loan options",
         "cta": "Compare Rates",
-        "notes": "Loan comparison"
+        "notes": "Loan comparison",
+        "tracked": false,
+        "network": ""
+      }
+    ]
+  },
+  "ev_chargers": {
+    "label": "EV Chargers & Equipment",
+    "partners": [
+      {
+        "name": "ChargePoint",
+        "url": "https://www.chargepoint.com/?ref=rebateatlas",
+        "description": "Home & commercial EV charging",
+        "cta": "Shop Chargers",
+        "notes": "Leading EV charging network with home charger products",
+        "tracked": true,
+        "network": "direct"
+      }
+    ]
+  },
+  "battery_backup": {
+    "label": "Battery Storage & Backup",
+    "partners": [
+      {
+        "name": "EcoFlow",
+        "url": "https://www.ecoflow.com/?ref=rebateatlas",
+        "description": "Portable & home battery systems",
+        "cta": "Shop Systems",
+        "notes": "Home battery and portable power stations",
+        "tracked": true,
+        "network": "direct"
       }
     ]
   }

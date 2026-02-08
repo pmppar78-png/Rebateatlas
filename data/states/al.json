@@ -1,0 +1,73 @@
+{
+  "state_code": "AL",
+  "state_name": "Alabama",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Alabama has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Alabama Department of Economic and Community Affairs (ADECA) is the designated administrator and is in the planning and application phase with the U.S. Department of Energy.",
+  "state_energy_office": "Alabama Department of Economic and Community Affairs (ADECA)",
+  "state_energy_office_url": "https://adeca.alabama.gov/energy/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Alabama, 80% of Area Median Income varies by county. For example, in Jefferson County (Birmingham), 80% AMI for a family of four is approximately $55,300. Rural counties may be significantly lower.",
+    "moderate_income_150_ami": "For Alabama, 150% of Area Median Income varies by county. In Jefferson County (Birmingham), 150% AMI for a family of four is approximately $103,700."
+  },
+  "net_metering": "Alabama does not have a statewide net metering policy. Alabama Power offers a rate-based program called Rate Rider RCG for small renewable generators (up to 25 kW) that credits customers at the avoided cost rate, which is significantly below the retail rate.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "TVA EnergyRight Residential Services",
+      "administrator": "Tennessee Valley Authority (TVA) and local power companies",
+      "amount": "Varies by measure; up to $1,500 for qualifying heat pumps",
+      "eligible_items": "Heat pumps, insulation, air sealing, duct sealing, ENERGY STAR appliances",
+      "details": "Available to customers of TVA-served utilities in northern Alabama including Huntsville Utilities, Decatur Utilities, and others. Includes home energy evaluations and rebates for qualifying improvements.",
+      "url": "https://energyright.com/"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Alabama Department of Economic and Community Affairs (ADECA)",
+      "amount": "Average expenditure of approximately $7,669 per home",
+      "eligible_items": "Insulation, air sealing, heating/cooling system repair or replacement, window and door improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through local community action agencies.",
+      "url": "https://adeca.alabama.gov/energy/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Alabama Power",
+      "programs": [
+        {
+          "name": "Residential Energy Checkup",
+          "amount": "Free home energy assessment",
+          "eligible_items": "Home energy audit identifying efficiency improvement opportunities",
+          "url": "https://www.alabamapower.com/residential/energy-savings.html"
+        },
+        {
+          "name": "Appliance Rebate Program",
+          "amount": "Varies; typical rebates $50-$300",
+          "eligible_items": "ENERGY STAR certified heat pumps, water heaters, smart thermostats",
+          "url": "https://www.alabamapower.com/residential/energy-savings.html"
+        }
+      ]
+    },
+    {
+      "name": "Huntsville Utilities",
+      "programs": [
+        {
+          "name": "TVA EnergyRight Heat Pump Rebate",
+          "amount": "Up to $1,500 for qualifying heat pumps",
+          "eligible_items": "ENERGY STAR certified heat pumps meeting minimum efficiency requirements",
+          "url": "https://www.hsvutil.org/"
+        }
+      ]
+    },
+    {
+      "name": "Riviera Utilities",
+      "programs": [
+        {
+          "name": "TVA EnergyRight Residential Rebates",
+          "amount": "Varies by measure",
+          "eligible_items": "Heat pumps, insulation, duct sealing",
+          "url": "https://rivierautilities.com/"
+        }
+      ]
+    }
+  ]
+}

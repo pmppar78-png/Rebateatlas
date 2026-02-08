@@ -74,6 +74,38 @@
   }
 
   /**
+   * Attach affiliate click and chat interaction tracking via GA4.
+   * Non-blocking — silently no-ops if gtag is not available.
+   */
+  function attachEventTracking() {
+    // Affiliate link click tracking
+    var affiliateLinks = document.querySelectorAll('a.affiliate-link, a[rel="sponsored"]');
+    affiliateLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'affiliate_click', {
+            partner: link.textContent.trim(),
+            url: link.href,
+            page: window.location.pathname
+          });
+        }
+      });
+    });
+
+    // AI chat interaction tracking
+    var chatForms = document.querySelectorAll('.chat-form');
+    chatForms.forEach(function (form) {
+      form.addEventListener('submit', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'chat_message_sent', {
+            page: window.location.pathname
+          });
+        }
+      });
+    });
+  }
+
+  /**
    * Load config.json and conditionally activate enabled hooks.
    */
   function init() {
@@ -101,6 +133,7 @@
 
         if (features.ga4_enabled) {
           injectGA4(ids);
+          attachEventTracking();
         }
       })
       .catch(function (err) {

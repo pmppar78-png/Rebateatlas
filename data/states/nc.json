@@ -1,0 +1,65 @@
+{
+  "state_code": "NC",
+  "state_name": "North Carolina",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "North Carolina has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The North Carolina Department of Environmental Quality (DEQ) Energy Office is coordinating with the U.S. Department of Energy on program design and implementation.",
+  "state_energy_office": "North Carolina Department of Environmental Quality - State Energy Office",
+  "state_energy_office_url": "https://www.deq.nc.gov/energy-climate/state-energy-office",
+  "income_thresholds": {
+    "low_income_80_ami": "For North Carolina, 80% of Area Median Income varies by county. In Mecklenburg County (Charlotte), 80% AMI for a family of four is approximately $64,650. In Wake County (Raleigh), it is approximately $68,400.",
+    "moderate_income_150_ami": "For North Carolina, 150% of Area Median Income varies by county. In Mecklenburg County (Charlotte), 150% AMI for a family of four is approximately $121,200. In Wake County (Raleigh), it is approximately $128,250."
+  },
+  "net_metering": "North Carolina does not have a traditional statewide net metering law. Duke Energy offers net metering for systems up to 1 MW under their Rider NM tariff, where customers receive a credit at the utility's avoided cost rate for excess generation, which is lower than the retail rate.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "North Carolina Department of Environmental Quality",
+      "amount": "Average expenditure of approximately $7,500 per home",
+      "eligible_items": "Insulation, air sealing, heating/cooling system repair or replacement, windows, doors, health and safety improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through regional community action agencies across the state.",
+      "url": "https://www.deq.nc.gov/energy-climate/state-energy-office/weatherization-assistance-program"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Duke Energy Carolinas",
+      "programs": [
+        {
+          "name": "Duke Energy Residential Smart $aver",
+          "amount": "Up to $1,000 for heat pumps, $200 for smart thermostats, $400 for duct sealing",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, duct sealing, smart thermostats, attic insulation",
+          "url": "https://www.duke-energy.com/home/products/smart-saver"
+        },
+        {
+          "name": "Duke Energy Home Energy Assessment",
+          "amount": "Free online energy assessment or reduced-cost in-home assessment",
+          "eligible_items": "Home energy evaluation identifying savings opportunities",
+          "url": "https://www.duke-energy.com/home/products/home-energy-house-call"
+        }
+      ]
+    },
+    {
+      "name": "Duke Energy Progress",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Up to $600 for heat pumps, $200 for smart thermostats, $300 for insulation",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, smart thermostats, insulation, duct sealing",
+          "url": "https://www.duke-energy.com/home/products/smart-saver"
+        }
+      ]
+    },
+    {
+      "name": "Dominion Energy North Carolina",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Programs",
+          "amount": "Varies by measure; up to $500 for qualifying equipment",
+          "eligible_items": "High-efficiency HVAC systems, smart thermostats, insulation",
+          "url": "https://www.dominionenergy.com/north-carolina/save-energy"
+        }
+      ]
+    }
+  ]
+}

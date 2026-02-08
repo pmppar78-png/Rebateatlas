@@ -1,0 +1,116 @@
+{
+  "state_code": "FL",
+  "state_name": "Florida",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Florida has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Florida Department of Agriculture and Consumer Services (FDACS), Office of Energy, is the designated administrator. Florida's participation has been uncertain due to political dynamics around federal climate spending.",
+  "state_energy_office": "Florida Department of Agriculture and Consumer Services, Office of Energy",
+  "state_energy_office_url": "https://www.fdacs.gov/Energy",
+  "income_thresholds": {
+    "low_income_80_ami": "For Florida, 80% of Area Median Income varies significantly by county. In Miami-Dade County, 80% AMI for a family of four is approximately $58,600. In Orange County (Orlando), it is approximately $57,500.",
+    "moderate_income_150_ami": "For Florida, 150% of Area Median Income in Miami-Dade County for a family of four is approximately $109,900. In Orange County (Orlando), it is approximately $107,800."
+  },
+  "net_metering": "Florida has net metering under Florida Administrative Code 25-6.065. Residential systems up to 2 MW qualify. Customers receive credits at the full retail rate for excess generation. Credits roll forward monthly. Multiple attempts to weaken or eliminate net metering (e.g., HB 741 in 2022, vetoed by the governor) have been made but net metering remains in place as of early 2026.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Residential Property Tax Exemption for Renewable Energy",
+      "administrator": "Florida Department of Revenue (via local property appraisers)",
+      "amount": "100% property tax exemption for the added value of a renewable energy system",
+      "eligible_items": "Solar PV, solar thermal, wind, and other qualifying renewable energy systems installed on residential property",
+      "details": "Florida exempts the added value of residential renewable energy systems from property tax assessment. This means installing solar panels will not increase your property tax bill. This is a constitutional amendment (Article VII, Section 3(d)).",
+      "url": "https://floridarevenue.com/"
+    },
+    {
+      "name": "Sales Tax Exemption for Solar Energy Systems",
+      "administrator": "Florida Department of Revenue",
+      "amount": "Exemption from 6% state sales tax on solar energy equipment",
+      "eligible_items": "Solar PV panels, solar thermal collectors, and related equipment",
+      "details": "Florida exempts solar energy systems from the state's 6% sales tax, providing significant savings on equipment costs.",
+      "url": "https://floridarevenue.com/"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Florida Department of Economic Opportunity, through community action agencies",
+      "amount": "Average of approximately $5,000-$7,000 per home",
+      "eligible_items": "Insulation, air sealing, HVAC repair/replacement, duct sealing, window film, solar screens, attic ventilation",
+      "details": "Federally funded program for income-qualifying households. Florida's program emphasizes cooling load reduction including duct repair, insulation, and solar shading.",
+      "url": "https://floridajobs.org/community-planning-and-development/community-services/weatherization-assistance-program"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Florida Power & Light (FPL / NextEra Energy)",
+      "programs": [
+        {
+          "name": "Home Energy Survey",
+          "amount": "Free home energy assessment",
+          "eligible_items": "Comprehensive energy assessment identifying efficiency improvement opportunities",
+          "url": "https://www.fpl.com/save/programs.html"
+        },
+        {
+          "name": "Building Envelope Program",
+          "amount": "Up to $1,335 for ceiling insulation; up to $150 for duct repair",
+          "eligible_items": "Ceiling insulation, duct system testing and repair",
+          "url": "https://www.fpl.com/save/programs.html"
+        },
+        {
+          "name": "Residential AC Rebate",
+          "amount": "Up to $377 for qualifying high-efficiency systems",
+          "eligible_items": "High-efficiency central air conditioning systems meeting minimum SEER requirements",
+          "url": "https://www.fpl.com/save/programs.html"
+        }
+      ]
+    },
+    {
+      "name": "Duke Energy Florida",
+      "programs": [
+        {
+          "name": "Home Energy House Call",
+          "amount": "Free in-home energy assessment with installation of free efficiency measures",
+          "eligible_items": "Energy assessment plus free LED lighting, water heater wrap, faucet aerators, showerheads",
+          "url": "https://www.duke-energy.com/home/savings/florida"
+        },
+        {
+          "name": "Residential HVAC Rebates",
+          "amount": "Up to $467 for qualifying systems",
+          "eligible_items": "High-efficiency central air conditioning systems and heat pumps",
+          "url": "https://www.duke-energy.com/home/savings/florida"
+        },
+        {
+          "name": "Ceiling Insulation Rebate",
+          "amount": "Up to $862 for qualifying improvements",
+          "eligible_items": "Ceiling/attic insulation meeting minimum R-value requirements",
+          "url": "https://www.duke-energy.com/home/savings/florida"
+        }
+      ]
+    },
+    {
+      "name": "Tampa Electric (TECO Energy)",
+      "programs": [
+        {
+          "name": "Conservation Rebate Programs",
+          "amount": "Varies by measure; up to $477 for qualifying HVAC",
+          "eligible_items": "High-efficiency air conditioning, ceiling insulation, duct repair, heat pump water heaters",
+          "url": "https://www.tampaelectric.com/save-energy/"
+        },
+        {
+          "name": "Free Energy Audit",
+          "amount": "Free in-home energy assessment",
+          "eligible_items": "Comprehensive home energy assessment with efficiency recommendations",
+          "url": "https://www.tampaelectric.com/save-energy/"
+        }
+      ]
+    },
+    {
+      "name": "JEA (Jacksonville)",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Varies; up to $300 for HVAC, up to $200 for insulation",
+          "eligible_items": "High-efficiency HVAC systems, insulation, duct sealing, solar water heating",
+          "url": "https://www.jea.com/save-money-and-energy/"
+        }
+      ]
+    }
+  ]
+}

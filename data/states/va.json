@@ -1,0 +1,79 @@
+{
+  "state_code": "VA",
+  "state_name": "Virginia",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Virginia has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Virginia Department of Energy (Virginia Energy) is the designated state entity coordinating with the U.S. Department of Energy on program design and implementation.",
+  "state_energy_office": "Virginia Department of Energy (Virginia Energy)",
+  "state_energy_office_url": "https://energy.virginia.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Virginia, 80% of Area Median Income varies significantly by locality. In Fairfax County (Northern Virginia), 80% AMI for a family of four is approximately $92,800. In Richmond City, it is approximately $64,700.",
+    "moderate_income_150_ami": "For Virginia, 150% of Area Median Income varies significantly by locality. In Fairfax County (Northern Virginia), 150% AMI for a family of four is approximately $174,000. In Richmond City, it is approximately $121,300."
+  },
+  "net_metering": "Virginia has net metering for residential systems up to 25 kW under the Virginia Clean Economy Act framework. Customers receive credit at the retail rate for excess generation. Credits carry forward for up to 12 months. The state expanded net metering access and added provisions for shared solar programs.",
+  "state_tax_credits": [
+    {
+      "name": "Virginia Solar Energy Property Tax Exemption",
+      "amount": "Localities may exempt from property tax the assessed value added by solar energy equipment (80%+ of Virginia localities have adopted this exemption)",
+      "eligible_items": "Solar photovoltaic systems, solar thermal systems on residential and commercial property",
+      "details": "Under Virginia Code Section 58.1-3661, localities can choose to exempt solar energy equipment from property taxes. Most Virginia jurisdictions have adopted this exemption.",
+      "url": "https://energy.virginia.gov/renewable-energy/solar-energy.shtml"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Virginia Department of Housing and Community Development (DHCD)",
+      "amount": "Average expenditure of approximately $7,500 per home",
+      "eligible_items": "Insulation, air sealing, heating/cooling system repair or replacement, windows, doors, health and safety improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through local community action agencies.",
+      "url": "https://www.dhcd.virginia.gov/wx"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Dominion Energy Virginia",
+      "programs": [
+        {
+          "name": "Dominion Energy Residential Efficiency Rebates",
+          "amount": "Up to $500 for heat pumps, $250 for insulation, $75 for smart thermostats",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, insulation, duct sealing, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.dominionenergy.com/virginia/save-energy"
+        },
+        {
+          "name": "Dominion Energy Home Energy Assessment",
+          "amount": "Free in-home or online energy assessment",
+          "eligible_items": "Comprehensive home energy evaluation with recommendations and free direct-install measures (LEDs, water-saving devices)",
+          "url": "https://www.dominionenergy.com/virginia/save-energy/home-energy-assessment"
+        },
+        {
+          "name": "Dominion Energy Income-Qualified Programs",
+          "amount": "Free weatherization improvements up to $7,000 per home",
+          "eligible_items": "Insulation, air sealing, HVAC repair/replacement, water heaters for income-qualifying customers",
+          "url": "https://www.dominionenergy.com/virginia/save-energy"
+        }
+      ]
+    },
+    {
+      "name": "Appalachian Power (APCo - Virginia)",
+      "programs": [
+        {
+          "name": "Take Charge Virginia Residential Rebates",
+          "amount": "Up to $500 for heat pumps, $200 for insulation, $75 for smart thermostats",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, insulation, duct sealing, smart thermostats",
+          "url": "https://takechargevirginia.com/"
+        }
+      ]
+    },
+    {
+      "name": "Washington Gas (Virginia territory)",
+      "programs": [
+        {
+          "name": "Residential Rebate Programs",
+          "amount": "Up to $300 for high-efficiency furnaces, $200 for water heaters, $50 for smart thermostats",
+          "eligible_items": "High-efficiency natural gas furnaces, tankless water heaters, smart thermostats",
+          "url": "https://www.washingtongas.com/save-energy-money"
+        }
+      ]
+    }
+  ]
+}

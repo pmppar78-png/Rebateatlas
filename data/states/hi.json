@@ -1,0 +1,87 @@
+{
+  "state_code": "HI",
+  "state_name": "Hawaii",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Hawaii has launched both the HOMES and HEAR programs through the Hawaii State Energy Office, providing rebates for whole-home energy efficiency retrofits and high-efficiency electric appliances. Hawaii received over $48 million in IRA funding for these programs.",
+  "state_energy_office": "Hawaii State Energy Office",
+  "state_energy_office_url": "https://energy.hawaii.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in Honolulu County, 80% AMI is approximately $86,400. Outer islands have lower thresholds. Low-income households qualify for up to 100% of project costs covered under HOMES.",
+    "moderate_income_150_ami": "For a family of four in Honolulu County, 150% AMI is approximately $162,000. Moderate-income households qualify for up to 50% of project costs under HOMES."
+  },
+  "net_metering": "Hawaii transitioned from traditional net metering to Customer Grid-Supply (CGS) and Customer Self-Supply (CSS) programs. Under CGS, customers receive a credit for exported solar energy at a rate lower than the retail rate. CSS requires all solar generation to be used on-site. Smart Export programs offer time-of-use export credits.",
+  "state_tax_credits": [
+    {
+      "name": "Hawaii Renewable Energy Technologies Income Tax Credit",
+      "amount": "35% of installed cost for solar PV (capped at $5,000), 35% for solar thermal (capped at $2,250), and 20% for wind systems (capped at $1,500)",
+      "eligible_items": "Solar photovoltaic systems, solar thermal systems, wind energy systems, and battery storage systems paired with renewable energy",
+      "details": "This is a non-refundable state income tax credit that can be carried forward. The credit is claimed in the tax year the system is placed in service. It stacks with the federal 30% ITC.",
+      "url": "https://energy.hawaii.gov/renewable-energy-tax-credits/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Hawaii Energy Efficiency Rebate Program",
+      "administrator": "Hawaii Energy (administered by Leidos)",
+      "amount": "$200-$1,500 depending on measure",
+      "eligible_items": "Energy-efficient appliances, LED lighting, HVAC systems, heat pump water heaters, building envelope improvements",
+      "details": "Hawaii Energy is the state's ratepayer-funded conservation and efficiency program. Rebates are available for residential and commercial customers of HECO, MECO, and HELCO.",
+      "url": "https://www.hawaiienergy.com/residential"
+    },
+    {
+      "name": "Heat Pump Water Heater Rebate",
+      "administrator": "Hawaii Energy",
+      "amount": "Up to $1,000 for qualifying heat pump water heaters",
+      "eligible_items": "ENERGY STAR certified heat pump water heaters replacing electric resistance or propane water heaters",
+      "details": "Additional bonuses may be available for income-qualified households. Must be installed by a licensed contractor.",
+      "url": "https://www.hawaiienergy.com/residential/water-heating"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Hawaiian Electric (HECO)",
+      "programs": [
+        {
+          "name": "Customer Grid-Supply Program",
+          "amount": "Export credit rate varies by island (approximately $0.10-$0.15/kWh)",
+          "eligible_items": "Grid-connected solar PV and battery storage systems",
+          "url": "https://www.hawaiianelectric.com/products-and-services/customer-renewable-programs"
+        },
+        {
+          "name": "Battery Bonus Program",
+          "amount": "Up to $850/kW for residential battery storage",
+          "eligible_items": "Battery energy storage systems paired with solar PV",
+          "url": "https://www.hawaiianelectric.com/products-and-services/customer-renewable-programs/battery-bonus"
+        },
+        {
+          "name": "Time-of-Use Rate Program",
+          "amount": "Lower rates during off-peak hours; higher rates during peak (5-9 PM)",
+          "eligible_items": "All residential customers with smart meters",
+          "url": "https://www.hawaiianelectric.com/billing-and-payment/rates-and-regulations"
+        }
+      ]
+    },
+    {
+      "name": "Maui Electric (MECO)",
+      "programs": [
+        {
+          "name": "Customer Renewable Programs",
+          "amount": "Export credits vary by program tier",
+          "eligible_items": "Solar PV systems, battery storage, and solar-plus-storage systems",
+          "url": "https://www.hawaiianelectric.com/products-and-services/customer-renewable-programs"
+        }
+      ]
+    },
+    {
+      "name": "Hawaii Electric Light (HELCO)",
+      "programs": [
+        {
+          "name": "Customer Renewable Programs",
+          "amount": "Export credits vary by program tier",
+          "eligible_items": "Solar PV systems, battery storage, and solar-plus-storage systems",
+          "url": "https://www.hawaiianelectric.com/products-and-services/customer-renewable-programs"
+        }
+      ]
+    }
+  ]
+}

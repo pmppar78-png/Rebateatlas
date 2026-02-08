@@ -7,7 +7,7 @@
  * need to inject schema dynamically.
  */
 
-const SITE_URL = 'https://rebateatlas.netlify.app';
+const SITE_URL = 'https://rebateatlas.org';
 const SITE_NAME = 'Rebate Atlas';
 
 /**

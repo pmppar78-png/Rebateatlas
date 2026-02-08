@@ -1,0 +1,80 @@
+{
+  "state_code": "NM",
+  "state_name": "New Mexico",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "New Mexico has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The New Mexico Energy, Minerals and Natural Resources Department (EMNRD) is working with the U.S. Department of Energy on program design and deployment.",
+  "state_energy_office": "New Mexico Energy, Minerals and Natural Resources Department (EMNRD)",
+  "state_energy_office_url": "https://www.emnrd.nm.gov/ecmd/",
+  "income_thresholds": {
+    "low_income_80_ami": "For New Mexico, 80% of Area Median Income varies by county. In Bernalillo County (Albuquerque), 80% AMI for a family of four is approximately $55,950. Rural counties may be lower.",
+    "moderate_income_150_ami": "For New Mexico, 150% of Area Median Income varies by county. In Bernalillo County (Albuquerque), 150% AMI for a family of four is approximately $104,900."
+  },
+  "net_metering": "New Mexico has net metering rules for systems up to 80 MW. Residential customers receive full retail rate credit for excess generation. Credits carry forward month to month with an annual true-up, and any remaining credits are granted to the utility.",
+  "state_tax_credits": [
+    {
+      "name": "New Mexico Solar Market Development Tax Credit",
+      "amount": "10% of the cost of a solar system, up to $6,000 (originally $9,000 before 2024 adjustments)",
+      "eligible_items": "Solar photovoltaic systems and solar thermal systems installed on residential property",
+      "details": "New Mexico offers a personal income tax credit for the installation of solar energy systems. The credit can be carried forward for up to 10 years if it exceeds tax liability in a given year.",
+      "url": "https://www.emnrd.nm.gov/ecmd/tax-incentives/"
+    },
+    {
+      "name": "New Mexico Sustainable Building Tax Credit",
+      "amount": "Up to $5.00 per square foot for new residential construction meeting Build Green NM Silver or higher standards",
+      "eligible_items": "New construction or major renovations meeting sustainable building standards",
+      "details": "Available for homes built to sustainable building standards. Credit amount depends on the level of certification achieved.",
+      "url": "https://www.emnrd.nm.gov/ecmd/tax-incentives/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "New Mexico Mortgage Finance Authority (MFA)",
+      "amount": "Average expenditure of approximately $7,000 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies and non-profit organizations.",
+      "url": "https://housingnm.org/find-housing/weatherization"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "PNM (Public Service Company of New Mexico)",
+      "programs": [
+        {
+          "name": "PNM Residential Rebates",
+          "amount": "Up to $800 for heat pumps, $400 for insulation, $100 for smart thermostats",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, insulation, duct sealing, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.pnm.com/save-energy"
+        },
+        {
+          "name": "PNM Home Energy Checkup",
+          "amount": "Free online home energy assessment",
+          "eligible_items": "Home energy evaluation identifying savings opportunities and available rebates",
+          "url": "https://www.pnm.com/save-energy"
+        }
+      ]
+    },
+    {
+      "name": "El Paso Electric (New Mexico)",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Up to $600 for HVAC, $300 for insulation, $75 for smart thermostats",
+          "eligible_items": "High-efficiency HVAC systems, insulation, duct sealing, smart thermostats",
+          "url": "https://www.epelectric.com/save-energy-money/new-mexico"
+        }
+      ]
+    },
+    {
+      "name": "New Mexico Gas Company",
+      "programs": [
+        {
+          "name": "Energy Efficiency Rebates",
+          "amount": "Up to $500 for high-efficiency furnaces, $300 for water heaters",
+          "eligible_items": "High-efficiency natural gas furnaces, tankless water heaters, smart thermostats",
+          "url": "https://www.nmgco.com/en/save_energy_money"
+        }
+      ]
+    }
+  ]
+}

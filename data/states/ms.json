@@ -1,0 +1,73 @@
+{
+  "state_code": "MS",
+  "state_name": "Mississippi",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Mississippi's HOMES and HEAR programs are pending launch. The Mississippi Development Authority - Energy Division is working on program design and implementation using approximately $50 million in IRA funding allocated to the state.",
+  "state_energy_office": "Mississippi Development Authority - Energy Division",
+  "state_energy_office_url": "https://www.mississippi.org/energy/",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in Jackson, 80% AMI is approximately $49,900. Low-income households will qualify for the highest rebate levels under HOMES when the program launches.",
+    "moderate_income_150_ami": "For a family of four in Jackson, 150% AMI is approximately $93,600. Moderate-income households will qualify for partial rebates under HOMES when the program launches."
+  },
+  "net_metering": "Mississippi established net metering rules in 2015 through the Mississippi Public Service Commission. Systems up to 2 MW qualify for net metering with investor-owned utilities. Excess generation is credited at the avoided cost rate. The rules apply to Entergy Mississippi and Mississippi Power. Rural electric cooperatives and municipal utilities may have separate policies.",
+  "state_tax_credits": [
+    {
+      "name": "Mississippi does not currently offer state tax credits for residential renewable energy or energy efficiency",
+      "amount": "N/A",
+      "eligible_items": "N/A",
+      "details": "Mississippi does not have state-level solar tax credits, energy efficiency tax credits, or renewable energy incentives for residential customers. Residents can still claim the federal 30% Investment Tax Credit for solar PV and battery storage.",
+      "url": "https://www.mississippi.org/energy/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Mississippi Weatherization Assistance Program",
+      "administrator": "Mississippi Department of Human Services / Community Action Agencies",
+      "amount": "Average of $7,000+ per home",
+      "eligible_items": "Insulation, air sealing, HVAC repair and replacement, duct sealing, window and door repairs",
+      "details": "Available to households at or below 200% of the federal poverty level. Administered by local community action agencies throughout Mississippi.",
+      "url": "https://www.mdhs.ms.gov/community-services/weatherization/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Entergy Mississippi",
+      "programs": [
+        {
+          "name": "Entergy Solutions Residential Program",
+          "amount": "$25-$500 depending on measure",
+          "eligible_items": "Smart thermostats, HVAC tune-ups, duct sealing, insulation, LED lighting",
+          "url": "https://www.entergy.com/residential/energy-efficiency/"
+        },
+        {
+          "name": "Entergy Mississippi Income-Qualified Weatherization",
+          "amount": "Free weatherization improvements for qualifying customers",
+          "eligible_items": "Air sealing, insulation, HVAC repair, LED lighting for low-income households",
+          "url": "https://www.entergy.com/residential/energy-efficiency/"
+        }
+      ]
+    },
+    {
+      "name": "Mississippi Power (Southern Company)",
+      "programs": [
+        {
+          "name": "Mississippi Power Residential Energy Efficiency Programs",
+          "amount": "$25-$400 depending on measure",
+          "eligible_items": "HVAC tune-ups, duct sealing, insulation, LED lighting, smart thermostats",
+          "url": "https://www.mississippipower.com/residential/save-money-energy/"
+        }
+      ]
+    },
+    {
+      "name": "TVA-served Cooperatives and Municipalities",
+      "programs": [
+        {
+          "name": "TVA EnergyRight Residential Solutions",
+          "amount": "Up to $2,000 depending on measure",
+          "eligible_items": "Heat pumps, insulation, duct sealing, ENERGY STAR windows, smart thermostats, whole-home energy assessments",
+          "url": "https://energyright.com/residential/"
+        }
+      ]
+    }
+  ]
+}

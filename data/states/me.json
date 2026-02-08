@@ -1,0 +1,91 @@
+{
+  "state_code": "ME",
+  "state_name": "Maine",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Maine has launched both HOMES and HEAR programs through Efficiency Maine Trust. The state received approximately $52 million in IRA funding. Efficiency Maine is administering rebates for whole-home energy retrofits and high-efficiency electric appliances including heat pumps.",
+  "state_energy_office": "Governor's Energy Office",
+  "state_energy_office_url": "https://www.maine.gov/energy/",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in Portland, 80% AMI is approximately $65,650. Low-income households qualify for up to 100% of project costs under HOMES, with enhanced rebates through Efficiency Maine.",
+    "moderate_income_150_ami": "For a family of four in Portland, 150% AMI is approximately $123,100. Moderate-income households qualify for rebates covering up to 50% of project costs under HOMES."
+  },
+  "net_metering": "Maine enacted LD 1711 in 2019 creating a net energy billing (NEB) program that replaced traditional net metering. Customers receive bill credits at a rate based on the standard offer rate for excess generation. Systems up to 660 kW qualify. Community solar projects and third-party ownership are permitted. Credits can be used to offset delivery charges.",
+  "state_tax_credits": [
+    {
+      "name": "Maine does not offer a state-level solar or energy efficiency tax credit",
+      "amount": "N/A",
+      "eligible_items": "N/A",
+      "details": "Maine does not have state income tax credits for renewable energy or energy efficiency. However, the state has strong rebate programs through Efficiency Maine Trust. Residents can claim the federal 30% Investment Tax Credit for solar PV. Maine exempts solar energy equipment from state sales tax.",
+      "url": "https://www.maine.gov/energy/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Efficiency Maine Heat Pump Program",
+      "administrator": "Efficiency Maine Trust",
+      "amount": "$800 per indoor unit for standard rebate; up to $2,400 per heat pump for income-eligible households (up to 3 units)",
+      "eligible_items": "Ductless mini-split heat pumps, ducted heat pumps, heat pump water heaters that meet Efficiency Maine efficiency requirements",
+      "details": "One of the most successful heat pump rebate programs in the nation. Income-eligible customers (at or below 80% AMI) receive enhanced rebates. Must use a registered Efficiency Maine vendor for installation.",
+      "url": "https://www.efficiencymaine.com/at-home/heat-pumps/"
+    },
+    {
+      "name": "Efficiency Maine Home Insulation Program",
+      "administrator": "Efficiency Maine Trust",
+      "amount": "Up to $8,000 rebate for air sealing and insulation; up to $12,000 for income-eligible households",
+      "eligible_items": "Attic insulation, wall insulation, basement/crawl space insulation, air sealing, blower door testing",
+      "details": "Requires a pre and post energy assessment. Must use an Efficiency Maine registered contractor. Income-eligible households receive significantly higher rebate amounts.",
+      "url": "https://www.efficiencymaine.com/at-home/insulation/"
+    },
+    {
+      "name": "Efficiency Maine Heat Pump Water Heater Program",
+      "administrator": "Efficiency Maine Trust",
+      "amount": "$950 rebate for standard; $1,500 for income-eligible households",
+      "eligible_items": "ENERGY STAR certified heat pump water heaters replacing electric resistance, oil, or propane water heaters",
+      "details": "Available at point of sale through participating distributors or as a mail-in rebate. Must meet minimum efficiency requirements.",
+      "url": "https://www.efficiencymaine.com/at-home/water-heating/"
+    },
+    {
+      "name": "Efficiency Maine EV Rebate Program",
+      "administrator": "Efficiency Maine Trust",
+      "amount": "$2,000 for new BEVs, $1,000 for new PHEVs; enhanced rebates for income-eligible",
+      "eligible_items": "New battery electric vehicles, plug-in hybrid electric vehicles, and used EVs",
+      "details": "Additional rebates available for income-qualified households. Maine is working to electrify both homes and transportation.",
+      "url": "https://www.efficiencymaine.com/ev/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Central Maine Power (CMP / Avangrid)",
+      "programs": [
+        {
+          "name": "Net Energy Billing",
+          "amount": "Bill credits at standard offer rate for excess solar generation",
+          "eligible_items": "Solar PV systems, community solar subscriptions",
+          "url": "https://www.cmpco.com/smart-energy-use/renewable-energy/net-energy-billing"
+        }
+      ]
+    },
+    {
+      "name": "Versant Power (formerly Emera Maine)",
+      "programs": [
+        {
+          "name": "Net Energy Billing",
+          "amount": "Bill credits at standard offer rate for excess solar generation",
+          "eligible_items": "Solar PV systems, community solar subscriptions",
+          "url": "https://www.versantpower.com/residential/programs-services/net-energy-billing/"
+        }
+      ]
+    },
+    {
+      "name": "Maine Natural Gas",
+      "programs": [
+        {
+          "name": "Efficiency Maine Rebates (via natural gas surcharge funding)",
+          "amount": "Varies by measure through Efficiency Maine",
+          "eligible_items": "High-efficiency heating equipment, weatherization through Efficiency Maine programs",
+          "url": "https://www.efficiencymaine.com/"
+        }
+      ]
+    }
+  ]
+}

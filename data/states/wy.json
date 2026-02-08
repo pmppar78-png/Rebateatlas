@@ -1,0 +1,65 @@
+{
+  "state_code": "WY",
+  "state_name": "Wyoming",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Wyoming has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Wyoming Energy Authority is the designated state entity, and program design is still in early planning stages.",
+  "state_energy_office": "Wyoming Energy Authority",
+  "state_energy_office_url": "https://wyoenergy.org/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Wyoming, 80% of Area Median Income varies by county. In Laramie County (Cheyenne), 80% AMI for a family of four is approximately $61,600. In Natrona County (Casper), it is approximately $62,800.",
+    "moderate_income_150_ami": "For Wyoming, 150% of Area Median Income varies by county. In Laramie County (Cheyenne), 150% AMI for a family of four is approximately $115,500. In Natrona County (Casper), it is approximately $117,800."
+  },
+  "net_metering": "Wyoming has a net metering law for systems up to 25 kW for residential customers. Investor-owned utilities must offer net metering. Customers receive credit at the retail rate for excess generation. However, Wyoming is one of the few states that has also imposed a fee on distributed generation systems.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Wyoming Department of Family Services",
+      "amount": "Average expenditure of approximately $6,500 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies.",
+      "url": "https://dfs.wyo.gov/assistance-programs/energy-assistance/weatherization/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Rocky Mountain Power (Wyoming)",
+      "programs": [
+        {
+          "name": "Wattsmart Residential Rebates",
+          "amount": "Up to $1,000 for heat pumps, $300 for insulation, $100 for smart thermostats",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, insulation, smart thermostats, heat pump water heaters",
+          "url": "https://www.rockymountainpower.net/savings-energy-choices/home/wyoming.html"
+        },
+        {
+          "name": "Home Energy Savings",
+          "amount": "Free online home energy assessment",
+          "eligible_items": "Home energy evaluation with personalized recommendations",
+          "url": "https://www.rockymountainpower.net/savings-energy-choices/home/wyoming.html"
+        }
+      ]
+    },
+    {
+      "name": "Black Hills Energy (Wyoming)",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Up to $500 for high-efficiency furnaces, $200 for water heaters, $50 for smart thermostats",
+          "eligible_items": "High-efficiency natural gas furnaces, tankless water heaters, smart thermostats, insulation",
+          "url": "https://www.blackhillsenergy.com/efficiency-and-savings/residential-rebates"
+        }
+      ]
+    },
+    {
+      "name": "Cheyenne Light, Fuel and Power",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Varies by measure; rebates for qualifying equipment",
+          "eligible_items": "High-efficiency HVAC, insulation, smart thermostats",
+          "url": "https://www.cheyennelight.com/efficiency-and-savings"
+        }
+      ]
+    }
+  ]
+}

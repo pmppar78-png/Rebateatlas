@@ -1,0 +1,73 @@
+{
+  "state_code": "ID",
+  "state_name": "Idaho",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Idaho's HOMES and HEAR programs are pending launch. The Idaho Office of Energy and Mineral Resources is developing program guidelines and implementation plans using approximately $30 million in IRA funding allocated to the state.",
+  "state_energy_office": "Idaho Office of Energy and Mineral Resources",
+  "state_energy_office_url": "https://oemr.idaho.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For a family of four in Boise, 80% AMI is approximately $58,250. Low-income households will qualify for the highest rebate levels under HOMES when launched.",
+    "moderate_income_150_ami": "For a family of four in Boise, 150% AMI is approximately $109,200. Moderate-income households will qualify for partial rebates under HOMES when launched."
+  },
+  "net_metering": "Idaho offers net metering for systems up to 100 kW for residential customers. Customers receive a credit at the utility's avoided cost rate for excess generation, which is lower than the retail rate. Credits carry over monthly and are reconciled annually.",
+  "state_tax_credits": [
+    {
+      "name": "Idaho Residential Alternative Energy Tax Deduction",
+      "amount": "40% of cost in year one (up to $5,000), then 20% per year for the next three years (up to $5,000 total deduction)",
+      "eligible_items": "Solar PV, solar thermal, geothermal, wind, and fuel cell systems for residential properties",
+      "details": "This is a state income tax deduction, not a credit. The total deduction cannot exceed $20,000 over four years. Must be for the taxpayer's primary residence in Idaho.",
+      "url": "https://tax.idaho.gov/taxes/income-tax/credits-deductions/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Idaho Weatherization Assistance Program",
+      "administrator": "Idaho Community Action Network",
+      "amount": "Up to $8,009 average per home",
+      "eligible_items": "Insulation, air sealing, furnace repair or replacement, window repair, and other weatherization measures",
+      "details": "Federally funded program available to low-income households. Income must be at or below 200% of the federal poverty level.",
+      "url": "https://oemr.idaho.gov/weatherization/"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Idaho Power",
+      "programs": [
+        {
+          "name": "Home Improvement Program",
+          "amount": "Varies by measure: up to $1,000 for heat pumps, $100-$400 for weatherization",
+          "eligible_items": "Ductless heat pumps, central heat pumps, insulation, windows, smart thermostats",
+          "url": "https://www.idahopower.com/energy-environment/ways-to-save/savings-for-your-home/"
+        },
+        {
+          "name": "Net Metering Program",
+          "amount": "Monthly credits at published avoided cost rate",
+          "eligible_items": "Solar PV, wind, and other qualifying renewable energy systems up to 100 kW",
+          "url": "https://www.idahopower.com/energy-environment/green-choices/net-metering/"
+        }
+      ]
+    },
+    {
+      "name": "Avista Utilities",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "$50-$3,000 depending on measure",
+          "eligible_items": "Heat pumps, insulation, windows, smart thermostats, water heaters",
+          "url": "https://www.myavista.com/energy-saving/rebates-and-incentives"
+        }
+      ]
+    },
+    {
+      "name": "Rocky Mountain Power",
+      "programs": [
+        {
+          "name": "Wattsmart Residential Program",
+          "amount": "$50-$1,400 depending on measure",
+          "eligible_items": "Heat pumps, weatherization, smart thermostats, ENERGY STAR appliances",
+          "url": "https://www.rockymountainpower.net/savings-energy-choices/home.html"
+        }
+      ]
+    }
+  ]
+}

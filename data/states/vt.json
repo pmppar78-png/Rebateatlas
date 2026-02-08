@@ -1,0 +1,87 @@
+{
+  "state_code": "VT",
+  "state_name": "Vermont",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Vermont has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. Efficiency Vermont, the state's energy efficiency utility, is a key partner in administering these programs alongside the Vermont Department of Public Service, providing rebates for whole-home efficiency and high-efficiency electric equipment.",
+  "state_energy_office": "Vermont Department of Public Service",
+  "state_energy_office_url": "https://publicservice.vermont.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Vermont, 80% of Area Median Income varies by county. In Chittenden County (Burlington), 80% AMI for a family of four is approximately $73,200. In Rutland County, it is approximately $60,400.",
+    "moderate_income_150_ami": "For Vermont, 150% of Area Median Income varies by county. In Chittenden County (Burlington), 150% AMI for a family of four is approximately $137,250. In Rutland County, it is approximately $113,250."
+  },
+  "net_metering": "Vermont has a robust net metering program for systems up to 500 kW. Residential customers receive credit for excess generation at a rate that includes an adjustor based on siting and technology. Credits can be carried forward indefinitely. Vermont's net metering rules are among the most favorable in the country.",
+  "state_tax_credits": [
+    {
+      "name": "Vermont Sales Tax Exemption for Renewable Energy",
+      "amount": "100% exemption from Vermont's 6% sales and use tax on renewable energy equipment",
+      "eligible_items": "Solar photovoltaic panels, solar hot water systems, wind turbines, and other renewable energy generation equipment",
+      "details": "Vermont exempts sales of renewable energy equipment from the state sales and use tax, reducing the upfront cost of installation.",
+      "url": "https://tax.vermont.gov/"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "Efficiency Vermont Residential Programs",
+      "administrator": "Efficiency Vermont (operated by Vermont Energy Investment Corporation - VEIC)",
+      "amount": "Up to $3,000 for heat pumps, up to $4,000 for weatherization, $300-$800 for heat pump water heaters, $50-$200 for appliances",
+      "eligible_items": "Cold-climate heat pumps (ductless and ducted), insulation, air sealing, heat pump water heaters, smart thermostats, ENERGY STAR appliances, windows",
+      "details": "Efficiency Vermont is the nation's first statewide energy efficiency utility. It provides rebates, technical assistance, and financing options for residential energy efficiency improvements. Enhanced rebates are available for income-qualifying households.",
+      "url": "https://www.efficiencyvermont.com/rebates"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Vermont Office of Economic Opportunity",
+      "amount": "Average expenditure of approximately $8,500 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors, health and safety improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through community action agencies.",
+      "url": "https://dcf.vermont.gov/benefits/weatherization"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "Green Mountain Power (GMP)",
+      "programs": [
+        {
+          "name": "GMP Bring Your Own Device Program",
+          "amount": "Up to $1,000 rebate for battery storage, discounted Tesla Powerwall at $5,500",
+          "eligible_items": "Home battery storage systems (Tesla Powerwall, Enphase, etc.) that participate in grid peak management",
+          "url": "https://greenmountainpower.com/rebates-programs/"
+        },
+        {
+          "name": "GMP Heat Pump Programs",
+          "amount": "Additional utility incentives stacked with Efficiency Vermont rebates",
+          "eligible_items": "Cold-climate heat pumps for space heating and cooling",
+          "url": "https://greenmountainpower.com/rebates-programs/"
+        },
+        {
+          "name": "GMP EV Charging Rebate",
+          "amount": "Up to $400 for Level 2 home EV charger",
+          "eligible_items": "Level 2 (240V) home electric vehicle charging stations",
+          "url": "https://greenmountainpower.com/rebates-programs/"
+        }
+      ]
+    },
+    {
+      "name": "Vermont Electric Cooperative",
+      "programs": [
+        {
+          "name": "Residential Efficiency Programs",
+          "amount": "Varies; coordinates with Efficiency Vermont rebates",
+          "eligible_items": "Heat pumps, insulation, ENERGY STAR appliances, heat pump water heaters",
+          "url": "https://vermontelectric.coop/programs-services"
+        }
+      ]
+    },
+    {
+      "name": "Burlington Electric Department",
+      "programs": [
+        {
+          "name": "BED Residential Rebates",
+          "amount": "Additional incentives beyond Efficiency Vermont, varies by measure",
+          "eligible_items": "Heat pumps, heat pump water heaters, insulation, weatherization, EV chargers",
+          "url": "https://www.burlingtonelectric.com/save-energy"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "state_code": "OH",
+  "state_name": "Ohio",
+  "homes_hear_status": "pending",
+  "homes_hear_details": "Ohio has not yet launched its HOMES or HEAR rebate programs under the Inflation Reduction Act. The Ohio Development Services Agency - Office of Community Development is the designated state entity coordinating with the U.S. Department of Energy on program planning.",
+  "state_energy_office": "Ohio Development Services Agency - Office of Community Development",
+  "state_energy_office_url": "https://development.ohio.gov/community/energy",
+  "income_thresholds": {
+    "low_income_80_ami": "For Ohio, 80% of Area Median Income varies by county. In Franklin County (Columbus), 80% AMI for a family of four is approximately $65,200. In Cuyahoga County (Cleveland), it is approximately $59,700.",
+    "moderate_income_150_ami": "For Ohio, 150% of Area Median Income varies by county. In Franklin County (Columbus), 150% AMI for a family of four is approximately $122,250. In Cuyahoga County (Cleveland), it is approximately $111,900."
+  },
+  "net_metering": "Ohio has net metering rules for customer-owned generating facilities up to the customer's load. Customers receive credit at the retail rate for excess generation, carried forward to subsequent billing periods. Ohio law requires all electric distribution utilities to offer net metering.",
+  "state_tax_credits": [],
+  "state_rebate_programs": [
+    {
+      "name": "Home Weatherization Assistance Program (HWAP)",
+      "administrator": "Ohio Development Services Agency",
+      "amount": "Average expenditure of approximately $7,200 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors, health and safety improvements",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level. Administered through local community action agencies across Ohio.",
+      "url": "https://development.ohio.gov/individual/energy-assistance/home-weatherization-assistance-program"
+    },
+    {
+      "name": "Home Energy Assistance Program (HEAP)",
+      "administrator": "Ohio Development Services Agency",
+      "amount": "One-time assistance payment varies by household size and income",
+      "eligible_items": "Heating and cooling bill assistance for income-qualifying households",
+      "details": "Provides assistance with energy bills for eligible low-income Ohio residents. Eligibility is based on income at or below 175% of the federal poverty level.",
+      "url": "https://development.ohio.gov/individual/energy-assistance/heap"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "AEP Ohio",
+      "programs": [
+        {
+          "name": "AEP Ohio Energy Efficiency Rebates",
+          "amount": "Up to $500 for heat pumps, $300 for smart thermostats and insulation, $50-$200 for ENERGY STAR appliances",
+          "eligible_items": "High-efficiency HVAC systems, heat pumps, smart thermostats, insulation, ENERGY STAR appliances, heat pump water heaters",
+          "url": "https://www.aepohio.com/savings/"
+        },
+        {
+          "name": "AEP Ohio Home Energy Assessment",
+          "amount": "Free in-home or online energy assessment",
+          "eligible_items": "Comprehensive home energy evaluation with energy-saving recommendations",
+          "url": "https://www.aepohio.com/savings/"
+        }
+      ]
+    },
+    {
+      "name": "Duke Energy Ohio",
+      "programs": [
+        {
+          "name": "Duke Energy Smart $aver Rebates",
+          "amount": "Up to $600 for heat pumps, $200 for smart thermostats, $300 for insulation",
+          "eligible_items": "High-efficiency heat pumps, central air conditioners, smart thermostats, attic insulation, duct sealing",
+          "url": "https://www.duke-energy.com/home/products/smart-saver"
+        }
+      ]
+    },
+    {
+      "name": "FirstEnergy Ohio (Ohio Edison, The Illuminating Company, Toledo Edison)",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Programs",
+          "amount": "Varies by measure; rebates for qualifying equipment",
+          "eligible_items": "ENERGY STAR HVAC systems, smart thermostats, insulation, efficient lighting",
+          "url": "https://www.firstenergycorp.com/save_energy.html"
+        }
+      ]
+    }
+  ]
+}

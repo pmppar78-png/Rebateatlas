@@ -14,7 +14,15 @@ const ASSETS = [
   '/categories/ev-chargers.html', '/categories/water-heaters.html',
   '/categories/smart-thermostats.html', '/categories/insulation-weatherization.html',
   '/categories/windows-doors.html', '/categories/battery-storage.html',
-  '/states/'
+  '/states/',
+  '/guides/', '/guides/25c-tax-credit.html', '/guides/25d-clean-energy-credit.html',
+  '/guides/30c-ev-charger-credit.html', '/guides/homes-rebate-program.html',
+  '/guides/hear-rebate-program.html', '/guides/weatherization-assistance-program.html',
+  '/guides/heat-pump-vs-furnace.html', '/guides/water-heater-comparison.html',
+  '/guides/solar-vs-battery.html', '/guides/renter-vs-homeowner-rebates.html',
+  '/guides/stacking-rebates.html', '/guides/low-income-rebates.html',
+  '/guides/moderate-income-eligibility.html', '/guides/manufactured-home-rebates.html',
+  '/guides/2026-rebate-deadlines.html'
 ];
 
 self.addEventListener('install', e => {

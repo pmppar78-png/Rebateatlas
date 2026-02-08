@@ -1,0 +1,84 @@
+{
+  "state_code": "RI",
+  "state_name": "Rhode Island",
+  "homes_hear_status": "launched",
+  "homes_hear_details": "Rhode Island has launched its HOMES and HEAR rebate programs under the Inflation Reduction Act. The Rhode Island Office of Energy Resources (OER) is administering the programs in coordination with RI Energy (formerly National Grid) and existing energy efficiency programs.",
+  "state_energy_office": "Rhode Island Office of Energy Resources (OER)",
+  "state_energy_office_url": "https://energy.ri.gov/",
+  "income_thresholds": {
+    "low_income_80_ami": "For Rhode Island, 80% of Area Median Income is based on the Providence-Warwick metropolitan area. 80% AMI for a family of four is approximately $72,650.",
+    "moderate_income_150_ami": "For Rhode Island, 150% of Area Median Income for a family of four is approximately $136,200 based on the Providence-Warwick metropolitan area."
+  },
+  "net_metering": "Rhode Island has strong net metering rules under the Renewable Energy Net Metering Act. Residential customers can net meter systems up to 25 kW. Customers receive credit at the full retail rate for excess generation. The state also has a Renewable Energy Growth Program that provides above-market-rate compensation for small-scale renewable energy projects.",
+  "state_tax_credits": [
+    {
+      "name": "Rhode Island Renewable Energy Property Tax Exemption",
+      "amount": "100% property tax exemption for the value added by renewable energy systems for the life of the system",
+      "eligible_items": "Solar photovoltaic systems, wind energy systems, and other qualifying renewable energy installations",
+      "details": "Rhode Island exempts the added value of qualifying renewable energy systems from local property taxes.",
+      "url": "https://energy.ri.gov/incentives-and-rebates"
+    }
+  ],
+  "state_rebate_programs": [
+    {
+      "name": "RI Energy (formerly National Grid) Residential Energy Efficiency Programs",
+      "administrator": "RI Energy / Rhode Island Energy Efficiency Resource Management Council",
+      "amount": "Up to $2,000 for heat pumps, up to $4,000 for weatherization, $50-$750 for ENERGY STAR appliances",
+      "eligible_items": "Heat pumps (ductless and ducted), insulation, air sealing, smart thermostats, ENERGY STAR appliances, heat pump water heaters, windows",
+      "details": "RI Energy administers comprehensive residential energy efficiency programs funded through the System Benefit Charge. Rhode Island's programs are among the strongest in the nation, consistently ranking highly for per-capita energy efficiency spending.",
+      "url": "https://www.rienergy.com/RI-Home/Energy-Saving-Programs"
+    },
+    {
+      "name": "Renewable Energy Growth Program",
+      "administrator": "RI Energy / Rhode Island Office of Energy Resources",
+      "amount": "Fixed per-kWh compensation above retail rate for 20 years (rate varies by project class and year)",
+      "eligible_items": "Small-scale solar (up to 25 kW for residential), wind, and other renewable energy systems",
+      "details": "The Renewable Energy Growth Program provides long-term, above-market-rate compensation for small-scale renewable energy generation through performance-based incentives.",
+      "url": "https://www.rienergy.com/RI-Home/Renewable-Energy/Renewable-Energy-Growth"
+    },
+    {
+      "name": "Weatherization Assistance Program",
+      "administrator": "Rhode Island Department of Human Services",
+      "amount": "Average expenditure of approximately $8,500 per home",
+      "eligible_items": "Insulation, air sealing, heating system repair or replacement, windows, doors",
+      "details": "Federally funded program for income-qualifying households at or below 200% of federal poverty level.",
+      "url": "https://dhs.ri.gov/programs-and-services/energy-assistance-programs/weatherization-assistance-program"
+    }
+  ],
+  "top_utilities": [
+    {
+      "name": "RI Energy (formerly National Grid Rhode Island)",
+      "programs": [
+        {
+          "name": "EnergyWise Home Energy Assessment",
+          "amount": "Free or reduced-cost ($25) comprehensive home energy assessment with direct-install measures",
+          "eligible_items": "Home energy audit including free LED bulbs, smart power strips, low-flow showerheads, and faucet aerators. Identifies opportunities for weatherization and HVAC upgrades.",
+          "url": "https://www.rienergy.com/RI-Home/Energy-Saving-Programs/EnergyWise"
+        },
+        {
+          "name": "Heat Pump Rebates",
+          "amount": "Up to $2,000 per system for qualifying air-source heat pumps",
+          "eligible_items": "ENERGY STAR certified ductless mini-split and ducted heat pump systems",
+          "url": "https://www.rienergy.com/RI-Home/Energy-Saving-Programs"
+        },
+        {
+          "name": "Appliance Rebates",
+          "amount": "$50-$750 depending on appliance type",
+          "eligible_items": "Heat pump water heaters, smart thermostats, ENERGY STAR dehumidifiers, ENERGY STAR dryers",
+          "url": "https://www.rienergy.com/RI-Home/Energy-Saving-Programs"
+        }
+      ]
+    },
+    {
+      "name": "Pascoag Utility District",
+      "programs": [
+        {
+          "name": "Residential Energy Efficiency Rebates",
+          "amount": "Varies by measure",
+          "eligible_items": "High-efficiency HVAC, insulation, ENERGY STAR appliances",
+          "url": "https://www.pud-ri.org/"
+        }
+      ]
+    }
+  ]
+}
