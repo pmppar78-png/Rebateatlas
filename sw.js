@@ -1,5 +1,12 @@
-const CACHE_NAME = 'ra-v6';
-const ASSETS = ['/', '/index.html', '/chat.html', '/404.html', '/styles.css', '/main.js', '/partners.js'];
+const CACHE_NAME = 'ra-v7';
+const ASSETS = [
+  '/', '/index.html', '/chat.html', '/404.html',
+  '/styles.css', '/main.js', '/partners.js',
+  '/categories/', '/categories/heat-pumps.html', '/categories/solar-panels.html',
+  '/categories/ev-chargers.html', '/categories/water-heaters.html',
+  '/categories/smart-thermostats.html', '/categories/insulation-weatherization.html',
+  '/categories/windows-doors.html', '/categories/battery-storage.html'
+];
 
 self.addEventListener('install', e => {
   e.waitUntil(

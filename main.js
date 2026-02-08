@@ -100,6 +100,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Export/copy chat button
+  const exportBtn = document.getElementById('export-chat');
+  if (exportBtn) {
+    exportBtn.addEventListener('click', () => {
+      const lines = conversationHistory.map(m => {
+        const label = m.role === 'user' ? 'You' : 'Rebate Atlas AI';
+        // Strip HTML tags for plain text export
+        const text = m.content.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+        return `${label}: ${text}`;
+      });
+      if (lines.length === 0) {
+        exportBtn.textContent = 'No messages to copy';
+        setTimeout(() => { exportBtn.textContent = 'Copy chat'; }, 2000);
+        return;
+      }
+      const text = 'Rebate Atlas Chat Export\n' + new Date().toLocaleDateString() + '\n\n' + lines.join('\n\n');
+      navigator.clipboard.writeText(text).then(() => {
+        exportBtn.textContent = 'Copied!';
+        setTimeout(() => { exportBtn.textContent = 'Copy chat'; }, 2000);
+      }).catch(() => {
+        exportBtn.textContent = 'Copy failed';
+        setTimeout(() => { exportBtn.textContent = 'Copy chat'; }, 2000);
+      });
+    });
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const content = input.value.trim();
@@ -120,46 +146,84 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const typingIndicator = renderTypingIndicator();
 
-    try {
-      const payload = { messages: conversationHistory };
-      if (activeZip) {
-        payload.zip = activeZip;
-      }
+    const MAX_RETRIES = 2;
+    let attempt = 0;
+    let success = false;
 
-      const res = await fetch('/.netlify/functions/ai-chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
+    while (attempt <= MAX_RETRIES && !success) {
+      try {
+        const payload = { messages: conversationHistory };
+        if (activeZip) {
+          payload.zip = activeZip;
+        }
 
-      const data = await res.json();
+        const res = await fetch('/.netlify/functions/ai-chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
 
-      if (typingIndicator && typingIndicator.parentNode) {
-        log.removeChild(typingIndicator);
-      }
+        if (res.status === 429) {
+          attempt++;
+          if (attempt <= MAX_RETRIES) {
+            if (typingIndicator) {
+              typingIndicator.querySelector('.typing-dots').textContent = 'Rate limited, retrying...';
+            }
+            await new Promise(r => setTimeout(r, 2000 * attempt));
+            continue;
+          }
+          if (typingIndicator && typingIndicator.parentNode) {
+            log.removeChild(typingIndicator);
+          }
+          appendMessage(
+            '<strong>Rebate Atlas AI:</strong> The AI is receiving a lot of requests right now. Please wait a moment and try again.',
+            'ai'
+          );
+          success = true;
+          break;
+        }
 
-      if (res.ok && data.reply) {
-        const aiReply = `<strong>Rebate Atlas AI:</strong> ${data.reply}`;
-        appendMessage(aiReply, 'ai');
-        conversationHistory.push({ role: 'assistant', content: data.reply });
-      } else {
+        const data = await res.json();
+
+        if (typingIndicator && typingIndicator.parentNode) {
+          log.removeChild(typingIndicator);
+        }
+
+        if (res.ok && data.reply) {
+          const aiReply = `<strong>Rebate Atlas AI:</strong> ${data.reply}`;
+          appendMessage(aiReply, 'ai');
+          conversationHistory.push({ role: 'assistant', content: data.reply });
+        } else if (res.status === 400 && data.error) {
+          appendMessage(
+            `<strong>Rebate Atlas AI:</strong> ${data.error.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}`,
+            'ai'
+          );
+        } else {
+          appendMessage(
+            '<strong>Rebate Atlas AI:</strong> Sorry \u2014 I encountered an error. Please try again.',
+            'ai'
+          );
+        }
+        success = true;
+      } catch (err) {
+        attempt++;
+        if (attempt <= MAX_RETRIES) {
+          await new Promise(r => setTimeout(r, 1500 * attempt));
+          continue;
+        }
+        console.error('Chat error:', err);
+        if (typingIndicator && typingIndicator.parentNode) {
+          log.removeChild(typingIndicator);
+        }
         appendMessage(
-          '<strong>Rebate Atlas AI:</strong> Sorry \u2014 I encountered an error. Please try again.',
+          '<strong>Rebate Atlas AI:</strong> Sorry \u2014 I couldn\u2019t reach the AI engine. Please check your connection and try again.',
           'ai'
         );
+        success = true;
       }
-    } catch (err) {
-      console.error('Chat error:', err);
-      if (typingIndicator && typingIndicator.parentNode) {
-        log.removeChild(typingIndicator);
-      }
-      appendMessage(
-        '<strong>Rebate Atlas AI:</strong> Sorry \u2014 I couldn\u2019t reach the AI engine. Please check your connection and try again.',
-        'ai'
-      );
-    } finally {
-      input.disabled = false;
-      input.focus();
     }
+
+    input.disabled = false;
+    input.focus();
   });
 });
