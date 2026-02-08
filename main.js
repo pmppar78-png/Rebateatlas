@@ -10,9 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ── Defend against injected snippet drawers ──
-  document.querySelectorAll('.ra-drawer, .ra-overlay').forEach(el => el.remove());
+  document.querySelectorAll('.ra-drawer, .ra-overlay, aside.ra-drawer, div.ra-overlay').forEach(el => el.remove());
   document.documentElement.classList.remove('ra-lock');
   document.body.classList.remove('ra-lock');
+
+  // Hide old #site-nav on mobile to prevent "Categories" overlay issue
+  const siteNav = document.getElementById('site-nav');
+  if (siteNav && window.innerWidth <= 640) {
+    siteNav.style.setProperty('display', 'none', 'important');
+    siteNav.style.setProperty('visibility', 'hidden', 'important');
+  }
 
   // Watch for snippet-injected elements and remove them immediately
   const snippetObserver = new MutationObserver((mutations) => {

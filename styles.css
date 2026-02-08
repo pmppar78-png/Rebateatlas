@@ -1271,25 +1271,35 @@ a, button, input, select, textarea {
 /* ── Override any injected drawer/overlay snippets ── */
 /* Hide snippet-injected drawer and overlay so our built-in drawer is the only one */
 .ra-drawer,
-.ra-overlay {
+.ra-overlay,
+aside.ra-drawer,
+div.ra-overlay {
   display: none !important;
   visibility: hidden !important;
   pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
 
 /* Ensure the original site-nav is never hidden by injected scripts (desktop only) */
 @media (min-width: 641px) {
-  #site-nav {
+  nav#site-nav.site-nav {
     display: flex !important;
   }
 }
 
 /* On mobile, hide the old in-header nav — the dedicated drawer is used instead */
 @media (max-width: 640px) {
-  #site-nav {
+  nav#site-nav.site-nav {
     display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
-  .nav-overlay {
+  .nav-overlay,
+  div#nav-overlay {
     display: none !important;
   }
 }
@@ -1298,6 +1308,32 @@ a, button, input, select, textarea {
 html.ra-lock,
 body.ra-lock {
   overflow: unset !important;
+  height: auto !important;
+}
+
+/* Counter snippet CSS that styles all nav links as green buttons */
+nav#mobileMenuDrawer .menu-link,
+nav#mobileMenuDrawer .menu-link:link,
+nav#mobileMenuDrawer .menu-link:visited {
+  display: block !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  padding: 12px 12px !important;
+  border-radius: 12px !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  box-shadow: none !important;
+  border: none !important;
+  white-space: normal !important;
+  line-height: 1.4 !important;
+  text-decoration: none !important;
+}
+nav#mobileMenuDrawer .menu-link--ai,
+nav#mobileMenuDrawer .menu-link--ai:link,
+nav#mobileMenuDrawer .menu-link--ai:visited {
+  background: #22c55e !important;
+  color: #07120a !important;
+  font-weight: 800 !important;
 }
 
 /* ── Dedicated Mobile Drawer ── */
