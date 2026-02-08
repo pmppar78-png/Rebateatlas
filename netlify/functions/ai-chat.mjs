@@ -3,7 +3,6 @@ import OpenAI from 'openai';
 // --- CORS ---
 const ALLOWED_ORIGINS = [
   'https://rebateatlas.org',
-  'https://rebateatlas.org',
   'https://www.rebateatlas.org'
 ];
 
