@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('nav-toggle');
   const siteNav = document.getElementById('site-nav');
   const navOverlay = document.getElementById('nav-overlay');
+  const navClose = document.getElementById('nav-close');
 
   const openNav = () => {
     siteNav.classList.add('nav-open');
@@ -35,6 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = siteNav.classList.contains('nav-open');
       if (isOpen) { closeNav(); } else { openNav(); }
     });
+    // Close drawer via X button
+    if (navClose) {
+      navClose.addEventListener('click', closeNav);
+    }
     // Close drawer when a nav link is clicked
     siteNav.addEventListener('click', (e) => {
       if (e.target.classList.contains('nav-link') || e.target.classList.contains('header-ai-cta')) {
