@@ -90,6 +90,32 @@ export default async (req, context) => {
     const userMessages = body.messages || [];
     const zip = body.zip || '';
 
+    // Input validation: limit conversation length and message size
+    const MAX_MESSAGES = 20;
+    const MAX_MESSAGE_LENGTH = 2000;
+
+    if (!Array.isArray(userMessages) || userMessages.length === 0) {
+      return new Response(JSON.stringify({ error: 'No messages provided' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' }
+      });
+    }
+
+    if (userMessages.length > MAX_MESSAGES) {
+      return new Response(JSON.stringify({ error: 'Conversation too long. Please start a new chat.' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' }
+      });
+    }
+
+    // Sanitize messages: ensure valid roles and trim content
+    const sanitizedMessages = userMessages
+      .filter(m => m && typeof m.content === 'string' && ['user', 'assistant'].includes(m.role))
+      .map(m => ({
+        role: m.role,
+        content: m.content.slice(0, MAX_MESSAGE_LENGTH)
+      }));
+
     // Fetch affiliate data from the site's own static JSON
     const siteUrl = Netlify.env.get('URL') || Netlify.env.get('DEPLOY_PRIME_URL') || '';
     let affiliateSection = '';
@@ -144,7 +170,7 @@ IMPORTANT: You must not give tax, legal, or financial advice. Always remind user
 
     const messages = [
       { role: 'system', content: systemPrompt },
-      ...userMessages
+      ...sanitizedMessages
     ];
 
     const completion = await openai.chat.completions.create({

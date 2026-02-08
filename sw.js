@@ -1,5 +1,5 @@
-const CACHE_NAME = 'ra-v5';
-const ASSETS = ['/', '/index.html', '/chat.html', '/styles.css', '/main.js', '/partners.js'];
+const CACHE_NAME = 'ra-v6';
+const ASSETS = ['/', '/index.html', '/chat.html', '/404.html', '/styles.css', '/main.js', '/partners.js'];
 
 self.addEventListener('install', e => {
   e.waitUntil(
@@ -23,6 +23,23 @@ self.addEventListener('fetch', e => {
   if (url.pathname.endsWith('.json') || url.pathname.includes('/.netlify/')) {
     return;
   }
+  // For HTML pages, try network first so content stays fresh
+  if (e.request.headers.get('accept')?.includes('text/html')) {
+    e.respondWith(
+      fetch(e.request)
+        .then(res => {
+          if (res.ok) {
+            const clone = res.clone();
+            caches.open(CACHE_NAME).then(c => c.put(e.request, clone));
+            return res;
+          }
+          return caches.match(e.request).then(cached => cached || caches.match('/404.html'));
+        })
+        .catch(() => caches.match(e.request).then(cached => cached || caches.match('/404.html')))
+    );
+    return;
+  }
+  // For other assets, use cache-first
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request))
   );

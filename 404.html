@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found · Rebate Atlas</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Find energy rebates, tax credits, and incentives on Rebate Atlas." />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#050816" />
+</head>
+<body class="page">
+  <header class="site-header">
+    <div class="site-brand">
+      <span class="site-logo-dot"></span>
+      <span class="site-title">Rebate Atlas</span>
+    </div>
+    <nav class="site-nav">
+      <a href="/index.html" class="nav-link">Home</a>
+      <a href="/chat.html" class="nav-link">Ask the AI</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="explainer" style="text-align:center; padding:40px 20px;">
+      <h1>Page not found</h1>
+      <p style="font-size:1.1rem; color:var(--text-muted); margin:16px 0 24px;">
+        The page you're looking for doesn't exist or has been moved.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:20px;">
+        <a href="/index.html" class="btn-primary" style="display:inline-block; text-decoration:none;">Go to homepage</a>
+        <a href="/chat.html" class="btn-primary" style="display:inline-block; text-decoration:none; background:linear-gradient(135deg, rgba(79,209,197,0.9), rgba(56,241,122,0.7));">Ask the AI</a>
+      </div>
+      <div style="margin-top:32px;">
+        <p style="color:var(--text-muted); font-size:0.9rem;">Or browse rebate categories:</p>
+        <div class="chip-row" style="justify-content:center; margin-top:12px;">
+          <a href="/categories/heat-pumps.html" class="chip chip-link">Heat pumps</a>
+          <a href="/categories/solar-panels.html" class="chip chip-link">Solar panels</a>
+          <a href="/categories/ev-chargers.html" class="chip chip-link">EV chargers</a>
+          <a href="/categories/insulation-weatherization.html" class="chip chip-link">Insulation</a>
+          <a href="/categories/battery-storage.html" class="chip chip-link">Battery storage</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only &middot; Not tax or legal advice.</p>
+    <p><a href="/about.html" class="inline-link">About</a> &middot; <a href="/faq.html" class="inline-link">FAQ</a> &middot; <a href="/contact.html" class="inline-link">Contact</a></p>
+  </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

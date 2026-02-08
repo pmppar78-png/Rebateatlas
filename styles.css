@@ -13,6 +13,25 @@
   --shadow-soft: 0 18px 45px rgba(0,0,0,0.65);
 }
 
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: var(--accent);
+  color: #020617;
+  font-weight: 600;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -578,10 +597,41 @@ a.chip-link:hover {
   flex: 1;
 }
 
+.chat-actions {
+  margin-top: 10px;
+}
+
+.btn-clear {
+  margin-top: 8px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 6px 14px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.btn-clear:hover {
+  color: var(--text-main);
+  border-color: rgba(255,255,255,0.15);
+}
+
 .chat-tip {
   margin-top: 8px;
   font-size: 0.78rem;
   color: var(--text-muted);
+}
+
+/* AI response formatting */
+.msg-ai p {
+  margin: 0 0 8px;
+  line-height: 1.55;
+}
+
+.msg-ai p:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 640px) {
@@ -591,6 +641,10 @@ a.chip-link:hover {
 
   .chat-panel {
     padding: 14px 12px 18px;
+  }
+
+  .chat-log {
+    max-height: 55vh;
   }
 
   .benefit-grid {

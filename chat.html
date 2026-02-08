@@ -14,18 +14,19 @@
   <meta name="theme-color" content="#050816" />
 </head>
 <body class="page page-chat">
-  <header class="site-header">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header" role="banner">
     <div class="site-brand">
       <span class="site-logo-dot"></span>
       <span class="site-title">Rebate Atlas</span>
     </div>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main navigation">
       <a href="index.html" class="nav-link">Home</a>
       <a href="chat.html" class="nav-link nav-link-active">Ask the AI</a>
     </nav>
   </header>
 
-  <main class="content content-chat">
+  <main class="content content-chat" id="main-content">
     <p style="margin: 1rem 0; padding: 0.75rem; background: rgba(15, 23, 42, 0.75); border-left: 3px solid #4fd1c5; font-size: 0.9rem; border-radius: 8px; color: #a3acc7;">
       Some suggestions may include sponsored partners. This does not affect guidance.
     </p>
@@ -39,7 +40,7 @@
         </p>
       </div>
 
-      <div id="chat-log" class="chat-log">
+      <div id="chat-log" class="chat-log" role="log" aria-live="polite" aria-label="Chat messages">
         <div class="msg msg-ai">
           <p><strong>Rebate Atlas AI:</strong> Hi! Share your ZIP code, home type, and one upgrade you're
             considering (like a heat pump, insulation, EV charger, or solar). I'll outline likely
@@ -48,10 +49,13 @@
         </div>
       </div>
 
-      <form id="chat-form" class="chat-input-row">
-        <input id="chat-input" type="text" placeholder="Ask about any rebate, upgrade, or credit..." autocomplete="off" />
-        <button class="btn-primary" type="submit">Send</button>
-      </form>
+      <div class="chat-actions">
+        <form id="chat-form" class="chat-input-row">
+          <input id="chat-input" type="text" placeholder="Ask about any rebate, upgrade, or credit..." autocomplete="off" aria-label="Type your message" />
+          <button class="btn-primary" type="submit">Send</button>
+        </form>
+        <button id="clear-chat" class="btn-clear" type="button" aria-label="Clear conversation">Clear chat</button>
+      </div>
 
       <p class="chat-tip">
         Tip: You can ask things like <em>“How much could I get to replace my oil boiler with a heat pump?”</em>
@@ -60,7 +64,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only &middot; Not tax or legal advice.</p>
     <p>Some suggestions may include sponsored partners. This does not affect guidance.</p>
     <p><a href="index.html" class="inline-link">Home</a> &middot; <a href="about.html" class="inline-link">About</a> &middot; <a href="faq.html" class="inline-link">FAQ</a> &middot; <a href="privacy-policy.html" class="inline-link">Privacy Policy</a> &middot; <a href="terms.html" class="inline-link">Terms</a> &middot; <a href="contact.html" class="inline-link">Contact</a></p>
