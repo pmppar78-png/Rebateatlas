@@ -139,6 +139,9 @@
       </ol>
     </section>
 
+    <!-- In-content ad slot (activated by injectors.js when AdSense is enabled) -->
+    <div class="ad-slot" data-ad-format="auto" style="margin:24px 0; min-height:0;"></div>
+
     <section class="calculator" id="calculator">
       <h2>Quick savings estimator</h2>
       <p class="calculator-intro">Select the upgrades you're planning. We'll estimate total federal credits and typical state/utility rebates you might qualify for.</p>
@@ -327,6 +330,7 @@
 
   <script src="/main.js"></script>
   <script src="/partners.js"></script>
+  <script src="/injectors.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var form = document.getElementById('zip-form');
