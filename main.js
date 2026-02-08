@@ -9,47 +9,74 @@ document.addEventListener('DOMContentLoaded', () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // ── Mobile drawer (dedicated off-canvas panel) ──
-  const drawer = document.getElementById('mobileMenuDrawer');
-  const backdrop = document.getElementById('mobileMenuBackdrop');
-  const drawerCloseBtn = document.getElementById('mobileMenuClose');
-  const navToggle = document.getElementById('nav-toggle');
+  // ── Mobile Quick Links (replaces hamburger drawer on mobile) ──
+  const isMobile = window.matchMedia('(max-width: 640px)').matches;
 
-  function openMenu() {
-    if (!drawer || !backdrop) return;
-    drawer.classList.add('open');
-    backdrop.classList.add('open');
-    document.body.classList.add('menu-open');
-    drawer.setAttribute('aria-hidden', 'false');
-    backdrop.setAttribute('aria-hidden', 'false');
-    if (navToggle) navToggle.setAttribute('aria-expanded', 'true');
-  }
+  if (isMobile) {
+    // Inject Quick Links bar after the header
+    const header = document.querySelector('.site-header');
+    if (header && !document.querySelector('.mobile-quick-links')) {
+      const quickLinks = document.createElement('nav');
+      quickLinks.className = 'mobile-quick-links';
+      quickLinks.setAttribute('aria-label', 'Quick links');
+      quickLinks.innerHTML =
+        '<a href="/states/">States</a>' +
+        '<a href="/categories/">Categories</a>' +
+        '<a href="/about.html">About</a>' +
+        '<a href="/faq.html">FAQ</a>' +
+        '<a href="/contact.html">Contact</a>';
+      header.insertAdjacentElement('afterend', quickLinks);
+    }
 
-  function closeMenu() {
-    if (!drawer || !backdrop) return;
-    drawer.classList.remove('open');
-    backdrop.classList.remove('open');
+    // Ensure drawer and backdrop stay closed and hidden
+    const drawer = document.getElementById('mobileMenuDrawer');
+    const backdrop = document.getElementById('mobileMenuBackdrop');
+    if (drawer) { drawer.classList.remove('open'); drawer.setAttribute('aria-hidden', 'true'); }
+    if (backdrop) { backdrop.classList.remove('open'); backdrop.setAttribute('aria-hidden', 'true'); }
     document.body.classList.remove('menu-open');
-    drawer.setAttribute('aria-hidden', 'true');
-    backdrop.setAttribute('aria-hidden', 'true');
-    if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
-  }
+  } else {
+    // Desktop: keep drawer toggle behavior (unchanged)
+    const drawer = document.getElementById('mobileMenuDrawer');
+    const backdrop = document.getElementById('mobileMenuBackdrop');
+    const drawerCloseBtn = document.getElementById('mobileMenuClose');
+    const navToggle = document.getElementById('nav-toggle');
 
-  if (navToggle) {
-    navToggle.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-      openMenu();
+    function openMenu() {
+      if (!drawer || !backdrop) return;
+      drawer.classList.add('open');
+      backdrop.classList.add('open');
+      document.body.classList.add('menu-open');
+      drawer.setAttribute('aria-hidden', 'false');
+      backdrop.setAttribute('aria-hidden', 'false');
+      if (navToggle) navToggle.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeMenu() {
+      if (!drawer || !backdrop) return;
+      drawer.classList.remove('open');
+      backdrop.classList.remove('open');
+      document.body.classList.remove('menu-open');
+      drawer.setAttribute('aria-hidden', 'true');
+      backdrop.setAttribute('aria-hidden', 'true');
+      if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    if (navToggle) {
+      navToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        openMenu();
+      });
+    }
+    if (backdrop) backdrop.addEventListener('click', closeMenu);
+    if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeMenu);
+    if (drawer) {
+      drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
     });
   }
-  if (backdrop) backdrop.addEventListener('click', closeMenu);
-  if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeMenu);
-  if (drawer) {
-    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
-  }
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeMenu();
-  });
 
   const form = document.getElementById('chat-form');
   const input = document.getElementById('chat-input');
