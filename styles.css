@@ -183,57 +183,6 @@ body {
   color: #fff !important;
 }
 
-/* Mobile drawer overlay */
-.nav-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 10040;
-  background: rgba(0, 0, 0, 0.55);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 180ms ease;
-}
-
-.nav-overlay.nav-overlay-active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Body scroll lock */
-body.nav-locked {
-  overflow: hidden;
-}
-
-/* Drawer close button */
-.nav-close {
-  display: none;
-  appearance: none;
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  width: auto;
-  height: auto;
-  border: 0;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.9);
-  padding: 8px 10px;
-  font-weight: 700;
-  z-index: 10051;
-}
-
-.nav-close:hover {
-  background: rgba(255, 255, 255, 0.14);
-}
-
-.nav-close svg {
-  width: 18px;
-  height: 18px;
-  stroke: currentColor;
-  stroke-width: 2.5;
-  fill: none;
-}
 
 /* AI promo block under hero */
 .ai-promo {
@@ -871,94 +820,9 @@ a.chip-link:hover {
     z-index: 10060;
   }
 
-  /* Close button visible on mobile */
-  .nav-close {
-    display: flex;
-  }
-
-  /* Compact off-canvas drawer — slides in from right */
+  /* Hide desktop nav on mobile — #mobileMenuDrawer is used instead */
   .site-nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: min(86vw, 360px);
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 2px;
-    padding: 14px;
-    padding-top: 58px;
-    background: #0b1220;
-    border-left: 1px solid rgba(255, 255, 255, 0.08);
-    z-index: 10050;
-    transform: translateX(100%);
-    visibility: hidden;
-    pointer-events: none;
-    transition: transform 180ms ease, visibility 0s 180ms;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .site-nav.nav-open {
-    transform: translateX(0);
-    visibility: visible;
-    pointer-events: auto;
-    transition: transform 180ms ease, visibility 0s 0s;
-  }
-
-  .site-nav .nav-link,
-  .site-nav .nav-link:link,
-  .site-nav .nav-link:visited {
-    display: block;
-    font-size: 16px;
-    padding: 12px 10px;
-    margin: 6px 0;
-    border-radius: 12px;
-    transition: background 0.15s;
-    color: rgba(255, 255, 255, 0.92);
-    background: rgba(255, 255, 255, 0.06);
-    text-decoration: none;
-  }
-
-  .site-nav .nav-link:hover {
-    background: rgba(255, 255, 255, 0.10);
-  }
-
-  .site-nav .nav-link-secondary {
-    display: block;
-  }
-
-  .site-nav .nav-link-active {
-    background: rgba(255, 255, 255, 0.12);
-    color: rgba(255, 255, 255, 0.92);
-  }
-
-  /* Drawer divider between primary and secondary links */
-  .site-nav .nav-divider {
-    display: block;
-    height: 1px;
-    margin: 10px 0;
-    background: rgba(255, 255, 255, 0.06);
-    border: none;
-  }
-
-  /* AI CTA inside the drawer — compact link style */
-  .site-nav .header-ai-cta,
-  .site-nav .header-ai-cta:link,
-  .site-nav .header-ai-cta:visited {
-    display: block;
-    margin-top: 8px;
-    padding: 12px 10px;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.92) !important;
-    text-decoration: none !important;
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 12px;
-  }
-
-  .site-nav .header-ai-cta:hover {
-    background: rgba(255, 255, 255, 0.10);
+    display: none;
   }
 
   /* Header AI CTA — hidden on mobile, shown inside drawer instead */
@@ -1268,73 +1132,6 @@ a, button, input, select, textarea {
   margin-top: 0.5rem;
 }
 
-/* ── Override any injected drawer/overlay snippets ── */
-/* Hide snippet-injected drawer and overlay so our built-in drawer is the only one */
-.ra-drawer,
-.ra-overlay,
-aside.ra-drawer,
-div.ra-overlay {
-  display: none !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-  width: 0 !important;
-  height: 0 !important;
-  overflow: hidden !important;
-}
-
-/* Ensure the original site-nav is never hidden by injected scripts (desktop only) */
-@media (min-width: 641px) {
-  nav#site-nav.site-nav {
-    display: flex !important;
-  }
-}
-
-/* On mobile, hide the old in-header nav — the dedicated drawer is used instead */
-@media (max-width: 640px) {
-  nav#site-nav.site-nav {
-    display: none !important;
-    visibility: hidden !important;
-    width: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
-  }
-  .nav-overlay,
-  div#nav-overlay {
-    display: none !important;
-  }
-}
-
-/* Prevent injected scroll-lock classes from breaking layout */
-html.ra-lock,
-body.ra-lock {
-  overflow: unset !important;
-  height: auto !important;
-}
-
-/* Counter snippet CSS that styles all nav links as green buttons */
-nav#mobileMenuDrawer .menu-link,
-nav#mobileMenuDrawer .menu-link:link,
-nav#mobileMenuDrawer .menu-link:visited {
-  display: block !important;
-  background: rgba(255, 255, 255, 0.06) !important;
-  color: rgba(255, 255, 255, 0.92) !important;
-  padding: 12px 12px !important;
-  border-radius: 12px !important;
-  font-weight: normal !important;
-  font-size: 16px !important;
-  box-shadow: none !important;
-  border: none !important;
-  white-space: normal !important;
-  line-height: 1.4 !important;
-  text-decoration: none !important;
-}
-nav#mobileMenuDrawer .menu-link--ai,
-nav#mobileMenuDrawer .menu-link--ai:link,
-nav#mobileMenuDrawer .menu-link--ai:visited {
-  background: #22c55e !important;
-  color: #07120a !important;
-  font-weight: 800 !important;
-}
 
 /* ── Dedicated Mobile Drawer ── */
 

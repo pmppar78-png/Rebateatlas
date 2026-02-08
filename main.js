@@ -9,37 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // ── Defend against injected snippet drawers ──
-  document.querySelectorAll('.ra-drawer, .ra-overlay, aside.ra-drawer, div.ra-overlay').forEach(el => el.remove());
-  document.documentElement.classList.remove('ra-lock');
-  document.body.classList.remove('ra-lock');
-
-  // Hide old #site-nav on mobile to prevent "Categories" overlay issue
-  const siteNav = document.getElementById('site-nav');
-  if (siteNav && window.innerWidth <= 640) {
-    siteNav.style.setProperty('display', 'none', 'important');
-    siteNav.style.setProperty('visibility', 'hidden', 'important');
-  }
-
-  // Watch for snippet-injected elements and remove them immediately
-  const snippetObserver = new MutationObserver((mutations) => {
-    for (const m of mutations) {
-      for (const node of m.addedNodes) {
-        if (node.nodeType !== 1) continue;
-        if (node.classList && (node.classList.contains('ra-drawer') || node.classList.contains('ra-overlay'))) {
-          node.remove();
-          return;
-        }
-      }
-    }
-  });
-  snippetObserver.observe(document.body, { childList: true });
-
   // ── Mobile drawer (dedicated off-canvas panel) ──
   const drawer = document.getElementById('mobileMenuDrawer');
   const backdrop = document.getElementById('mobileMenuBackdrop');
   const drawerCloseBtn = document.getElementById('mobileMenuClose');
-  let navToggle = document.getElementById('nav-toggle');
+  const navToggle = document.getElementById('nav-toggle');
 
   function openMenu() {
     if (!drawer || !backdrop) return;
@@ -59,13 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
     drawer.setAttribute('aria-hidden', 'true');
     backdrop.setAttribute('aria-hidden', 'true');
     if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
-  }
-
-  // Clone the toggle button to strip any capture-phase listeners from injected snippets
-  if (navToggle) {
-    const fresh = navToggle.cloneNode(true);
-    navToggle.parentNode.replaceChild(fresh, navToggle);
-    navToggle = fresh;
   }
 
   if (navToggle) {
