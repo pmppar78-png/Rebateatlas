@@ -1,8 +1,10 @@
-const CACHE_NAME = 'ra-v10';
+const CACHE_NAME = 'ra-v11';
 const ASSETS = [
   '/', '/index.html', '/chat.html', '/404.html', '/form-success.html',
   '/about.html', '/faq.html', '/contact.html',
-  '/styles.css', '/main.js', '/partners.js', '/og-image.svg',
+  '/privacy-policy.html', '/terms.html', '/accessibility.html',
+  '/styles.css', '/main.js', '/partners.js', '/injectors.js', '/og-image.svg',
+  '/icon.svg', '/manifest.json',
   '/categories/', '/categories/heat-pumps.html', '/categories/solar-panels.html',
   '/categories/ev-chargers.html', '/categories/water-heaters.html',
   '/categories/smart-thermostats.html', '/categories/insulation-weatherization.html',
