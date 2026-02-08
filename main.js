@@ -9,6 +9,24 @@ document.addEventListener('DOMContentLoaded', () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
+  // Mobile nav toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const siteNav = document.getElementById('site-nav');
+  if (navToggle && siteNav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    siteNav.addEventListener('click', (e) => {
+      if (e.target.classList.contains('nav-link')) {
+        siteNav.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open navigation menu');
+      }
+    });
+  }
+
   const form = document.getElementById('chat-form');
   const input = document.getElementById('chat-input');
   const log = document.getElementById('chat-log');
