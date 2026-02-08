@@ -1,6 +1,6 @@
-const CACHE_NAME = 'ra-v7';
+const CACHE_NAME = 'ra-v8';
 const ASSETS = [
-  '/', '/index.html', '/chat.html', '/404.html',
+  '/', '/index.html', '/chat.html', '/404.html', '/form-success.html',
   '/styles.css', '/main.js', '/partners.js',
   '/categories/', '/categories/heat-pumps.html', '/categories/solar-panels.html',
   '/categories/ev-chargers.html', '/categories/water-heaters.html',
