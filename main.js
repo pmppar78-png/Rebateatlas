@@ -15,6 +15,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const navClose = document.getElementById('nav-close');
   let navToggle = document.getElementById('nav-toggle');
 
+  // ── Escape header stacking context on mobile ──
+  // The .site-header uses position: sticky + z-index which creates a stacking
+  // context.  A position: fixed child inside that context can end up rendered
+  // behind or on top of content incorrectly.  Moving the nav and overlay to
+  // <body> root level lets them use the viewport stacking context instead.
+  const siteHeader = siteNav ? siteNav.closest('.site-header') : null;
+  const mobileMediaQuery = window.matchMedia('(max-width: 640px)');
+
+  const repositionNav = () => {
+    if (!siteNav) return;
+    if (mobileMediaQuery.matches) {
+      // Move to body for correct fixed stacking
+      document.body.appendChild(siteNav);
+      if (navOverlay) document.body.appendChild(navOverlay);
+    } else if (siteHeader && siteNav.parentNode !== siteHeader) {
+      // Move back into header for desktop layout
+      const toggleBtn = siteHeader.querySelector('.nav-toggle') || siteHeader.querySelector('#nav-toggle');
+      if (toggleBtn) {
+        siteHeader.insertBefore(siteNav, toggleBtn);
+      } else {
+        siteHeader.appendChild(siteNav);
+      }
+    }
+  };
+
+  repositionNav();
+  mobileMediaQuery.addEventListener('change', repositionNav);
+
   // ── Defend against injected snippet drawers ──
   // Some Netlify snippets inject their own drawer (ra-drawer / ra-overlay) and
   // hijack the hamburger button with capture-phase stopPropagation, breaking the

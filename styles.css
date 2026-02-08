@@ -187,13 +187,11 @@ body {
 .nav-overlay {
   position: fixed;
   inset: 0;
-  z-index: 9998;
-  background: rgba(0, 0, 0, 0.6);
+  z-index: 10040;
+  background: rgba(0, 0, 0, 0.55);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  transition: opacity 180ms ease;
 }
 
 .nav-overlay.nav-overlay-active {
@@ -210,12 +208,12 @@ body.nav-locked {
 .nav-close {
   display: none;
   position: absolute;
-  top: 18px;
-  right: 18px;
-  width: 36px;
-  height: 36px;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
   border: none;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   cursor: pointer;
   color: var(--text-muted);
@@ -223,7 +221,7 @@ body.nav-locked {
   padding: 0;
   align-items: center;
   justify-content: center;
-  z-index: 10001;
+  z-index: 10051;
 }
 
 .nav-close:hover {
@@ -872,7 +870,7 @@ a.chip-link:hover {
 @media (max-width: 640px) {
   .nav-toggle {
     display: block;
-    z-index: 10000;
+    z-index: 10060;
   }
 
   /* Close button visible on mobile */
@@ -885,25 +883,24 @@ a.chip-link:hover {
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: auto;
     left: auto;
-    width: 300px;
-    max-width: 85vw;
+    width: min(86vw, 360px);
     height: 100vh;
     height: 100dvh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    gap: 2px;
-    padding: 68px 20px 32px;
-    background: #070b1e !important;
-    background-color: #070b1e !important;
-    border-left: 1px solid rgba(56, 241, 122, 0.12);
-    z-index: 9999;
+    gap: 0;
+    padding: 56px 14px 32px;
+    background: #0b1220 !important;
+    background-color: #0b1220 !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 10050;
     transform: translateX(100%);
     visibility: hidden;
     pointer-events: none;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0.3s;
+    transition: transform 180ms ease, visibility 0s 180ms;
     overflow-y: auto;
     box-shadow: none;
     -webkit-overflow-scrolling: touch;
@@ -913,31 +910,36 @@ a.chip-link:hover {
     transform: translateX(0);
     visibility: visible;
     pointer-events: auto;
-    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0s;
+    box-shadow: -6px 0 24px rgba(0, 0, 0, 0.5);
+    transition: transform 180ms ease, visibility 0s 0s;
   }
 
+  /* Compact menu link styles — NOT giant CTA blocks */
   .site-nav .nav-link,
   .site-nav .nav-link:link,
   .site-nav .nav-link:visited {
-    font-size: 1.05rem;
-    padding: 14px 18px;
+    display: block;
+    font-size: 16px;
+    padding: 12px 10px;
+    margin: 6px 0;
     border-radius: 12px;
-    transition: background 0.15s;
-    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.92);
     text-decoration: none;
+    transition: background 0.15s;
   }
 
   .site-nav .nav-link:hover {
-    background: rgba(56, 241, 122, 0.08);
+    background: rgba(255, 255, 255, 0.10);
   }
 
   .site-nav .nav-link-secondary {
     display: block;
   }
 
+  /* Active link — subtle highlight, NOT a giant green block */
   .site-nav .nav-link-active {
-    background: var(--accent-soft);
+    background: rgba(56, 241, 122, 0.12);
     color: var(--accent);
   }
 
@@ -950,19 +952,34 @@ a.chip-link:hover {
     border: none;
   }
 
-  /* AI CTA inside the drawer */
+  /* AI CTA inside the drawer — compact, matches other links */
   .site-nav .header-ai-cta,
   .site-nav .header-ai-cta:link,
   .site-nav .header-ai-cta:visited {
-    display: flex;
-    margin-top: 14px;
-    justify-content: center;
-    padding: 14px 18px;
-    font-size: 1rem;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    padding: 12px 10px;
+    font-size: 16px;
+    font-weight: 600;
     color: #fff !important;
     text-decoration: none !important;
-    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.2);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    border-radius: 12px;
+    box-shadow: none;
+  }
+
+  .site-nav .header-ai-cta:hover {
+    background: rgba(34, 197, 94, 0.3);
+    filter: none;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .site-nav .header-ai-cta:active {
+    transform: none;
+    box-shadow: none;
   }
 
   /* Header AI CTA — hidden on mobile, shown inside drawer instead */
