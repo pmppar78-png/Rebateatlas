@@ -23,20 +23,31 @@
     "sameAs": []
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rebateatlas.netlify.app/"},
+      {"@type": "ListItem", "position": 2, "name": "About"}
+    ]
+  }
+  </script>
 </head>
 <body class="page">
-  <header class="site-header">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header" role="banner">
     <div class="site-brand">
       <span class="site-logo-dot"></span>
       <span class="site-title">Rebate Atlas</span>
     </div>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main navigation">
       <a href="index.html" class="nav-link">Home</a>
       <a href="chat.html" class="nav-link">Ask the AI</a>
     </nav>
   </header>
 
-  <main class="content">
+  <main class="content" id="main-content">
     <section class="explainer">
       <h1>About Rebate Atlas</h1>
       <p>
@@ -61,7 +72,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only &middot; Not tax or legal advice.</p>
     <p>Some suggestions may include sponsored partners. This does not affect guidance.</p>
     <p><a href="chat.html" class="inline-link">Ask the AI</a> &middot; <a href="about.html" class="inline-link">About</a> &middot; <a href="faq.html" class="inline-link">FAQ</a> &middot; <a href="privacy-policy.html" class="inline-link">Privacy Policy</a> &middot; <a href="terms.html" class="inline-link">Terms</a> &middot; <a href="contact.html" class="inline-link">Contact</a></p>
