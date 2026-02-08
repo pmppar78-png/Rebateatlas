@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,7 +91,7 @@
         </div>
       </div>
 
-      <form id="zip-form" class="zip-form" onsubmit="return false;">
+      <form id="zip-form" class="zip-form">
         <div class="field-row">
           <label class="field">
             <span class="field-label">ZIP code</span>
@@ -329,61 +329,12 @@
   <footer class="site-footer" role="contentinfo">
     <p>&copy; <span id="year"></span> Rebate Atlas. Educational use only &middot; Not tax or legal advice.</p>
     <p>Some suggestions may include sponsored partners. This does not affect guidance.</p>
-    <p><a href="/chat.html" class="inline-link">Ask the AI</a> &middot; <a href="/states/" class="inline-link">States</a> &middot; <a href="/categories/" class="inline-link">Categories</a> &middot; <a href="/about.html" class="inline-link">About</a> &middot; <a href="/faq.html" class="inline-link">FAQ</a> &middot; <a href="/privacy-policy.html" class="inline-link">Privacy Policy</a> &middot; <a href="/terms.html" class="inline-link">Terms</a> &middot; <a href="/contact.html" class="inline-link">Contact</a></p>
+    <p><a href="/chat.html" class="inline-link">Ask the AI</a> &middot; <a href="/states/" class="inline-link">States</a> &middot; <a href="/categories/" class="inline-link">Categories</a> &middot; <a href="/blog/" class="inline-link">Updates</a> &middot; <a href="/about.html" class="inline-link">About</a> &middot; <a href="/faq.html" class="inline-link">FAQ</a> &middot; <a href="/privacy-policy.html" class="inline-link">Privacy Policy</a> &middot; <a href="/terms.html" class="inline-link">Terms</a> &middot; <a href="/contact.html" class="inline-link">Contact</a></p>
   </footer>
 
   <script src="/main.js"></script>
   <script src="/partners.js"></script>
+  <script src="/forms.js"></script>
   <script src="/injectors.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var form = document.getElementById('zip-form');
-      if (form) {
-        form.addEventListener('submit', function(e) {
-          e.preventDefault();
-          var zip = document.getElementById('zip-input').value.trim();
-          var homeType = document.getElementById('home-type').value;
-          if (!/^\d{5}$/.test(zip)) {
-            alert('Please enter a valid 5-digit ZIP code.');
-            return;
-          }
-          var params = new URLSearchParams();
-          params.set('zip', zip);
-          if (homeType) params.set('home', homeType);
-          window.location.href = 'chat.html?' + params.toString();
-        });
-      }
-
-      // Savings calculator
-      var checkboxes = document.querySelectorAll('.calc-option input[type="checkbox"]');
-      var resultsEl = document.getElementById('calc-results');
-      var federalEl = document.getElementById('calc-federal');
-      var stateEl = document.getElementById('calc-state');
-      var totalEl = document.getElementById('calc-total');
-
-      function updateCalc() {
-        var federal = 0;
-        var state = 0;
-        checkboxes.forEach(function(cb) {
-          if (cb.checked) {
-            federal += parseInt(cb.dataset.federal, 10) || 0;
-            state += parseInt(cb.dataset.state, 10) || 0;
-          }
-        });
-        if (federal > 0 || state > 0) {
-          resultsEl.style.display = 'block';
-          federalEl.textContent = '$' + federal.toLocaleString();
-          stateEl.textContent = '$' + state.toLocaleString();
-          totalEl.textContent = '$' + (federal + state).toLocaleString();
-        } else {
-          resultsEl.style.display = 'none';
-        }
-      }
-
-      checkboxes.forEach(function(cb) {
-        cb.addEventListener('change', updateCalc);
-      });
-    });
-  </script>
 </body>
 </html>

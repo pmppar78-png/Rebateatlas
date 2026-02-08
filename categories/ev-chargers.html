@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -92,6 +92,8 @@
       <span class="breadcrumb-sep">/</span>
       <span>EV Chargers</span>
     </nav>
+    <p class="affiliate-disclosure">This page may contain affiliate links. If you use a partner link, we may earn a referral commission at no extra cost to you. See our <a href="/privacy-policy.html" class="inline-link">privacy policy</a>.</p>
+
     <!-- Intro -->
     <section class="explainer">
       <span class="eyebrow">Rebate category</span>
@@ -113,7 +115,7 @@
     <section class="explainer" style="margin-top:22px;">
       <h2>Find local EV Chargers rebates</h2>
       <p>Enter your ZIP code to discover state, utility, and local rebates available in your area.</p>
-      <form class="zip-form" onsubmit="return false;" id="zip-form">
+      <form class="zip-form" id="zip-form">
         <div class="field-row" style="grid-template-columns:1fr;">
           <label class="field">
             <span class="field-label">ZIP code</span>
@@ -215,17 +217,7 @@
   </footer>
 
   <script src="/main.js"></script>
+  <script src="/forms.js"></script>
   <script src="/injectors.js"></script>
-  <script>
-    var form = document.getElementById('zip-form');
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        var zip = document.getElementById('zip-input').value.trim();
-        if (!/^\d{5}$/.test(zip)) { alert('Please enter a valid 5-digit ZIP code.'); return; }
-        window.location.href = '/chat.html?zip=' + encodeURIComponent(zip);
-      });
-    }
-  </script>
 </body>
 </html>
