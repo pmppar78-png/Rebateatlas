@@ -10,12 +10,52 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Mobile nav toggle — side drawer with overlay and scroll lock
-  const navToggle = document.getElementById('nav-toggle');
   const siteNav = document.getElementById('site-nav');
   const navOverlay = document.getElementById('nav-overlay');
   const navClose = document.getElementById('nav-close');
+  let navToggle = document.getElementById('nav-toggle');
+
+  // ── Defend against injected snippet drawers ──
+  // Some Netlify snippets inject their own drawer (ra-drawer / ra-overlay) and
+  // hijack the hamburger button with capture-phase stopPropagation, breaking the
+  // built-in side drawer.  We remove their elements, strip their listeners by
+  // cloning the button, and watch for late injection via MutationObserver.
+
+  const cleanUpSnippet = () => {
+    document.querySelectorAll('.ra-drawer, .ra-overlay').forEach(el => el.remove());
+    document.documentElement.classList.remove('ra-lock');
+    document.body.classList.remove('ra-lock');
+    if (siteNav) siteNav.style.removeProperty('display');
+  };
+
+  const replaceToggle = () => {
+    const current = document.getElementById('nav-toggle');
+    if (!current) return;
+    const fresh = current.cloneNode(true);
+    current.parentNode.replaceChild(fresh, current);
+    navToggle = fresh;
+    attachToggleHandler();
+  };
+
+  cleanUpSnippet();
+
+  // Watch for snippet-injected elements and remove them immediately
+  const observer = new MutationObserver((mutations) => {
+    for (const m of mutations) {
+      for (const node of m.addedNodes) {
+        if (node.nodeType !== 1) continue;
+        if (node.classList && (node.classList.contains('ra-drawer') || node.classList.contains('ra-overlay'))) {
+          node.remove();
+          replaceToggle();
+          return;
+        }
+      }
+    }
+  });
+  observer.observe(document.body, { childList: true });
 
   const openNav = () => {
+    cleanUpSnippet();
     siteNav.classList.add('nav-open');
     if (navOverlay) navOverlay.classList.add('nav-overlay-active');
     document.body.classList.add('nav-locked');
@@ -31,11 +71,17 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.setAttribute('aria-label', 'Open navigation menu');
   };
 
-  if (navToggle && siteNav) {
-    navToggle.addEventListener('click', () => {
+  const attachToggleHandler = () => {
+    if (!navToggle || !siteNav) return;
+    navToggle.addEventListener('click', (e) => {
+      e.stopImmediatePropagation();
       const isOpen = siteNav.classList.contains('nav-open');
       if (isOpen) { closeNav(); } else { openNav(); }
     });
+  };
+
+  if (navToggle && siteNav) {
+    replaceToggle();
     // Close drawer via X button
     if (navClose) {
       navClose.addEventListener('click', closeNav);
