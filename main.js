@@ -9,20 +9,46 @@ document.addEventListener('DOMContentLoaded', () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // Mobile nav toggle
+  // Mobile nav toggle — side drawer with overlay and scroll lock
   const navToggle = document.getElementById('nav-toggle');
   const siteNav = document.getElementById('site-nav');
+  const navOverlay = document.getElementById('nav-overlay');
+
+  const openNav = () => {
+    siteNav.classList.add('nav-open');
+    if (navOverlay) navOverlay.classList.add('nav-overlay-active');
+    document.body.classList.add('nav-locked');
+    navToggle.setAttribute('aria-expanded', 'true');
+    navToggle.setAttribute('aria-label', 'Close navigation menu');
+  };
+
+  const closeNav = () => {
+    siteNav.classList.remove('nav-open');
+    if (navOverlay) navOverlay.classList.remove('nav-overlay-active');
+    document.body.classList.remove('nav-locked');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Open navigation menu');
+  };
+
   if (navToggle && siteNav) {
     navToggle.addEventListener('click', () => {
-      const isOpen = siteNav.classList.toggle('nav-open');
-      navToggle.setAttribute('aria-expanded', isOpen);
-      navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      const isOpen = siteNav.classList.contains('nav-open');
+      if (isOpen) { closeNav(); } else { openNav(); }
     });
+    // Close drawer when a nav link is clicked
     siteNav.addEventListener('click', (e) => {
-      if (e.target.classList.contains('nav-link')) {
-        siteNav.classList.remove('nav-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-        navToggle.setAttribute('aria-label', 'Open navigation menu');
+      if (e.target.classList.contains('nav-link') || e.target.classList.contains('header-ai-cta')) {
+        closeNav();
+      }
+    });
+    // Close drawer when overlay is clicked
+    if (navOverlay) {
+      navOverlay.addEventListener('click', closeNav);
+    }
+    // Close drawer on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && siteNav.classList.contains('nav-open')) {
+        closeNav();
       }
     });
   }
