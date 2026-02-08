@@ -24,7 +24,7 @@
       link.href = partner.url;
       link.className = 'partner-link';
       link.target = '_blank';
-      link.rel = 'sponsored noopener';
+      link.rel = 'sponsored noopener noreferrer';
 
       var strong = document.createElement('strong');
       strong.textContent = partner.name;

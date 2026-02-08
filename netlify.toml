@@ -49,6 +49,36 @@
   to = "/categories/battery-storage.html"
   status = 301
 
+[[redirects]]
+  from = "/water-heaters"
+  to = "/categories/water-heaters.html"
+  status = 301
+
+[[redirects]]
+  from = "/smart-thermostats"
+  to = "/categories/smart-thermostats.html"
+  status = 301
+
+[[redirects]]
+  from = "/windows-doors"
+  to = "/categories/windows-doors.html"
+  status = 301
+
+[[redirects]]
+  from = "/windows"
+  to = "/categories/windows-doors.html"
+  status = 301
+
+[[redirects]]
+  from = "/battery-storage"
+  to = "/categories/battery-storage.html"
+  status = 301
+
+[[redirects]]
+  from = "/weatherization"
+  to = "/categories/insulation-weatherization.html"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

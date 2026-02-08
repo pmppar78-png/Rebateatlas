@@ -88,9 +88,37 @@ document.addEventListener('DOMContentLoaded', () => {
     return match ? match[1] : '';
   };
 
-  const formatAIResponse = (html) => {
+  // HTML escape helper
+  const escapeHtml = (str) => str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+  // Sanitize AI output: allow only safe affiliate links, escape everything else
+  const sanitizeAIContent = (text) => {
+    // Extract safe links before escaping, then re-insert after
+    const linkPattern = /<a\s+href="(https?:\/\/[^"]+)"\s*(?:class="[^"]*"\s*)?(?:style="[^"]*"\s*)?target="_blank"\s*rel="sponsored\s*noopener(?:\s*noreferrer)?"\s*>([^<]+)<\/a>/gi;
+    const links = [];
+    let match;
+    while ((match = linkPattern.exec(text)) !== null) {
+      links.push({ full: match[0], url: match[1], label: match[2] });
+    }
+
+    // Escape the entire text
+    let safe = escapeHtml(text);
+
+    // Re-insert safe links with CSS class instead of inline style
+    for (const link of links) {
+      const escapedFull = escapeHtml(link.full);
+      const safeLink = '<a href="' + escapeHtml(link.url) + '" class="affiliate-link" target="_blank" rel="sponsored noopener noreferrer">' + escapeHtml(link.label) + '</a>';
+      safe = safe.replace(escapedFull, safeLink);
+    }
+
+    return safe;
+  };
+
+  const formatAIResponse = (text) => {
+    // Sanitize first, then format
+    let formatted = sanitizeAIContent(text);
     // Convert double newlines into paragraph breaks for readability
-    let formatted = html.replace(/\n{2,}/g, '</p><p>');
+    formatted = formatted.replace(/\n{2,}/g, '</p><p>');
     // Convert single newlines to line breaks
     formatted = formatted.replace(/\n/g, '<br>');
     // Wrap in paragraph if not already wrapped
@@ -100,18 +128,27 @@ document.addEventListener('DOMContentLoaded', () => {
     return formatted;
   };
 
-  const appendMessage = (text, who = 'ai') => {
+  const appendMessage = (text, who = 'ai', rawAI = false) => {
     const div = document.createElement('div');
     div.className = 'msg ' + (who === 'user' ? 'msg-user' : 'msg-ai');
-    if (who === 'ai') {
-      // Parse the label and content separately
+    if (who === 'ai' && rawAI) {
+      // AI response from server - sanitize before rendering
+      const label = document.createElement('strong');
+      label.textContent = 'Rebate Atlas AI:';
+      div.appendChild(label);
+      div.appendChild(document.createTextNode(' '));
+      const contentSpan = document.createElement('span');
+      contentSpan.innerHTML = formatAIResponse(text);
+      div.appendChild(contentSpan);
+    } else if (who === 'ai') {
+      // Pre-built safe HTML for system messages
       const labelMatch = text.match(/^(<strong>.*?<\/strong>)\s*/);
       if (labelMatch) {
         const label = labelMatch[1];
         const content = text.slice(labelMatch[0].length);
-        div.innerHTML = label + ' ' + formatAIResponse(content);
+        div.innerHTML = label + ' ' + content;
       } else {
-        div.innerHTML = formatAIResponse(text);
+        div.innerHTML = text;
       }
     } else {
       div.innerHTML = text;
@@ -230,12 +267,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (res.ok && data.reply) {
-          const aiReply = `<strong>Rebate Atlas AI:</strong> ${data.reply}`;
-          appendMessage(aiReply, 'ai');
+          // Use rawAI=true to sanitize server response before rendering
+          appendMessage(data.reply, 'ai', true);
           conversationHistory.push({ role: 'assistant', content: data.reply });
         } else if (res.status === 400 && data.error) {
           appendMessage(
-            `<strong>Rebate Atlas AI:</strong> ${data.error.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}`,
+            '<strong>Rebate Atlas AI:</strong> ' + escapeHtml(data.error),
             'ai'
           );
         } else {

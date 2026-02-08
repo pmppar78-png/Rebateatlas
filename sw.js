@@ -1,10 +1,15 @@
-const CACHE_NAME = 'ra-v11';
+// Cache version: auto-busted via deploy timestamp injected by build, or manual bump
+const CACHE_VERSION = '20260208';
+const CACHE_NAME = 'ra-v12-' + CACHE_VERSION;
+
 const ASSETS = [
   '/', '/index.html', '/chat.html', '/404.html', '/form-success.html',
   '/about.html', '/faq.html', '/contact.html',
   '/privacy-policy.html', '/terms.html', '/accessibility.html',
-  '/styles.css', '/main.js', '/partners.js', '/injectors.js', '/og-image.svg',
-  '/icon.svg', '/manifest.json',
+  '/styles.css', '/main.js', '/partners.js', '/injectors.js',
+  '/og-image.png', '/icon.svg', '/icon-192.png', '/icon-512.png',
+  '/manifest.json',
+  '/config.json', '/affiliates.json',
   '/categories/', '/categories/heat-pumps.html', '/categories/solar-panels.html',
   '/categories/ev-chargers.html', '/categories/water-heaters.html',
   '/categories/smart-thermostats.html', '/categories/insulation-weatherization.html',
@@ -31,10 +36,30 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
   const url = new URL(e.request.url);
-  if (url.pathname.endsWith('.json') || url.pathname.includes('/.netlify/')) {
+
+  // Never cache Netlify function calls
+  if (url.pathname.includes('/.netlify/')) return;
+
+  // For config/affiliate JSON: network-first with cache fallback
+  if (url.pathname === '/config.json' || url.pathname === '/affiliates.json') {
+    e.respondWith(
+      fetch(e.request)
+        .then(res => {
+          if (res.ok) {
+            const clone = res.clone();
+            caches.open(CACHE_NAME).then(c => c.put(e.request, clone));
+          }
+          return res;
+        })
+        .catch(() => caches.match(e.request))
+    );
     return;
   }
-  // For HTML pages, try network first so content stays fresh
+
+  // For ZIP data JSON files: skip caching (too many, network-only)
+  if (url.pathname.endsWith('.json')) return;
+
+  // For HTML pages: network-first so content stays fresh
   if (e.request.headers.get('accept')?.includes('text/html')) {
     e.respondWith(
       fetch(e.request)
@@ -50,7 +75,8 @@ self.addEventListener('fetch', e => {
     );
     return;
   }
-  // For other assets, use cache-first
+
+  // For other assets: cache-first
   e.respondWith(
     caches.match(e.request).then(cached => cached || fetch(e.request))
   );
