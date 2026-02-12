@@ -16,7 +16,7 @@ const path = require('path');
 
 const DATA_DIR = path.join(__dirname, '..', 'data', 'states');
 const STATES_DIR = path.join(__dirname, '..', 'states');
-const SITE_URL = 'https://rebateatlas.org';
+const SITE_URL = 'https://rebateatlas.com';
 
 // State code to slug and full name mapping
 const STATE_MAP = {
@@ -433,7 +433,7 @@ function generatePage(data) {
     </div>
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
       <button class="nav-close" id="nav-close" aria-label="Close navigation menu"><svg viewBox="0 0 24 24"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>
-      <a href="/index.html" class="nav-link">Home</a>
+      <a href="/" class="nav-link">Home</a>
       <a href="/chat.html" class="nav-link">Ask the AI</a>
       <a href="/states/" class="nav-link nav-link-active">States</a>
       <a href="/categories/" class="nav-link">Categories</a>
@@ -463,7 +463,7 @@ function generatePage(data) {
 
   <main class="content" id="main-content">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/index.html">Home</a>
+      <a href="/">Home</a>
       <span class="breadcrumb-sep">/</span>
       <a href="/states/">States</a>
       <span class="breadcrumb-sep">/</span>

@@ -7,19 +7,56 @@
   node_bundler = "esbuild"
   included_files = ["data/zip-lookup.json"]
 
-# Redirects for clean category URLs
+# ─── Domain canonicalization ───
+# Force www → non-www (301)
+[[redirects]]
+  from = "https://www.rebateatlas.com/*"
+  to = "https://rebateatlas.com/:splat"
+  status = 301
+  force = true
+
+# Force old .org domain → .com (301)
+[[redirects]]
+  from = "https://rebateatlas.org/*"
+  to = "https://rebateatlas.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.rebateatlas.org/*"
+  to = "https://rebateatlas.com/:splat"
+  status = 301
+  force = true
+
+# ─── Eliminate /index.html duplicates ───
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+# ─── Clean URL rewrites (directory index pages) ───
 [[redirects]]
   from = "/categories"
   to = "/categories/index.html"
   status = 200
 
-# Redirect for clean states URL
 [[redirects]]
   from = "/states"
   to = "/states/index.html"
   status = 200
 
-# Redirect common misspellings and variations
+[[redirects]]
+  from = "/blog"
+  to = "/blog/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/guides"
+  to = "/guides/index.html"
+  status = 200
+
+# ─── Keyword shortcut redirects (301) ───
 [[redirects]]
   from = "/heat-pumps"
   to = "/categories/heat-pumps.html"
@@ -79,12 +116,6 @@
   from = "/weatherization"
   to = "/categories/insulation-weatherization.html"
   status = 301
-
-# Redirect for clean blog URL
-[[redirects]]
-  from = "/blog"
-  to = "/blog/index.html"
-  status = 200
 
 [[headers]]
   for = "/*"
