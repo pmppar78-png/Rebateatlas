@@ -5,6 +5,8 @@ const ZIP_LOOKUP = require('../../data/zip-lookup.json');
 
 // --- CORS ---
 const ALLOWED_ORIGINS = [
+  'https://rebateatlas.com',
+  'https://www.rebateatlas.com',
   'https://rebateatlas.org',
   'https://www.rebateatlas.org'
 ];

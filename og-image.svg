@@ -18,5 +18,5 @@
   <text x="120" y="400" fill="#38f17a" font-family="system-ui, -apple-system, sans-serif" font-size="22">Type your ZIP. See every rebate you can claim.</text>
   <rect x="120" y="450" width="200" height="48" rx="24" fill="#22c55e" opacity="0.9"/>
   <text x="155" y="481" fill="#020617" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600">Find my rebates</text>
-  <text x="120" y="560" fill="#a3acc7" font-family="system-ui, -apple-system, sans-serif" font-size="16" opacity="0.7">rebateatlas.org</text>
+  <text x="120" y="560" fill="#a3acc7" font-family="system-ui, -apple-system, sans-serif" font-size="16" opacity="0.7">rebateatlas.com</text>
 </svg>
