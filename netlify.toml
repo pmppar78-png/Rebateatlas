@@ -10,21 +10,8 @@
 # ─── Domain canonicalization ───
 # Force www → non-www (301)
 [[redirects]]
-  from = "https://www.rebateatlas.com/*"
-  to = "https://rebateatlas.com/:splat"
-  status = 301
-  force = true
-
-# Force old .org domain → .com (301)
-[[redirects]]
-  from = "https://rebateatlas.org/*"
-  to = "https://rebateatlas.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "https://www.rebateatlas.org/*"
-  to = "https://rebateatlas.com/:splat"
+  to = "https://rebateatlas.org/:splat"
   status = 301
   force = true
 
