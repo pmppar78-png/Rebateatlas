@@ -8,7 +8,21 @@
   included_files = ["data/zip-lookup.json"]
 
 # ─── Domain canonicalization ───
-# Force www → non-www (301)
+# Force .com → .org (301)
+[[redirects]]
+  from = "https://rebateatlas.com/*"
+  to = "https://rebateatlas.org/:splat"
+  status = 301
+  force = true
+
+# Force www.rebateatlas.com → .org (301)
+[[redirects]]
+  from = "https://www.rebateatlas.com/*"
+  to = "https://rebateatlas.org/:splat"
+  status = 301
+  force = true
+
+# Force www.rebateatlas.org → non-www (301)
 [[redirects]]
   from = "https://www.rebateatlas.org/*"
   to = "https://rebateatlas.org/:splat"

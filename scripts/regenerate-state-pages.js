@@ -16,7 +16,7 @@ const path = require('path');
 
 const DATA_DIR = path.join(__dirname, '..', 'data', 'states');
 const STATES_DIR = path.join(__dirname, '..', 'states');
-const SITE_URL = 'https://rebateatlas.com';
+const SITE_URL = 'https://rebateatlas.org';
 
 // State code to slug and full name mapping
 const STATE_MAP = {
