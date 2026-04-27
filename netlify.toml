@@ -7,7 +7,7 @@
   node_bundler = "esbuild"
   included_files = ["data/zip-lookup.json"]
 
-# ─── Domain canonicalization ───
+# ─── Domain canonicalization (mandatory) ───
 # Force .com → .org (301)
 [[redirects]]
   from = "https://rebateatlas.com/*"
@@ -29,94 +29,109 @@
   status = 301
   force = true
 
-# ─── Eliminate /index.html duplicates ───
-[[redirects]]
-  from = "/index.html"
-  to = "/"
-  status = 301
-  force = true
-
 # ─── Clean URL rewrites (directory index pages) ───
+# force = true ensures these serve content directly with status 200
+# instead of falling through to Netlify's automatic trailing-slash 301.
 [[redirects]]
   from = "/categories"
   to = "/categories/index.html"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/states"
   to = "/states/index.html"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/blog"
   to = "/blog/index.html"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/guides"
   to = "/guides/index.html"
   status = 200
+  force = true
 
-# ─── Keyword shortcut redirects (301) ───
+# ─── Keyword shortcuts (rewrites, status 200) ───
+# Served as 200 (rewrite) rather than 301 redirect so they no longer
+# appear as "Page with redirect" in Google Search Console. The HTML
+# carries a canonical pointing to the destination URL, so Google
+# consolidates them as alternate pages with proper canonical tags.
 [[redirects]]
   from = "/heat-pumps"
   to = "/categories/heat-pumps.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/solar"
   to = "/categories/solar-panels.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/solar-panels"
   to = "/categories/solar-panels.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/ev-chargers"
   to = "/categories/ev-chargers.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/insulation"
   to = "/categories/insulation-weatherization.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/battery"
   to = "/categories/battery-storage.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/water-heaters"
   to = "/categories/water-heaters.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/smart-thermostats"
   to = "/categories/smart-thermostats.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/windows-doors"
   to = "/categories/windows-doors.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/windows"
   to = "/categories/windows-doors.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/battery-storage"
   to = "/categories/battery-storage.html"
-  status = 301
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/weatherization"
   to = "/categories/insulation-weatherization.html"
-  status = 301
+  status = 200
+  force = true
 
 [[headers]]
   for = "/*"
