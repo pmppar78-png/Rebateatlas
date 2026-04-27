@@ -1,9 +1,9 @@
 // Cache version: auto-busted via deploy timestamp injected by build, or manual bump
-const CACHE_VERSION = '20260208c';
+const CACHE_VERSION = '20260427a';
 const CACHE_NAME = 'ra-v14-' + CACHE_VERSION;
 
 const ASSETS = [
-  '/', '/index.html', '/chat.html', '/404.html', '/form-success.html',
+  '/', '/chat.html', '/404.html', '/form-success.html',
   '/about.html', '/faq.html', '/contact.html',
   '/privacy-policy.html', '/terms.html', '/accessibility.html',
   '/styles.css', '/main.js', '/partners.js', '/injectors.js', '/forms.js',
