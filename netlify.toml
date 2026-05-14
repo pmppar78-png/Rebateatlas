@@ -8,21 +8,49 @@
   included_files = ["data/zip-lookup.json"]
 
 # ─── Domain canonicalization (mandatory) ───
-# Force .com → .org (301)
+# Every non-canonical variant → https://rebateatlas.org in ONE hop.
+# http:// rules listed first so the CDN edge can match them before
+# falling through to its automatic HTTP→HTTPS upgrade (which would
+# otherwise create a 2-hop chain for http://www variants).
+
+# http → canonical (single hop, avoids http→https then www→non-www chain)
+[[redirects]]
+  from = "http://www.rebateatlas.org/*"
+  to = "https://rebateatlas.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://rebateatlas.org/*"
+  to = "https://rebateatlas.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.rebateatlas.com/*"
+  to = "https://rebateatlas.org/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://rebateatlas.com/*"
+  to = "https://rebateatlas.org/:splat"
+  status = 301
+  force = true
+
+# https non-canonical → canonical
 [[redirects]]
   from = "https://rebateatlas.com/*"
   to = "https://rebateatlas.org/:splat"
   status = 301
   force = true
 
-# Force www.rebateatlas.com → .org (301)
 [[redirects]]
   from = "https://www.rebateatlas.com/*"
   to = "https://rebateatlas.org/:splat"
   status = 301
   force = true
 
-# Force www.rebateatlas.org → non-www (301)
 [[redirects]]
   from = "https://www.rebateatlas.org/*"
   to = "https://rebateatlas.org/:splat"
