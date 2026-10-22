@@ -217,6 +217,17 @@ export default async (req, context) => {
     });
   }
 
+  // Reject requests that do not come from our own site (stops use as an open AI proxy)
+  {
+    const origin = req.headers.get('origin') || '';
+    if (!ALLOWED_ORIGINS.includes(origin) && !/^https:\/\/[a-z0-9-]+--rebateatlas\.netlify\.app$/.test(origin)) {
+      return new Response(JSON.stringify({ error: 'Forbidden' }), {
+        status: 403,
+        headers: { 'Content-Type': 'application/json', ...corsHeaders(req) }
+      });
+    }
+  }
+
   // Rate limiting
   const clientIp = context.ip || req.headers.get('x-forwarded-for') || req.headers.get('x-nf-client-connection-ip') || 'unknown';
   if (!checkRateLimit(clientIp)) {
