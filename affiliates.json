@@ -63,7 +63,7 @@
       },
       {
         "name": "Angi",
-        "url": "https://www.angi.com/?ref=rebateatlas",
+        "url": "https://www.angi.com/",
         "description": "Home services marketplace",
         "cta": "Find Pros",
         "notes": "Home services marketplace",
@@ -104,7 +104,7 @@
       },
       {
         "name": "Ecobee",
-        "url": "https://www.ecobee.com/?ref=rebateatlas",
+        "url": "https://www.ecobee.com/",
         "description": "Smart thermostats",
         "cta": "Shop Now",
         "notes": "Smart thermostats",
@@ -113,7 +113,7 @@
       },
       {
         "name": "Google Nest",
-        "url": "https://store.google.com/us/category/connected_home?ref=rebateatlas",
+        "url": "https://store.google.com/us/category/connected_home",
         "description": "Nest thermostats & devices",
         "cta": "Shop Now",
         "notes": "Nest thermostats & devices",
@@ -136,7 +136,7 @@
     "partners": [
       {
         "name": "Amazon",
-        "url": "https://www.amazon.com/?tag=rebateatlas-20",
+        "url": "https://www.amazon.com/",
         "description": "Smart thermostats & energy devices",
         "cta": "Shop Now",
         "notes": "Smart thermostats, energy devices, etc.",
@@ -145,7 +145,7 @@
       },
       {
         "name": "Home Depot",
-        "url": "https://www.homedepot.com/?mtc=rebateatlas",
+        "url": "https://www.homedepot.com/",
         "description": "Home improvement supplies",
         "cta": "Shop Now",
         "notes": "Home improvement retailer",
@@ -177,7 +177,7 @@
       },
       {
         "name": "LendingTree",
-        "url": "https://www.lendingtree.com/?esource=rebateatlas",
+        "url": "https://www.lendingtree.com/",
         "description": "Loan comparison marketplace",
         "cta": "Compare Rates",
         "notes": "Loan comparison marketplace",
@@ -195,7 +195,7 @@
       },
       {
         "name": "SoFi",
-        "url": "https://www.sofi.com/?ref=rebateatlas",
+        "url": "https://www.sofi.com/",
         "description": "Loans & refinancing",
         "cta": "Check Rates",
         "notes": "Loans & refinancing",
@@ -218,7 +218,7 @@
     "partners": [
       {
         "name": "ChargePoint",
-        "url": "https://www.chargepoint.com/?ref=rebateatlas",
+        "url": "https://www.chargepoint.com/",
         "description": "Home & commercial EV charging",
         "cta": "Shop Chargers",
         "notes": "Leading EV charging network with home charger products",
@@ -232,7 +232,7 @@
     "partners": [
       {
         "name": "EcoFlow",
-        "url": "https://www.ecoflow.com/?ref=rebateatlas",
+        "url": "https://www.ecoflow.com/",
         "description": "Portable & home battery systems",
         "cta": "Shop Systems",
         "notes": "Home battery and portable power stations",
