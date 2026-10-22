@@ -3,7 +3,7 @@
     "slug": "heat-pumps",
     "name": "Heat Pumps",
     "headline": "Heat Pump Rebates & Incentives",
-    "description": "Heat pumps are one of the most efficient ways to heat and cool your home. Federal tax credits under the Inflation Reduction Act cover up to 30% of the cost (up to $2,000 per year), and many states and utilities offer additional rebates that can significantly reduce your out-of-pocket expense.",
+    "description": "Heat pumps are one of the most efficient ways to heat and cool your home. The federal 25C credit (30%, up to $2,000 per year) ended for heat pumps installed after December 31, 2025, but HEAR rebates (where launched) and many state and utility rebates can still significantly reduce your out-of-pocket expense.",
     "federal_programs": [
       {
         "name": "25C Energy Efficient Home Improvement Credit",
@@ -19,7 +19,7 @@
     "faqs": [
       {
         "question": "How much can I save with heat pump rebates?",
-        "answer": "Depending on your income and location, you could save $2,000–$8,000 or more on a heat pump installation through combined federal tax credits, state rebates, and utility incentives."
+        "answer": "Depending on your income and location, you could save $2,000–$8,000 or more on a heat pump installation through HEAR or HOMES rebates (where launched), state rebates and utility incentives."
       },
       {
         "question": "Do I need to replace my existing system to qualify?",
@@ -27,7 +27,7 @@
       },
       {
         "question": "Are mini-splits eligible for rebates?",
-        "answer": "Yes. Ductless mini-split heat pumps qualify for the federal 25C tax credit and most state and utility rebate programs."
+        "answer": "Yes. Ductless mini-split heat pumps qualify for most state, utility and HEAR rebate programs (the federal 25C credit ended after 2025)."
       }
     ],
     "related_affiliates": ["home_services", "financing"]
@@ -36,7 +36,7 @@
     "slug": "water-heaters",
     "name": "Water Heaters",
     "headline": "Water Heater Rebates & Incentives",
-    "description": "Upgrading to a heat pump water heater or high-efficiency gas water heater can qualify you for significant federal tax credits and utility rebates. Water heating accounts for roughly 20% of home energy use, so an efficient unit pays for itself over time.",
+    "description": "Upgrading to a heat pump water heater can qualify you for HEAR rebates (where launched) and utility rebates. Water heating accounts for roughly 20% of home energy use, so an efficient unit pays for itself over time.",
     "federal_programs": [
       {
         "name": "25C Energy Efficient Home Improvement Credit",
@@ -56,7 +56,7 @@
       },
       {
         "question": "How much does a heat pump water heater cost?",
-        "answer": "Typical installed costs range from $2,500 to $4,500. After federal tax credits and any state/utility rebates, your net cost could be $1,000–$2,500 or less."
+        "answer": "Typical installed costs range from $2,500 to $4,500. After any HEAR, state or utility rebates, your net cost may be much lower."
       },
       {
         "question": "Can I claim both the federal credit and a utility rebate?",
@@ -69,7 +69,7 @@
     "slug": "smart-thermostats",
     "name": "Smart Thermostats",
     "headline": "Smart Thermostat Rebates & Incentives",
-    "description": "Smart thermostats help reduce heating and cooling costs by learning your schedule and optimizing temperature settings automatically. While the federal tax credit for thermostats is modest, many utilities offer instant rebates or free smart thermostats to their customers.",
+    "description": "Smart thermostats help reduce heating and cooling costs by learning your schedule and optimizing temperature settings automatically. Many utilities offer instant rebates or free smart thermostats to their customers.",
     "federal_programs": [
       {
         "name": "25C Energy Efficient Home Improvement Credit",
@@ -88,7 +88,7 @@
       },
       {
         "question": "Which smart thermostats qualify for rebates?",
-        "answer": "ENERGY STAR certified models from brands like Ecobee, Google Nest, and Honeywell typically qualify for federal credits and utility rebates."
+        "answer": "ENERGY STAR certified models from brands like Ecobee, Google Nest, and Honeywell typically qualify for utility rebates."
       }
     ],
     "related_affiliates": ["energy_devices", "retail"]
@@ -97,7 +97,7 @@
     "slug": "ev-chargers",
     "name": "EV Chargers",
     "headline": "EV Charger Rebates & Incentives",
-    "description": "Installing a Level 2 home EV charger can qualify you for a federal tax credit, and many states and utilities offer additional incentives. As electric vehicle adoption grows, charging at home remains the most convenient and cost-effective option.",
+    "description": "The federal 30C charger credit ended for chargers placed in service after June 30, 2026, but many states and utilities still offer charger rebates and EV rates. As electric vehicle adoption grows, charging at home remains the most convenient and cost-effective option.",
     "federal_programs": [
       {
         "name": "30C Alternative Fuel Vehicle Refueling Property Credit",
@@ -129,7 +129,7 @@
     "federal_programs": [
       {
         "name": "25D Residential Clean Energy Credit",
-        "details": "30% of the total cost of a solar panel system (equipment, installation, permitting). No annual cap. Available through 2032, then steps down to 26% in 2033 and 22% in 2034.",
+        "details": "30% of the total cost of a solar panel system (equipment, installation, permitting). No annual cap. Ended for expenditures made after December 31, 2025 (it was scheduled to run through 2034 before the One Big Beautiful Bill Act).",
         "eligibility": "Must be a home you own in the US (primary or secondary residence). Rental properties do not qualify. System must be new — used panels are not eligible."
       }
     ],
@@ -140,7 +140,7 @@
       },
       {
         "question": "Can I combine the federal credit with state incentives?",
-        "answer": "Yes. Many states offer additional rebates, performance payments, or renewable energy credits (SRECs) that stack on top of the federal credit."
+        "answer": "Yes. Many states offer rebates, performance payments or renewable energy credits (SRECs), which matter more now that the federal 25D credit ended after 2025."
       },
       {
         "question": "Does the credit apply to battery storage too?",
@@ -153,7 +153,7 @@
     "slug": "insulation-weatherization",
     "name": "Insulation & Weatherization",
     "headline": "Insulation & Weatherization Rebates & Incentives",
-    "description": "Proper insulation and air sealing are among the most cost-effective home energy improvements. Federal tax credits cover insulation materials, and income-qualified households may receive substantial rebates through the Weatherization Assistance Program and new IRA-funded programs.",
+    "description": "Proper insulation and air sealing are among the most cost-effective home energy improvements. Income-qualified households may receive substantial help through the Weatherization Assistance Program and HEAR/HOMES rebates where launched (the federal 25C credit ended after 2025).",
     "federal_programs": [
       {
         "name": "25C Energy Efficient Home Improvement Credit",
@@ -191,7 +191,7 @@
     "slug": "windows-doors",
     "name": "Windows & Doors",
     "headline": "Window & Door Rebates & Incentives",
-    "description": "Replacing old, drafty windows and exterior doors with ENERGY STAR certified models can improve comfort, reduce noise, and lower energy bills. The federal tax credit covers a meaningful portion of the cost, and some utilities offer additional rebates.",
+    "description": "Replacing old, drafty windows and exterior doors with ENERGY STAR certified models can improve comfort, reduce noise, and lower energy bills. The federal 25C credit ended after 2025, but some utilities and states offer rebates.",
     "federal_programs": [
       {
         "name": "25C Energy Efficient Home Improvement Credit",
@@ -219,7 +219,7 @@
     "slug": "battery-storage",
     "name": "Battery Storage",
     "headline": "Battery Storage Rebates & Incentives",
-    "description": "Home battery storage systems provide backup power during outages, help you maximize solar self-consumption, and can reduce peak electricity charges. The federal tax credit now covers standalone batteries, making energy storage more accessible than ever.",
+    "description": "Home battery storage systems provide backup power during outages, help you maximize solar self-consumption, and can reduce peak electricity charges. The federal 25D credit covered standalone batteries through 2025; for 2026, look to state and utility storage programs.",
     "federal_programs": [
       {
         "name": "25D Residential Clean Energy Credit",
@@ -234,7 +234,7 @@
       },
       {
         "question": "How much does a home battery system cost?",
-        "answer": "Typical home battery systems cost $10,000–$20,000 installed. After the 30% federal credit, your net cost would be $7,000–$14,000."
+        "answer": "Typical home battery systems cost $10,000–$20,000 installed. Before the 25D credit ended, the 30% credit cut that to about $7,000–$14,000; 2026 buyers should check state and utility storage incentives."
       },
       {
         "question": "Are there state incentives for batteries?",
