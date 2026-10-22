@@ -89,4 +89,12 @@
 <url><loc>https://rebateatlas.org/privacy-policy.html</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
 <url><loc>https://rebateatlas.org/terms.html</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
 <url><loc>https://rebateatlas.org/accessibility.html</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url>
+    <loc>https://rebateatlas.org/disclaimer.html</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://rebateatlas.org/affiliate-disclosure.html</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
 </urlset>
