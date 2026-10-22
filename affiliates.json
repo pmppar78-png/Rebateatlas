@@ -4,7 +4,7 @@
     "partners": [
       {
         "name": "EnergySage",
-        "url": "https://www.energysage.com/?rc=rebateatlas",
+        "url": "https://www.energysage.com/",
         "description": "Solar quote marketplace",
         "cta": "Compare Solar Quotes",
         "notes": "Solar quote marketplace, very high EPC",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Project Solar",
-        "url": "https://www.projectsolar.com/?ref=rebateatlas",
+        "url": "https://www.projectsolar.com/",
         "description": "Direct-to-consumer installer",
         "cta": "Get a Quote",
         "notes": "Direct-to-consumer solar installer",
