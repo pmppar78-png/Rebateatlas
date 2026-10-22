@@ -128,6 +128,13 @@ const NEIGHBORS = {
   WY: ['MT', 'SD', 'NE', 'CO', 'UT', 'ID']
 };
 
+// HOMES/HEAR status line (source: NASEO IRA Home Energy Rebates tracker, updated September 30, 2026).
+// The live state pages carry hand-verified, state-specific sentences; keep data/states/*.json status current before regenerating.
+function homesHearStatusSentence(state, status) {
+  if (status === 'launched') return `${state} has launched at least one of the HOMES or HEAR rebate programs (NASEO tracker, September 30, 2026). Funding and eligibility change, so confirm with the state energy office before starting work.`;
+  return `${state} had not launched the HOMES or HEAR rebate programs as of the NASEO tracker updated September 30, 2026. Funding and eligibility change, so confirm with the state energy office before starting work.`;
+}
+
 function escapeHtml(str) {
   return str
     .replace(/&/g, '&amp;')
@@ -184,7 +191,7 @@ function generateFAQs(data) {
   const faqs = [];
 
   // FAQ 1: What rebates are available
-  let answer1 = `${state} residents can access federal tax credits including the 25C Energy Efficient Home Improvement Credit (up to $3,200/year) and the 25D Residential Clean Energy Credit (30% for solar and battery storage).`;
+  let answer1 = `With the federal 25C and 25D tax credits ended after 2025, ${state} residents should look to state, utility and HOMES/HEAR programs.`;
   if (programs.length > 0) {
     answer1 += ` State-level programs include ${programs.map(p => p.name).join(', ')}.`;
   }
@@ -221,7 +228,7 @@ function generateFAQs(data) {
   // FAQ 5: How to apply
   faqs.push({
     question: `How do I apply for energy rebates in ${state}?`,
-    answer: `Start by entering your ZIP code on Rebate Atlas to get personalized guidance. For federal tax credits (25C and 25D), you claim them when you file your federal income tax return using IRS Form 5695. For state programs, contact the ${data.state_energy_office || state + ' state energy office'}. For utility rebates, check with your local utility provider directly.`
+    answer: `Start by entering your ZIP code on Rebate Atlas to get personalized guidance. If you completed qualifying work in 2025 or earlier, claim the 25C or 25D credit on IRS Form 5695 for that tax year (both ended for 2026 work). For state programs, contact the ${data.state_energy_office || state + ' state energy office'}. For utility rebates, check with your local utility provider directly.`
   });
 
   return faqs;
@@ -336,6 +343,7 @@ function generateStateContent(data) {
 
 function generatePage(data) {
   const state = data.state_name;
+  const status = data.homes_hear_status;
   const code = data.state_code;
   const slug = STATE_MAP[code].slug;
   const metaDesc = generateMetaDescription(data);
@@ -482,13 +490,12 @@ function generatePage(data) {
         official sources.
       </p>
 
-      <h2>Federal Programs Available in ${state}</h2>
+      <h2>Federal Programs in ${state} for 2026</h2>
       <ul>
-        <li><strong>25C Energy Efficient Home Improvement Credit:</strong> Up to $3,200/year for heat pumps, insulation, windows, doors, electrical panels, and home energy audits. Covers 30% of costs.</li>
-        <li><strong>25D Residential Clean Energy Credit:</strong> 30% tax credit for solar panels and battery storage with no dollar cap. Available through 2032.</li>
-        <li><strong>HOMES &amp; HEAR Rebates:</strong> Income-qualified point-of-sale rebates up to $14,000 for heat pumps, water heaters, electrical panels, and other electrification upgrades.</li>
-        <li><strong>30C EV Charger Credit:</strong> Up to $1,000 for home EV charging equipment in eligible census tracts.</li>
-        <li><strong>Weatherization Assistance Program (WAP):</strong> Free weatherization services for low-income households at or below 200% of the federal poverty level.</li>
+        <li><strong>Federal home energy tax credits (25C and 25D) ended after 2025:</strong> The 25C Energy Efficient Home Improvement Credit does not apply to property placed in service after December 31, 2025, and the 25D Residential Clean Energy Credit (solar, batteries, geothermal) does not apply to expenditures made after December 31, 2025 (<a href="https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb" target="_blank" rel="noopener">IRS</a>). Work completed in 2025 or earlier can still be claimed on IRS Form 5695.</li>
+        <li><strong>HOMES &amp; HEAR Rebates:</strong> ${homesHearStatusSentence(state, status)} HEAR can provide up to $14,000 per income-qualified household; see our <a href="/guides/hear-rebate-program.html">HEAR</a> and <a href="/guides/homes-rebate-program.html">HOMES</a> guides.</li>
+        <li><strong>30C EV Charger Credit (ended):</strong> Does not apply to chargers placed in service after June 30, 2026.</li>
+        <li><strong>Weatherization Assistance Program (WAP):</strong> Free weatherization services for low-income households, generally at or below 200% of the federal poverty level.</li>
       </ul>
 
 ${stateContent}

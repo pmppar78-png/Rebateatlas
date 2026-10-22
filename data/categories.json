@@ -6,8 +6,8 @@
     "description": "Heat pumps are one of the most efficient ways to heat and cool your home. The federal 25C credit (30%, up to $2,000 per year) ended for heat pumps installed after December 31, 2025, but HEAR rebates (where launched) and many state and utility rebates can still significantly reduce your out-of-pocket expense.",
     "federal_programs": [
       {
-        "name": "25C Energy Efficient Home Improvement Credit",
-        "details": "Up to $2,000 per year for qualifying heat pumps (air-source, geothermal, or mini-split). Covers 30% of equipment and installation costs.",
+        "name": "25C Energy Efficient Home Improvement Credit (ended)",
+        "details": "Ended for property placed in service after December 31, 2025. Before that: Up to $2,000 per year for qualifying heat pumps (air-source, geothermal, or mini-split). Covers 30% of equipment and installation costs. Work completed in 2025 can still be claimed on IRS Form 5695 for tax year 2025.",
         "eligibility": "Must be an existing home you own and use as a primary or secondary residence. New construction does not qualify."
       },
       {
@@ -30,7 +30,10 @@
         "answer": "Yes. Ductless mini-split heat pumps qualify for most state, utility and HEAR rebate programs (the federal 25C credit ended after 2025)."
       }
     ],
-    "related_affiliates": ["home_services", "financing"]
+    "related_affiliates": [
+      "home_services",
+      "financing"
+    ]
   },
   {
     "slug": "water-heaters",
@@ -39,8 +42,8 @@
     "description": "Upgrading to a heat pump water heater can qualify you for HEAR rebates (where launched) and utility rebates. Water heating accounts for roughly 20% of home energy use, so an efficient unit pays for itself over time.",
     "federal_programs": [
       {
-        "name": "25C Energy Efficient Home Improvement Credit",
-        "details": "Up to $2,000 per year for qualifying heat pump water heaters. Covers 30% of equipment and installation costs.",
+        "name": "25C Energy Efficient Home Improvement Credit (ended)",
+        "details": "Ended for property placed in service after December 31, 2025. Before that: Up to $2,000 per year for qualifying heat pump water heaters. Covers 30% of equipment and installation costs. Work completed in 2025 can still be claimed on IRS Form 5695 for tax year 2025.",
         "eligibility": "Existing homes only. The water heater must meet specific energy efficiency requirements (typically ENERGY STAR certified)."
       },
       {
@@ -63,7 +66,10 @@
         "answer": "Yes. The federal tax credit and utility or state rebates are independent programs. You can stack them to maximize your savings."
       }
     ],
-    "related_affiliates": ["home_services", "financing"]
+    "related_affiliates": [
+      "home_services",
+      "financing"
+    ]
   },
   {
     "slug": "smart-thermostats",
@@ -72,8 +78,8 @@
     "description": "Smart thermostats help reduce heating and cooling costs by learning your schedule and optimizing temperature settings automatically. Many utilities offer instant rebates or free smart thermostats to their customers.",
     "federal_programs": [
       {
-        "name": "25C Energy Efficient Home Improvement Credit",
-        "details": "Up to $150 for qualifying ENERGY STAR smart thermostats. Part of the $1,200 annual cap for non-heat-pump improvements.",
+        "name": "25C Energy Efficient Home Improvement Credit (ended)",
+        "details": "Ended for property placed in service after December 31, 2025. Before that: Up to $150 for qualifying ENERGY STAR smart thermostats. Part of the $1,200 annual cap for non-heat-pump improvements. Work completed in 2025 can still be claimed on IRS Form 5695 for tax year 2025.",
         "eligibility": "Existing homes only. The thermostat must be ENERGY STAR certified."
       }
     ],
@@ -91,7 +97,10 @@
         "answer": "ENERGY STAR certified models from brands like Ecobee, Google Nest, and Honeywell typically qualify for utility rebates."
       }
     ],
-    "related_affiliates": ["energy_devices", "retail"]
+    "related_affiliates": [
+      "energy_devices",
+      "retail"
+    ]
   },
   {
     "slug": "ev-chargers",
@@ -119,7 +128,11 @@
         "answer": "Many states and utilities offer $200–$1,000 in additional rebates for home EV charger installations. Some also offer discounted electricity rates for EV charging during off-peak hours."
       }
     ],
-    "related_affiliates": ["energy_devices", "retail", "financing"]
+    "related_affiliates": [
+      "energy_devices",
+      "retail",
+      "financing"
+    ]
   },
   {
     "slug": "solar-panels",
@@ -128,7 +141,7 @@
     "description": "The federal solar tax credit (ITC) remains one of the most valuable clean energy incentives available to homeowners. Combined with state programs, net metering, and utility incentives, solar panels can dramatically reduce or eliminate your electricity bill.",
     "federal_programs": [
       {
-        "name": "25D Residential Clean Energy Credit",
+        "name": "25D Residential Clean Energy Credit (ended)",
         "details": "30% of the total cost of a solar panel system (equipment, installation, permitting). No annual cap. Ended for expenditures made after December 31, 2025 (it was scheduled to run through 2034 before the One Big Beautiful Bill Act).",
         "eligibility": "Must be a home you own in the US (primary or secondary residence). Rental properties do not qualify. System must be new — used panels are not eligible."
       }
@@ -147,7 +160,10 @@
         "answer": "Yes, as of 2023, standalone battery storage systems also qualify for the 30% Residential Clean Energy Credit, even if not paired with solar."
       }
     ],
-    "related_affiliates": ["solar_quotes", "financing"]
+    "related_affiliates": [
+      "solar_quotes",
+      "financing"
+    ]
   },
   {
     "slug": "insulation-weatherization",
@@ -156,8 +172,8 @@
     "description": "Proper insulation and air sealing are among the most cost-effective home energy improvements. Income-qualified households may receive substantial help through the Weatherization Assistance Program and HEAR/HOMES rebates where launched (the federal 25C credit ended after 2025).",
     "federal_programs": [
       {
-        "name": "25C Energy Efficient Home Improvement Credit",
-        "details": "Up to $1,200 per year for insulation, air sealing materials, and home energy audits. Covers 30% of material and installation costs.",
+        "name": "25C Energy Efficient Home Improvement Credit (ended)",
+        "details": "Ended for property placed in service after December 31, 2025. Before that: Up to $1,200 per year for insulation, air sealing materials, and home energy audits. Covers 30% of material and installation costs. Work completed in 2025 can still be claimed on IRS Form 5695 for tax year 2025.",
         "eligibility": "Existing homes only. Insulation must meet IECC standards for your climate zone."
       },
       {
@@ -178,14 +194,18 @@
       },
       {
         "question": "Can I do the insulation work myself and still claim the credit?",
-        "answer": "Yes, for the 25C tax credit. The credit covers the cost of materials even for DIY installation. However, most utility and state rebate programs require professional installation."
+        "answer": "For work completed in 2025 or earlier, yes: the 25C credit covered materials even for DIY installation (25C ended for property placed in service after December 31, 2025). Most utility, state and HEAR rebate programs require professional installation."
       },
       {
         "question": "How much can weatherization save on energy bills?",
         "answer": "The Department of Energy estimates that weatherization reduces heating bills by an average of 30% and overall energy costs by an average of $372 per year."
       }
     ],
-    "related_affiliates": ["home_services", "retail", "financing"]
+    "related_affiliates": [
+      "home_services",
+      "retail",
+      "financing"
+    ]
   },
   {
     "slug": "windows-doors",
@@ -194,8 +214,8 @@
     "description": "Replacing old, drafty windows and exterior doors with ENERGY STAR certified models can improve comfort, reduce noise, and lower energy bills. The federal 25C credit ended after 2025, but some utilities and states offer rebates.",
     "federal_programs": [
       {
-        "name": "25C Energy Efficient Home Improvement Credit",
-        "details": "Up to $600 per year for ENERGY STAR Most Efficient certified windows and skylights. Up to $500 for exterior doors ($250 per door). These fall within the $1,200 annual cap.",
+        "name": "25C Energy Efficient Home Improvement Credit (ended)",
+        "details": "Ended for property placed in service after December 31, 2025. Before that: Up to $600 per year for ENERGY STAR Most Efficient certified windows and skylights. Up to $500 for exterior doors ($250 per door). These fall within the $1,200 annual cap. Work completed in 2025 can still be claimed on IRS Form 5695 for tax year 2025.",
         "eligibility": "Existing homes only. Products must be ENERGY STAR Most Efficient certified (windows) or ENERGY STAR certified (doors)."
       }
     ],
@@ -213,7 +233,11 @@
         "answer": "Storm windows that meet ENERGY STAR criteria may qualify. Check the ENERGY STAR product finder for certified models."
       }
     ],
-    "related_affiliates": ["home_services", "retail", "financing"]
+    "related_affiliates": [
+      "home_services",
+      "retail",
+      "financing"
+    ]
   },
   {
     "slug": "battery-storage",
@@ -222,8 +246,8 @@
     "description": "Home battery storage systems provide backup power during outages, help you maximize solar self-consumption, and can reduce peak electricity charges. The federal 25D credit covered standalone batteries through 2025; for 2026, look to state and utility storage programs.",
     "federal_programs": [
       {
-        "name": "25D Residential Clean Energy Credit",
-        "details": "30% of the total cost of a battery storage system (must have at least 3 kWh capacity). No annual cap. Standalone batteries qualify as of 2023.",
+        "name": "25D Residential Clean Energy Credit (ended)",
+        "details": "Ended for expenditures made after December 31, 2025. Before that: 30% of the total cost of a battery storage system (must have at least 3 kWh capacity). No annual cap. Standalone batteries qualify as of 2023.",
         "eligibility": "Must be a home you own in the US. Battery must have a capacity of at least 3 kWh. Does not need to be paired with solar."
       }
     ],
@@ -241,6 +265,10 @@
         "answer": "Several states (California, Massachusetts, Oregon, and others) offer additional battery storage rebates ranging from $1,000 to $5,000 or more."
       }
     ],
-    "related_affiliates": ["solar_quotes", "energy_devices", "financing"]
+    "related_affiliates": [
+      "solar_quotes",
+      "energy_devices",
+      "financing"
+    ]
   }
 ]
